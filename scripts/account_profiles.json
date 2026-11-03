@@ -1,14 +1,277 @@
 {
-  "教育技术学": {
-    "biz": "MjM5MDgyNjYzNQ==",
-    "wechat_id": "JYJSX2014",
-    "original_id": "gh_03cca6f28b11",
-    "sample_urls": ["https://mp.weixin.qq.com/s/Y-v5io7KoD4sd4b8c7Llbw"]
+  "人文社科论文速览": {
+    "publisher": "人文社科论文速览",
+    "biz": "MzI1MjE5MzQ0NQ==",
+    "wechat_id": "",
+    "original_id": "gh_28787020eb96",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/rXMQIIc_Xf2H0HpilcqzzQ"
+    ],
+    "sample_published_at": "2026-11-03T00:00:00+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "Citedu全媒": {
+    "publisher": "Citedu全媒",
+    "biz": "MzIzNDE2NzQwOA==",
+    "wechat_id": "chinaitedu",
+    "original_id": "gh_6f1bd4603e97",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/-bDjj_kwFhJrSj-XkRZYRw"
+    ],
+    "sample_published_at": "2026-11-03T10:30:00+08:00",
+    "verified_on": "2026-11-03"
   },
   "教育数字化100人": {
+    "publisher": "教育数字化100人",
     "biz": "MzI2NzQ2NzE1NQ==",
     "wechat_id": "wuxianclassroom",
     "original_id": "gh_9b3842ab092a",
-    "sample_urls": ["https://mp.weixin.qq.com/s/zIBQHN4Li45OR15ZVMwEOg"]
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/zIBQHN4Li45OR15ZVMwEOg"
+    ],
+    "sample_published_at": "2026-09-21T11:50:00+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "教育技术学": {
+    "publisher": "教育技术学",
+    "biz": "MjM5MDgyNjYzNQ==",
+    "wechat_id": "JYJSX2014",
+    "original_id": "gh_03cca6f28b11",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/Y-v5io7KoD4sd4b8c7Llbw"
+    ],
+    "sample_published_at": "2026-11-03T10:00:00+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "教育技术学自留地": {
+    "publisher": "教育技术学自留地",
+    "biz": "MzUxMjA0NTU4Mw==",
+    "wechat_id": "ET2018A",
+    "original_id": "gh_99a8aaad9e8b",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/w4S0NqyQOZQvAWvuapiLTQ"
+    ],
+    "sample_published_at": "2026-11-03T08:02:00+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "开放教育研究": {
+    "publisher": "开放教育研究",
+    "biz": "Mzg3NDU5MzU5Ng==",
+    "wechat_id": "",
+    "original_id": "gh_4f7e73e58c41",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/-mT4DwKCBtrloSkn5aXv7g"
+    ],
+    "sample_published_at": "2026-10-31T08:00:00+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "电化教育研究": {
+    "publisher": "电化教育研究",
+    "biz": "MzI5NjA1MzAyMA==",
+    "wechat_id": "e-EducationResearch",
+    "original_id": "gh_794f8190b213",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/1pbsb_VnWpOp8uppTTlo1A"
+    ],
+    "sample_published_at": "2026-11-03T12:19:10+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "西大教技": {
+    "publisher": "西大教技",
+    "biz": "MzIzMjMwNDA3Mw==",
+    "wechat_id": "xndxjyjs",
+    "original_id": "gh_74f383c34cfd",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/6l99L4KXbXmhRw-knAYyaA"
+    ],
+    "sample_published_at": "2026-10-15T15:00:00+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "现代远程教育研究": {
+    "publisher": "现代远程教育研究",
+    "biz": "MzIwMTQzMjY3OA==",
+    "wechat_id": "xdyjyj",
+    "original_id": "gh_e5f813797700",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/Ng8lK8QeHvnpHZCNQng69Q"
+    ],
+    "sample_published_at": "2026-11-03T11:20:40+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "国际与比较教育研究所": {
+    "publisher": "国际与比较教育研究所",
+    "biz": "MjM5MjM2NjM1Nw==",
+    "wechat_id": "Edu-in",
+    "original_id": "gh_de2abd6b70e8",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/54xsvs74irYgMAWm0x8sXg"
+    ],
+    "sample_published_at": "2026-10-30T08:30:00+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "PsyEcho 芯声": {
+    "publisher": "PsyEcho 芯声",
+    "biz": "MzcwMjM2NTgyNQ==",
+    "wechat_id": "",
+    "original_id": "gh_e4dff37b258f",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/qy79cKSfB3U2gsgjcVxDlA"
+    ],
+    "sample_published_at": "2026-11-02T14:30:00+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "智慧教与学小能手": {
+    "publisher": "智慧教与学小能手",
+    "biz": "Mzg5ODAyMjA5NQ==",
+    "wechat_id": "HSCKST",
+    "original_id": "gh_adc6fa2dd7d7",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/d-o-gcKv_-x_7R2zoUaO1A"
+    ],
+    "sample_published_at": "2026-10-16T20:36:17+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "视频课程与教师发展": {
+    "publisher": "视频课程与教师发展",
+    "biz": "MzU3MTk0OTM4OQ==",
+    "wechat_id": "ccnuvideolecture",
+    "original_id": "gh_0d885ad50c88",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/s8S7CY8EGANT6Xdv67IDPg"
+    ],
+    "sample_published_at": "2026-11-02T12:00:45+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "数教新知": {
+    "publisher": "数教新知",
+    "biz": "Mzg5NDY3OTMyOQ==",
+    "wechat_id": "",
+    "original_id": "gh_ab0c709da6c5",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/Hj385-4n9Nipp6MFzIwQDw"
+    ],
+    "sample_published_at": "2026-11-03T10:00:00+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "欢喜莳": {
+    "publisher": "欢喜莳",
+    "biz": "MzU4ODkxMTU0Mg==",
+    "wechat_id": "",
+    "original_id": "gh_1a330a62ffc7",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/o6nfig3VhDgGx8aylBZLoQ"
+    ],
+    "sample_published_at": "2026-11-03T11:00:00+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "智慧教育 Smart Education": {
+    "publisher": "智慧教育 Smart Education",
+    "biz": "MzcwODI0Nzc1Ng==",
+    "wechat_id": "ZHJY_20260328",
+    "original_id": "gh_2b65dc4a38df",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/mTJ2GSbsvf7D7YYksemZiw"
+    ],
+    "sample_published_at": "2026-10-28T12:00:00+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "温州信息技术教研": {
+    "publisher": "温州信息技术教研",
+    "biz": "Mzg2NjE3Njg0Mg==",
+    "wechat_id": "",
+    "original_id": "gh_cb2503511d73",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/uFV3wYiCjAF9r7AaPwggTA"
+    ],
+    "sample_published_at": "2026-10-14T11:48:16+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "数字游戏学习研究": {
+    "publisher": "数字游戏学习研究",
+    "biz": "MzIyMjE3NTMyNw==",
+    "wechat_id": "ldmr0418",
+    "original_id": "gh_d9d36d4632e6",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/5DaOCS9CQ8TiGydtQqJBbw"
+    ],
+    "sample_published_at": "2026-11-03T14:06:30+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "远程教育杂志": {
+    "publisher": "远程教育杂志",
+    "biz": "Mzk1NzEyMzcwOA==",
+    "wechat_id": "ycjyzz_zju",
+    "original_id": "gh_d1bb8e19e173",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/jSUn-dEhZdW8KORO4OAOoA"
+    ],
+    "sample_published_at": "2026-11-03T13:07:03+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "现代教育论丛": {
+    "publisher": "现代教育论丛",
+    "biz": "Mzg3NzU1MTQ4MA==",
+    "wechat_id": "",
+    "original_id": "gh_e810783647a0",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/r2HdwVqrtjhNHTQ8X3Ye1w"
+    ],
+    "sample_published_at": "2026-11-03T17:34:39+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "关于设计的": {
+    "publisher": "关于设计的",
+    "biz": "MzU2NTM2MzI5OA==",
+    "wechat_id": "AboutDesign-TJ",
+    "original_id": "gh_0ab755ee8434",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/dBfgPWa9OnMGP-EOs5ckFA"
+    ],
+    "sample_published_at": "2026-11-02T12:19:03+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "学士讲科研": {
+    "publisher": "学士讲科研",
+    "biz": "Mzg2MDYzNzY4NQ==",
+    "wechat_id": "XZSY20230426",
+    "original_id": "gh_dac89cf82b91",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/PkS2ZiU8LdfGXi3NOXfWuA"
+    ],
+    "sample_published_at": "2026-10-09T21:03:45+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "简小杰做科研": {
+    "publisher": "简小杰做科研",
+    "biz": "MzkzODk4OTAxMw==",
+    "wechat_id": "",
+    "original_id": "gh_0c8780a29b7b",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/cHc9aaC4jBnIaHFToS1oPg"
+    ],
+    "sample_published_at": "2026-10-07T18:38:40+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "ET学术小站": {
+    "publisher": "ET学术小站",
+    "biz": "MzIzNDgxNzYyNg==",
+    "wechat_id": "SuperResearchStudio",
+    "original_id": "gh_433708361470",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/lUsGUqKcUn1NjY8nm9SS8w"
+    ],
+    "sample_published_at": "2026-11-01T20:00:00+08:00",
+    "verified_on": "2026-11-03"
+  },
+  "e2lab": {
+    "publisher": "e2lab",
+    "biz": "MzIyMDEzMzA1MQ==",
+    "wechat_id": "",
+    "original_id": "gh_20d97d24cc32",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/p756Q-6-i99scZIT8WgDUw"
+    ],
+    "sample_published_at": "2026-11-03T19:30:00+08:00",
+    "verified_on": "2026-11-03"
   }
 }

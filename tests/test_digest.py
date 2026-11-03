@@ -47,6 +47,7 @@ class DigestTests(unittest.TestCase):
             self.assertNotIn('secret-do-not-log', str(caught.exception))
             self.assertNotIn('private body', str(caught.exception))
 
+    @patch.dict(d.PROFILES, {}, clear=True)
     def test_old_ministry_news_is_not_a_journal_supplement(self):
         source = {'id': 1, 'url': 'https://www.moe.gov.cn/news', 'title': '数字教育研究全球十大热点发布',
                   'body': '发布日期：2026-05-13 新闻正文', 'publication_date': None,
@@ -109,6 +110,43 @@ class DigestTests(unittest.TestCase):
         self.assertEqual(calls[1]['query'], '"JYJSX2014"')
         self.assertIn('Y-v5io7KoD4sd4b8c7Llbw', results[0]['url'])
         self.assertIn('已知样例入口', query)
+
+    def test_all_25_profiles_are_verified_and_match_targets(self):
+        targets = {name for _, names in d.GROUPS.values() for name in names}
+        self.assertEqual(set(d.PROFILES), targets)
+        self.assertEqual(len({p['biz'] for p in d.PROFILES.values()}), 25)
+        for profile in d.PROFILES.values():
+            self.assertTrue(profile['publisher'])
+            self.assertTrue(profile.get('wechat_id') or profile.get('original_id'))
+            self.assertEqual(len(profile['sample_urls']), 1)
+            self.assertTrue(profile['sample_urls'][0].startswith('https://mp.weixin.qq.com/s/'))
+
+    def test_discovery_uses_original_id_if_public_wechat_id_missing(self):
+        profile = {'publisher': '核验后的页面账号名', 'biz': 'test-biz', 'wechat_id': '',
+                   'original_id': 'gh_verified', 'sample_urls': []}
+        calls = []
+        def fake_post(url, key, payload):
+            calls.append(dict(payload))
+            return {'results': []}
+        with patch.dict(d.PROFILES, {'测试号': profile}), patch.object(d, 'post_json', side_effect=fake_post):
+            query, _ = d.discover('A', '测试号', datetime(2026, 11, 3, tzinfo=d.CN), 'dummy')
+        self.assertIn('核验后的页面账号名', calls[0]['query'])
+        self.assertEqual(calls[0]['include_domains'], ['mp.weixin.qq.com'])
+        self.assertNotIn('start_date', calls[0])
+        self.assertEqual(calls[1]['query'], '"gh_verified"')
+        self.assertIn('gh_verified', query)
+
+    def test_missing_both_ids_does_not_search_empty_value(self):
+        profile = {'publisher': '测试号', 'biz': 'test-biz', 'wechat_id': '', 'original_id': None, 'sample_urls': []}
+        calls = []
+        def fake_post(url, key, payload):
+            calls.append(dict(payload))
+            return {'results': []}
+        with patch.dict(d.PROFILES, {'测试号': profile}), patch.object(d, 'post_json', side_effect=fake_post):
+            query, _ = d.discover('B', '测试号', datetime(2026, 11, 3, tzinfo=d.CN), 'dummy')
+        self.assertEqual(len(calls), 1)
+        self.assertNotIn('"None"', query)
+        self.assertNotIn('""', query)
 
     @patch.dict(d.PROFILES, {}, clear=True)
     def test_end_to_end_dedup_and_retryable_failure(self):

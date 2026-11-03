@@ -56,7 +56,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add reports/ state/
+          git add -A -- reports/ state/ archive/
           if git diff --cached --quiet; then
             echo "No changes"
           else
@@ -69,9 +69,12 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: edutech-digest-${{ github.run_id }}-${{ github.run_attempt }}
-          path: reports/
+          path: |
+            reports/
+            archive/
+            state/
           retention-days: 30
           if-no-files-found: ignore
       - name: Flag partial provider failures
         run: |
-          python -c "import json; from pathlib import Path; s=json.loads(Path('reports/latest_status.json').read_text(encoding='utf-8')); print('Included:',s['included']); raise SystemExit(1 if s['failed'] else 0)"
+          python -c "import json; from pathlib import Path; s=json.loads(Path('state/latest_status.json').read_text(encoding='utf-8')); print('Included:',s['included']); raise SystemExit(1 if s['failed'] else 0)"

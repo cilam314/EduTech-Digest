@@ -18,6 +18,7 @@ from urllib.request import Request, urlopen
 
 import read_article
 from search_backends import SearchRouter
+from report_store import consolidate
 
 ROOT = Path(__file__).resolve().parents[1]
 CN = timezone(timedelta(hours=8))
@@ -120,13 +121,15 @@ def extract_wechat(html, url):
 def discover(group, name, now, key, router=None):
     router = router or SearchRouter(post_json, ServiceError, tavily_key=key)
     profile = PROFILES.get(name, {})
-    query = (f'"{name}" {now.year} 最新一期 目录' if group == "A"
-             else f'"{name}" 微信公众号 最新文章')
+    search_name = profile.get("publisher") or name
+    query = (f'"{search_name}" 微信公众号 最新文章' if profile or group != "A"
+             else f'"{name}" {now.year} 最新一期 目录')
     payload = {"query": query, "topic": "general", "search_depth": "basic",
                "max_results": 5, "include_raw_content": "text", "include_answer": False,
                "include_published_date": True, "auto_parameters": False}
-    if group != "A":
+    if profile or group != "A":
         payload["include_domains"] = ["mp.weixin.qq.com"]
+    if group != "A" and not profile:
         # Broad retrieval; actual publication dates are independently checked later.
         payload["start_date"] = (now - timedelta(days=3)).date().isoformat()
         payload["end_date"] = (now + timedelta(days=1)).date().isoformat()
@@ -135,15 +138,17 @@ def discover(group, name, now, key, router=None):
         raise ServiceError("Tavily 未返回有效 results")
     if profile:
         # Search a verified public WeChat ID as a separate query, not merely an ambiguous name.
-        payload["query"] = f'"{profile["wechat_id"]}"'
-        extra = router.search(payload)
+        identifier = profile.get("wechat_id") or profile.get("original_id")
+        payload["query"] = f'"{identifier}"' if identifier else f'"{search_name}"'
+        extra = router.search(payload) if identifier else {"results": []}
         if not isinstance(extra.get("results"), list):
             raise ServiceError("Tavily 微信号检索未返回有效 results")
         # Known samples verify ingestion even if the search index has missed the article.
         samples = [{"url": url, "title": "用户提供的账号样例", "content": "", "raw_content": ""}
                    for url in profile.get("sample_urls", [])]
         data["results"] = samples + extra["results"] + data["results"]
-        query += f'；补充微信号："{profile["wechat_id"]}"；已知样例入口（不代表发现了后续文章）'
+        query += (f'；补充微信号/原始ID："{identifier}"' if identifier else '；未提供公开微信号/原始ID，不进行空ID查询')
+        query += '；已知样例入口（不代表发现了后续文章）'
     elif group != "A" and not data["results"]:
         # A separate fallback produces domain news, never a claimed account update.
         payload.pop("include_domains")
@@ -522,8 +527,8 @@ def main(argv=None, root=ROOT):
     except ServiceError as exc:
         synthesis = {"overview": [], "trends": []}
         diagnostics.append({"account": "速览与趋势生成", "status": str(exc), "query": "不适用", "failed": True})
-    output = reports / f"情报简报_{stamp}.md"
-    output.write_text(render(now, records, diagnostics, args.limit, 25, synthesis, router.events), encoding="utf-8")
+    output = reports / 'latest.md'
+    merged = consolidate(root, now, render(now, records, diagnostics, args.limit, 25, synthesis, router.events), article_key)
     # Save state only for entries actually written to the report; failures remain retryable.
     for r in records:
         seen[article_key(r["url"])] = {"url": canonical_url(r["url"]), "reported_at": now.isoformat()}
@@ -547,7 +552,8 @@ def main(argv=None, root=ROOT):
               "search_events": router.events, "search_requests": router.counts,
               "included": len(records), "confirmed": sum(r["relation"] == "confirmed" for r in records), "report": output.name}
     health["expanded"] = sum(r["relation"] == "discovered" for r in records)
-    (reports / "latest_status.json").write_text(json.dumps(health, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    health.update(merged)
+    (state_path.parent / "latest_status.json").write_text(json.dumps(health, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"已保存简报：{output.name}；收录 {len(records)} 条", flush=True)
     return health
 
