@@ -20,6 +20,8 @@ import read_article
 
 ROOT = Path(__file__).resolve().parents[1]
 CN = timezone(timedelta(hours=8))
+PROFILE_PATH = Path(__file__).with_name("account_profiles.json")
+PROFILES = json.loads(PROFILE_PATH.read_text(encoding="utf-8")) if PROFILE_PATH.exists() else {}
 GROUPS = {
     "A": ("权威学术期刊", ["电化教育研究", "开放教育研究", "现代远程教育研究", "远程教育杂志", "现代教育论丛"]),
     "B": ("机构与团队", ["教育技术学", "西大教技", "国际与比较教育研究所", "数字游戏学习研究", "e2lab"]),
@@ -103,6 +105,8 @@ def extract_wechat(html, url):
     publisher = PublisherParser()
     publisher.feed(html)
     article["publisher"] = " ".join("".join(publisher.parts).split()) or None
+    biz = re.search(r'''\bbiz\s*=\s*["']([A-Za-z0-9+/=]+)["']''', html)
+    article["biz"] = biz[1] if biz else None
     # WeChat uses several date variables. Always interpret epoch seconds in China time.
     stamp = re.search(r'''(?:\bct\s*=\s*["']?|\b(?:publish_time|create_time)["']?\s*[:=]\s*["']?)(\d{10})''', html)
     if stamp:
@@ -111,6 +115,7 @@ def extract_wechat(html, url):
 
 
 def discover(group, name, now, key):
+    profile = PROFILES.get(name, {})
     query = (f'"{name}" {now.year} 最新一期 目录' if group == "A"
              else f'"{name}" 微信公众号 最新文章')
     payload = {"query": query, "topic": "general", "search_depth": "basic",
@@ -124,7 +129,18 @@ def discover(group, name, now, key):
     data = post_json("https://api.tavily.com/search", key, payload)
     if not isinstance(data.get("results"), list):
         raise ServiceError("Tavily 未返回有效 results")
-    if group != "A" and not data["results"]:
+    if profile:
+        # Search a verified public WeChat ID as a separate query, not merely an ambiguous name.
+        payload["query"] = f'"{profile["wechat_id"]}"'
+        extra = post_json("https://api.tavily.com/search", key, payload)
+        if not isinstance(extra.get("results"), list):
+            raise ServiceError("Tavily 微信号检索未返回有效 results")
+        # Known samples verify ingestion even if the search index has missed the article.
+        samples = [{"url": url, "title": "用户提供的账号样例", "content": "", "raw_content": ""}
+                   for url in profile.get("sample_urls", [])]
+        data["results"] = samples + extra["results"] + data["results"]
+        query += f'；补充微信号："{profile["wechat_id"]}"；已知样例入口（不代表发现了后续文章）'
+    elif group != "A" and not data["results"]:
         # A separate fallback produces domain news, never a claimed account update.
         payload.pop("include_domains")
         payload["query"] = f'"{name}" 教育技术 教育数字化'
@@ -145,13 +161,13 @@ def prepare(result, source_id):
     item = {"id": source_id, "url": url, "title": result.get("title", ""),
             "search_excerpt": (result.get("content") or "")[:1500],
             "search_estimated_date": result.get("published_date"),
-            "publication_date": None, "author": None, "publisher": None,
+            "publication_date": None, "author": None, "publisher": None, "biz": None,
             "read_status": "Tavily正文" if text else "仅搜索摘要"}
     if urlsplit(url).hostname == "mp.weixin.qq.com":
         try:
             article = extract_wechat(read_article.download(url), url)
             text = article["content"]
-            item.update(title=article["title"], author=article["author"], publisher=article["publisher"],
+            item.update(title=article["title"], author=article["author"], publisher=article["publisher"], biz=article["biz"],
                         publication_date=article["published_at"], read_status="微信正文读取成功")
         except Exception:
             item["read_status"] = "微信读取失败；" + ("使用Tavily正文" if text else "仅有搜索摘要")
@@ -222,6 +238,21 @@ def get_date(source, entry):
     return parsed, "正文日期片段（模型识别，建议复核）"
 
 
+def prefilter_sources(sources, name, group, now):
+    usable, reasons = [], []
+    profile = PROFILES.get(name)
+    for source in sources:
+        if profile and source.get("biz") != profile["biz"]:
+            reasons.append(f"候选{source['id']}：账号标识不匹配或不可核实，未调用模型")
+            continue
+        day, _ = get_date(source, {})
+        if group != "A" and day and not now.date() - timedelta(days=1) <= day <= now.date():
+            reasons.append(f"候选{source['id']}：页面发布日期{day}超出本期，未调用模型")
+            continue
+        usable.append(source)
+    return usable, reasons
+
+
 def validate_entry(entry, sources, name, group, now, seen):
     if not isinstance(entry, dict) or type(entry.get("source_id")) is not int:
         return None, "模型来源编号无效"
@@ -230,6 +261,9 @@ def validate_entry(entry, sources, name, group, now, seen):
         return None, "来源编号不存在或仅有搜索摘要"
     if article_key(source["url"]) in seen:
         return None, "已在历史简报收录"
+    profile = PROFILES.get(name)
+    if profile and source.get("biz") != profile["biz"]:
+        return None, "账号标识与已核实样例不匹配或无法核实"
     day, basis = get_date(source, entry)
     if day and day > now.date():
         return None, "未来日期，不计入本期"
@@ -239,6 +273,8 @@ def validate_entry(entry, sources, name, group, now, seen):
     confirmed = (source["read_status"] == "微信正文读取成功"
                  and bool(source.get("publisher"))
                  and normalized(source["publisher"]) == normalized(name))
+    if profile:
+        confirmed = source["read_status"] == "微信正文读取成功" and source.get("biz") == profile["biz"]
     # Only an explicitly named issue/directory may bypass the recent-date gate.
     journal_lead = (group == "A" and normalized(name) in normalized(source["title"])
                     and bool(re.search(r"目录|第?\s*\d+\s*期|当期|最新一期", source["title"])))
@@ -248,7 +284,7 @@ def validate_entry(entry, sources, name, group, now, seen):
     source_label = source.get("publisher") or urlsplit(source["url"]).hostname
     record = {"account": name, "group": group, "url": source["url"], "title": source["title"],
               "date": day.isoformat() if day else "日期未知", "date_basis": basis,
-              "credibility": "✅ 确认来自该号（页面账号名匹配）" if confirmed else "⚠️ 相关领域来源；未证实与目标账号同源",
+              "credibility": ("✅ 确认来自该号（账号标识匹配）" if profile else "✅ 确认来自该号（页面账号名匹配）") if confirmed else "⚠️ 相关领域来源；未证实与目标账号同源",
               "source_label": source_label, "relation": relation,
               "read_status": source["read_status"], "journal_supplement": journal_lead and not in_window}
     for field in ("summary", "research", "technology", "applications", "reflection"):
@@ -408,7 +444,9 @@ def main(argv=None, root=ROOT):
                 if source:
                     sources.append(source)
             d["sources"] = [{k: v for k, v in s.items() if k not in {"body", "search_excerpt"}} for s in sources]
-            entries = analyze(name, sources, prompt, os.environ["DEEPSEEK_API_KEY"])
+            usable, reasons = prefilter_sources(sources, name, group, now)
+            d["rejections"].extend(reasons)
+            entries = analyze(name, usable, prompt, os.environ["DEEPSEEK_API_KEY"])
             accepted_keys = set()
             for entry in entries:
                 record, reason = validate_entry(entry, sources, name, group, now, seen)

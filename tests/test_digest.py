@@ -56,6 +56,7 @@ class DigestTests(unittest.TestCase):
         self.assertIsNone(record)
         self.assertIn('超出本期', reason)
 
+    @patch.dict(d.PROFILES, {}, clear=True)
     def test_related_news_is_not_an_account_update(self):
         source = {'id': 1, 'url': 'https://news.example.org/article', 'title': 'AI教育新课程',
                   'body': '发布日期：2026-11-02 新闻正文', 'publication_date': None,
@@ -77,6 +78,39 @@ class DigestTests(unittest.TestCase):
         record, _ = d.validate_entry(entry, [source], '教育数字化100人', 'D', now, {})
         self.assertEqual(record['relation'], 'confirmed')
 
+    def test_verified_profile_rejects_same_name_wrong_biz(self):
+        name = '教育技术学'
+        source = {'id': 1, 'url': 'https://mp.weixin.qq.com/s/example', 'title': '测试研究',
+                  'body': '发布日期：2026-11-03 正文', 'publication_date': '2026-11-03T10:00:00+08:00',
+                  'publisher': name, 'biz': 'wrong', 'read_status': '微信正文读取成功'}
+        now = datetime(2026, 11, 3, 18, tzinfo=d.CN)
+        entry = {'source_id': 1}
+        rejected, _ = d.validate_entry(entry, [source], name, 'B', now, {})
+        self.assertIsNone(rejected)
+        usable, reasons = d.prefilter_sources([source], name, 'B', now)
+        self.assertFalse(usable)
+        self.assertIn('未调用模型', reasons[0])
+        source['biz'] = d.PROFILES[name]['biz']
+        accepted, _ = d.validate_entry(entry, [source], name, 'B', now, {})
+        self.assertEqual(accepted['relation'], 'confirmed')
+        source['publication_date'] = '2026-09-21T11:50:00+08:00'
+        usable, reasons = d.prefilter_sources([source], name, 'B', now)
+        self.assertFalse(usable)
+        self.assertIn('超出本期', reasons[0])
+
+    def test_profile_discovery_includes_id_query_and_sample(self):
+        calls = []
+        def fake_post(url, key, payload):
+            calls.append(dict(payload))
+            return {'results': []}
+        with patch.object(d, 'post_json', side_effect=fake_post):
+            query, results = d.discover('B', '教育技术学', datetime(2026, 11, 3, tzinfo=d.CN), 'dummy')
+        self.assertEqual(len(calls), 2)
+        self.assertEqual(calls[1]['query'], '"JYJSX2014"')
+        self.assertIn('Y-v5io7KoD4sd4b8c7Llbw', results[0]['url'])
+        self.assertIn('已知样例入口', query)
+
+    @patch.dict(d.PROFILES, {}, clear=True)
     def test_end_to_end_dedup_and_retryable_failure(self):
         now = datetime.now(d.CN)
         today = now.date().isoformat()
