@@ -1,53 +1,227 @@
 {
-  "failed": true,
+  "failed": false,
   "accounts": [
     {
       "account": "电化教育研究",
-      "query": "未执行",
-      "status": "服务失败：搜索后端均不可用或未配置；spark-x2.5-1.7b: 星火未返回可解析的结构化信源；不将模型生成的链接当作已核验搜索结果",
-      "sources": [],
-      "rejections": [],
-      "failed": true
+      "query": "\"电化教育研究\" 2026 最新一期 目录",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 1,
+          "url": "http://www.necteu.com/xueshuqikan/13.html",
+          "title": "中国电化教育 - 教育技术与资源发展中心",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 2,
+          "url": "https://epaper.naer.edu.tw/history",
+          "title": "國家教育研究院電子報 - 各期電子報",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 3,
+          "url": "https://www.fabiaoji.com/periodicalDetail?id=70afd80c-a73f-49f6-88ae-754b3ff59456&commentId=d9b1556a25584f44aaa60671079a9023",
+          "title": "电化教育研究- 发表记",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 4,
+          "url": "https://ericdata.com/tw/Journal_list.aspx?no=728",
+          "title": "中國電化教育,ERICDATA高等教育知識庫",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "跳过已收录或重复链接",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
     },
     {
       "account": "教育技术学",
-      "query": "未执行",
-      "status": "服务失败：搜索后端均不可用或未配置；",
-      "sources": [],
-      "rejections": [],
-      "failed": true
+      "query": "\"教育技术学\" 微信公众号 最新文章；补充微信号：\"JYJSX2014\"；已知样例入口（不代表发现了后续文章）",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 5,
+          "url": "https://mp.weixin.qq.com/s/C39ozPVflEO2QjDRu4-iww",
+          "title": "AI时代的组织形态变革与个人能力重构",
+          "search_estimated_date": "Sat, 31 Oct 2026 10:33:50 GMT",
+          "publication_date": "2026-05-11T11:59:38+08:00",
+          "author": "Tabriss",
+          "publisher": "Flame Stealer",
+          "biz": "MzI0ODMzMDAyMA==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 6,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "跳过已收录或重复链接",
+        "候选5：账号标识不匹配或不可核实，未调用模型",
+        "候选6：账号标识不匹配或不可核实，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
     },
     {
       "account": "教育数字化100人",
-      "query": "未执行",
-      "status": "服务失败：搜索后端均不可用或未配置；",
-      "sources": [],
-      "rejections": [],
-      "failed": true
+      "query": "\"教育数字化100人\" 微信公众号 最新文章；补充微信号：\"wuxianclassroom\"；已知样例入口（不代表发现了后续文章）",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 7,
+          "url": "https://mp.weixin.qq.com/s/zIBQHN4Li45OR15ZVMwEOg",
+          "title": "第一批把作业外包给 AI 的中学生，中高考成绩暴跌",
+          "search_estimated_date": null,
+          "publication_date": "2026-09-21T11:50:00+08:00",
+          "author": "编辑部",
+          "publisher": "教育数字化100人",
+          "biz": "MzI2NzQ2NzE1NQ==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "用户样例/未记录"
+        },
+        {
+          "id": 8,
+          "url": "https://mp.weixin.qq.com/s/HUlm2gfwLbDOrMWTms0FNQ",
+          "title": "Codex派活，Workbuddy干活，这条工作流我跑通了（附教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 06:47:36 GMT",
+          "publication_date": "2026-10-25T20:28:00+08:00",
+          "author": "彤彤",
+          "publisher": "彤彤笔记簿",
+          "biz": "MzU3NDgzNjgwOQ==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 9,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选7：页面发布日期2026-09-21超出本期，未调用模型",
+        "候选8：账号标识不匹配或不可核实，未调用模型",
+        "候选9：账号标识不匹配或不可核实，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
     },
     {
       "account": "数字教育",
-      "query": "未执行",
-      "status": "服务失败：搜索后端均不可用或未配置；",
-      "sources": [],
-      "rejections": [],
-      "failed": true
+      "query": "\"数字教育\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 10,
+          "url": "https://mp.weixin.qq.com/s/HUlm2gfwLbDOrMWTms0FNQ",
+          "title": "Codex派活，Workbuddy干活，这条工作流我跑通了（附教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 06:47:36 GMT",
+          "publication_date": "2026-10-25T20:28:00+08:00",
+          "author": "彤彤",
+          "publisher": "彤彤笔记簿",
+          "biz": "MzU3NDgzNjgwOQ==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 11,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选10：页面发布日期2026-10-25超出本期，未调用模型",
+        "候选11：页面发布日期2026-10-29超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
     }
   ],
   "search_events": [
     {
-      "provider": "spark-x2.5-1.7b",
-      "status": "disabled_this_run",
-      "reason": "星火未返回可解析的结构化信源；不将模型生成的链接当作已核验搜索结果"
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 5
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 2
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 2
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 2
     }
   ],
   "search_requests": {
-    "Tavily": 0,
+    "Tavily": 6,
     "spark-x2.5-4b": 0,
-    "spark-x2.5-1.7b": 1
+    "spark-x2.5-1.7b": 0
   },
   "included": 0,
   "confirmed": 0,
-  "report": "情报简报_2026-11-03_220529_41650249065_1.md",
+  "report": "情报简报_2026-11-03_221451_41651771884_1.md",
   "expanded": 0
 }
