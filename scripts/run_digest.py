@@ -17,9 +17,12 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 from urllib.request import Request, urlopen
 
 import read_article
+from search_backends import SearchRouter
 
 ROOT = Path(__file__).resolve().parents[1]
 CN = timezone(timedelta(hours=8))
+EXPANSION_TOPICS = ("数字教育", "数智教育", "游戏化教学", "创客教育")
+TOPIC_PATTERN = re.compile(r"数字教育|教育数字化|数智教育|游戏化|创客教育|教育技术|智慧教育|数字素养|STEAM|STEM", re.I)
 PROFILE_PATH = Path(__file__).with_name("account_profiles.json")
 PROFILES = json.loads(PROFILE_PATH.read_text(encoding="utf-8")) if PROFILE_PATH.exists() else {}
 GROUPS = {
@@ -114,7 +117,8 @@ def extract_wechat(html, url):
     return article
 
 
-def discover(group, name, now, key):
+def discover(group, name, now, key, router=None):
+    router = router or SearchRouter(post_json, ServiceError, tavily_key=key)
     profile = PROFILES.get(name, {})
     query = (f'"{name}" {now.year} 最新一期 目录' if group == "A"
              else f'"{name}" 微信公众号 最新文章')
@@ -126,13 +130,13 @@ def discover(group, name, now, key):
         # Broad retrieval; actual publication dates are independently checked later.
         payload["start_date"] = (now - timedelta(days=3)).date().isoformat()
         payload["end_date"] = (now + timedelta(days=1)).date().isoformat()
-    data = post_json("https://api.tavily.com/search", key, payload)
+    data = router.search(payload)
     if not isinstance(data.get("results"), list):
         raise ServiceError("Tavily 未返回有效 results")
     if profile:
         # Search a verified public WeChat ID as a separate query, not merely an ambiguous name.
         payload["query"] = f'"{profile["wechat_id"]}"'
-        extra = post_json("https://api.tavily.com/search", key, payload)
+        extra = router.search(payload)
         if not isinstance(extra.get("results"), list):
             raise ServiceError("Tavily 微信号检索未返回有效 results")
         # Known samples verify ingestion even if the search index has missed the article.
@@ -144,7 +148,7 @@ def discover(group, name, now, key):
         # A separate fallback produces domain news, never a claimed account update.
         payload.pop("include_domains")
         payload["query"] = f'"{name}" 教育技术 教育数字化'
-        data = post_json("https://api.tavily.com/search", key, payload)
+        data = router.search(payload)
         if not isinstance(data.get("results"), list):
             raise ServiceError("Tavily 领域补充搜索未返回有效 results")
         query += "（优先限定mp.weixin.qq.com）；无结果后补充：" + payload["query"]
@@ -163,6 +167,7 @@ def prepare(result, source_id):
             "search_estimated_date": result.get("published_date"),
             "publication_date": None, "author": None, "publisher": None, "biz": None,
             "read_status": "Tavily正文" if text else "仅搜索摘要"}
+    item["search_provider"] = result.get("search_provider", "用户样例/未记录")
     if urlsplit(url).hostname == "mp.weixin.qq.com":
         try:
             article = extract_wechat(read_article.download(url), url)
@@ -184,7 +189,7 @@ SYSTEM = """你是严谨的教育技术情报分析员。只输出JSON对象，�
 "date_evidence":"正文中明确标示发布日期的逐字短片段，包含完整年月日；没有则空字符串",
 "summary":"3–5句话，原文观点以原文指出开头", "research":"研究对象、方法、数据与结论；未提供则说明",
 "technology":"具体技术及新能力，未涉及则说明", "applications":"判断：2–3个可落地应用",
-"reflection":"判断：局限与亮点"}]}。
+"reflection":"判断：局限与亮点", "topic_evidence":"与教育技术主题直接相关的正文逐字短片段，最多200字"}]}。
 最多选3条直接相关的文章，无法确认相关性或正文不足则entries为空数组。
 账号名只是检索线索，不能把泛领域新闻断言为该账号发文；publisher才是微信账号标签，author仅是作者署名。
 publication_date优先使用提供的publication_date；没有则仅从正文中明确的发布日期提取。
@@ -264,6 +269,13 @@ def validate_entry(entry, sources, name, group, now, seen):
     profile = PROFILES.get(name)
     if profile and source.get("biz") != profile["biz"]:
         return None, "账号标识与已核实样例不匹配或无法核实"
+    if group == "F":
+        quote = entry.get("topic_evidence", "")
+        if (not isinstance(quote, str) or not quote or len(quote) > 250 or quote not in source["body"]
+                or not TOPIC_PATTERN.search(quote)):
+            return None, "主题扩展缺少与教育技术直接相关的正文证据"
+        if source["read_status"] != "微信正文读取成功" or not source.get("publisher") or not source.get("biz"):
+            return None, "主题扩展未核实微信公众号身份，暂不加入候选关注"
     day, basis = get_date(source, entry)
     if day and day > now.date():
         return None, "未来日期，不计入本期"
@@ -281,12 +293,17 @@ def validate_entry(entry, sources, name, group, now, seen):
     if not in_window and not journal_lead:
         return None, "日期未知或超出本期；且不是明确标有目标期刊名的期号/目录"
     relation = "confirmed" if confirmed else "journal_lead" if journal_lead else "related"
+    if group == "F":
+        relation = "discovered"
     source_label = source.get("publisher") or urlsplit(source["url"]).hostname
     record = {"account": name, "group": group, "url": source["url"], "title": source["title"],
               "date": day.isoformat() if day else "日期未知", "date_basis": basis,
               "credibility": ("✅ 确认来自该号（账号标识匹配）" if profile else "✅ 确认来自该号（页面账号名匹配）") if confirmed else "⚠️ 相关领域来源；未证实与目标账号同源",
               "source_label": source_label, "relation": relation,
+              "biz": source.get("biz"),
               "read_status": source["read_status"], "journal_supplement": journal_lead and not in_window}
+    if group == "F":
+        record["credibility"] = "✅ 主题扩展发现的微信来源（页面账号及标识已读取；尚未加入原25号名单）"
     for field in ("summary", "research", "technology", "applications", "reflection"):
         value = entry.get(field)
         record[field] = value if isinstance(value, str) and value.strip() else "原文未说明"
@@ -334,12 +351,12 @@ def synthesize(records, key):
         raise ServiceError("DeepSeek 速览/趋势输出格式异常") from None
 
 
-def render(now, records, diagnostics, limit, total_accounts, synthesis):
+def render(now, records, diagnostics, limit, total_accounts, synthesis, search_events=None):
     start = now.date() - timedelta(days=1)
     lines = [f"# 教育技术情报简报 · {now:%Y-%m-%d}", "",
              f"> 覆盖北京时间 {start} 00:00 至 {now:%Y-%m-%d %H:%M}（昨日与今日两个自然日）。",
              "> 期刊补充不计为本期新发布；正文日期由模型识别的条目请复核。搜索结果不能保证完整覆盖公众号。", "",
-             f"本次检索 {limit}/{total_accounts} 个账号线索，收录 {len(records)} 条；其中确认目标账号来源 {sum(r['relation'] == 'confirmed' for r in records)} 条。", ""]
+             f"本次检索 {limit}/{total_accounts} 个账号线索，并执行主题扩展；收录 {len(records)} 条；其中确认目标账号来源 {sum(r['relation'] == 'confirmed' for r in records)} 条，主题扩展 {sum(r['relation'] == 'discovered' for r in records)} 条。", ""]
     if len(records) < 5:
         lines += ["> 命中少于5条：可能存在搜索未收录、正文验证、日期不足或历史去重。具体原因见文末检索记录。",
                   "> 建议检索词：公众号名称＋文章标题关键词；期刊名称＋当年期号＋目录；机构名称＋研究成果。", ""]
@@ -354,7 +371,7 @@ def render(now, records, diagnostics, limit, total_accounts, synthesis):
         for r in items:
             lines.extend([f"### {r['source_label']} · {' '.join(r['title'].split())}", "",
                       f"- **实际来源**：{r['source_label']}",
-                      f"- **检索线索**：{r['account']}（{r['group']}类；不表示该账号发布了本文）",
+                      f"- **检索线索**：{r['account']}（{r['group']}类）",
                       f"- **日期 / 链接**：{r['date']} / [原文]({r['url']})",
                       f"- **日期依据**：{r['date_basis']}", f"- **可信度**：{r['credibility']}",
                       f"- **读取情况**：{r['read_status']}"])
@@ -375,6 +392,12 @@ def render(now, records, diagnostics, limit, total_accounts, synthesis):
     append_items(journal_items)
     if not journal_items:
         lines.append("本次无可用目录线索。")
+    lines += ["", "## 主题扩展 · 新发现的公众号文章", "",
+              "以下来自主题搜索，已读取发布账号；不冒充原25个公众号更新。新账号保存在候选关注列表中。", ""]
+    expanded = [r for r in records if r["relation"] == "discovered"]
+    append_items(expanded)
+    if not expanded:
+        lines.append("本次无满足日期、主题及账号证据要求的扩展文章。")
     lines += ["", "## 相关领域动态 · 未证实来自目标账号", "",
               "以下仅为教育技术领域补充，不能据此断言目标公众号已更新。", ""]
     related_items = [r for r in records if r["relation"] == "related"]
@@ -392,6 +415,12 @@ def render(now, records, diagnostics, limit, total_accounts, synthesis):
     lines += ["## 本期趋势小结", ""]
     lines.extend(list(points("trends")) or ["判断：未获得足够的跨来源证据或趋势生成失败，不强行归纳。"])
     lines.append("")
+    if search_events is not None:
+        lines += ["## 搜索后端执行记录", ""]
+        for event in search_events:
+            message = f"返回{event['results']}条候选" if event["status"] == "ok" else event.get("reason", "不可用")
+            lines.append(f"- {event['provider']}：{message}")
+        lines.append("")
     if limit < total_accounts:
         lines.append("**这是部分账号试运行，不代表全部25个公众号的检索结果。**\n")
     return "\n".join(lines)
@@ -403,9 +432,12 @@ def main(argv=None, root=ROOT):
     args = parser.parse_args(argv)
     if not 1 <= args.limit <= 25:
         parser.error("--limit 必须在1–25之间")
-    for name in ("TAVILY_API_KEY", "DEEPSEEK_API_KEY"):
+    for name in ("DEEPSEEK_API_KEY",):
         if not os.getenv(name, "").strip():
             raise ServiceError(f"缺少 GitHub Secret: {name}")
+    if not os.getenv("TAVILY_API_KEY") and not os.getenv("SPARK_API_KEY"):
+        raise ServiceError("至少配置TAVILY_API_KEY或SPARK_API_KEY")
+    router = SearchRouter(post_json, ServiceError)
     prompt = (root / "prompt.md").read_text(encoding="utf-8-sig")
     now = datetime.now(CN)
     reports = root / "reports"
@@ -421,6 +453,9 @@ def main(argv=None, root=ROOT):
         accounts = [("A", GROUPS["A"][1][0]), ("B", GROUPS["B"][1][0]), ("D", GROUPS["D"][1][0])]
     else:
         accounts = accounts[:args.limit]
+    # Preserve all 25 original accounts. Trial adds one topic; full run adds four.
+    topics = EXPANSION_TOPICS[:1] if args.limit == 3 else EXPANSION_TOPICS
+    accounts += [("F", topic) for topic in topics]
     diagnostics, by_account = [], []
     source_id = 0
     for group, name in accounts:
@@ -428,7 +463,7 @@ def main(argv=None, root=ROOT):
         d = {"account": name, "query": "未执行", "status": "未检索到可收录更新", "sources": [], "rejections": []}
         accepted = []
         try:
-            d["query"], results = discover(group, name, now, os.environ["TAVILY_API_KEY"])
+            d["query"], results = discover(group, name, now, os.getenv("TAVILY_API_KEY", ""), router)
             keys = set()
             sources = []
             for result in results:
@@ -466,14 +501,16 @@ def main(argv=None, root=ROOT):
         by_account.append(accepted)
     # Round-robin gives each account a chance before reaching the total cap.
     records, run_keys = [], set()
-    for position in range(3):
-        for entries in by_account:
-            if position < len(entries) and len(records) < 25:
-                record = entries[position]
-                key = article_key(record["url"])
-                if key not in run_keys:
-                    run_keys.add(key)
-                    records.append(record)
+    for priority in ("confirmed", "journal_lead", "discovered", "related"):
+        for position in range(3):
+            for entries in by_account:
+                filtered = [r for r in entries if r["relation"] == priority]
+                if position < len(filtered) and len(records) < 25:
+                    record = filtered[position]
+                    key = article_key(record["url"])
+                    if key not in run_keys:
+                        run_keys.add(key)
+                        records.append(record)
     for d in diagnostics:
         count = sum(r["account"] == d["account"] for r in records)
         matched = sum(r["account"] == d["account"] and r["relation"] == "confirmed" for r in records)
@@ -486,13 +523,30 @@ def main(argv=None, root=ROOT):
         synthesis = {"overview": [], "trends": []}
         diagnostics.append({"account": "速览与趋势生成", "status": str(exc), "query": "不适用", "failed": True})
     output = reports / f"情报简报_{stamp}.md"
-    output.write_text(render(now, records, diagnostics, args.limit, 25, synthesis), encoding="utf-8")
+    output.write_text(render(now, records, diagnostics, args.limit, 25, synthesis, router.events), encoding="utf-8")
     # Save state only for entries actually written to the report; failures remain retryable.
     for r in records:
         seen[article_key(r["url"])] = {"url": canonical_url(r["url"]), "reported_at": now.isoformat()}
     state_path.write_text(json.dumps(seen, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    candidates_path = state_path.with_name("candidate_accounts.json")
+    candidates = json.loads(candidates_path.read_text(encoding="utf-8")) if candidates_path.exists() else {}
+    existing_names = {n for _, names in GROUPS.values() for n in names}
+    existing_biz = {p["biz"] for p in PROFILES.values()}
+    for r in records:
+        if r["relation"] != "discovered" or r["source_label"] in existing_names or r["biz"] in existing_biz:
+            continue
+        item = candidates.setdefault(r["biz"], {"name": r["source_label"], "biz": r["biz"],
+                                               "first_seen": now.isoformat(), "sample_urls": []})
+        item["last_seen"] = now.isoformat()
+        item["topic"] = r["account"]
+        if r["url"] not in item["sample_urls"]:
+            item["sample_urls"].append(r["url"])
+            item["sample_urls"] = item["sample_urls"][-5:]
+    candidates_path.write_text(json.dumps(candidates, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     health = {"failed": any(d.get("failed") for d in diagnostics), "accounts": diagnostics,
+              "search_events": router.events, "search_requests": router.counts,
               "included": len(records), "confirmed": sum(r["relation"] == "confirmed" for r in records), "report": output.name}
+    health["expanded"] = sum(r["relation"] == "discovered" for r in records)
     (reports / "latest_status.json").write_text(json.dumps(health, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"已保存简报：{output.name}；收录 {len(records)} 条", flush=True)
     return health
