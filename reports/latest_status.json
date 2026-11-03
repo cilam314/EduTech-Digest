@@ -4,7 +4,7 @@
     {
       "account": "电化教育研究",
       "query": "未执行",
-      "status": "服务失败：搜索后端均不可用或未配置；spark-x2.5-4b: 星火未返回可解析的结构化信源；不将模型生成的链接当作已核验搜索结果；spark-x2.5-1.7b: 星火未返回可解析的结构化信源；不将模型生成的链接当作已核验搜索结果",
+      "status": "服务失败：搜索后端均不可用或未配置；spark-x2.5-1.7b: 星火未返回可解析的结构化信源；不将模型生成的链接当作已核验搜索结果",
       "sources": [],
       "rejections": [],
       "failed": true
@@ -36,11 +36,6 @@
   ],
   "search_events": [
     {
-      "provider": "spark-x2.5-4b",
-      "status": "disabled_this_run",
-      "reason": "星火未返回可解析的结构化信源；不将模型生成的链接当作已核验搜索结果"
-    },
-    {
       "provider": "spark-x2.5-1.7b",
       "status": "disabled_this_run",
       "reason": "星火未返回可解析的结构化信源；不将模型生成的链接当作已核验搜索结果"
@@ -48,11 +43,11 @@
   ],
   "search_requests": {
     "Tavily": 0,
-    "spark-x2.5-4b": 1,
+    "spark-x2.5-4b": 0,
     "spark-x2.5-1.7b": 1
   },
   "included": 0,
   "confirmed": 0,
-  "report": "情报简报_2026-11-03_212332_41643899620_1.md",
+  "report": "情报简报_2026-11-03_220529_41650249065_1.md",
   "expanded": 0
 }
