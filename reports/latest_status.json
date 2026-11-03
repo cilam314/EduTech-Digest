@@ -3,8 +3,8 @@
   "accounts": [
     {
       "account": "电化教育研究",
-      "query": "\"电化教育研究\" 2026 最新一期 目录 研究",
-      "status": "收录 1 条",
+      "query": "\"电化教育研究\" 2026 最新一期 目录",
+      "status": "服务失败：api.deepseek.com: HTTP 503（服务端暂不可用；请稍后重试，此状态不能证明密钥或余额有问题）",
       "sources": [
         {
           "id": 1,
@@ -13,15 +13,17 @@
           "search_estimated_date": null,
           "publication_date": null,
           "author": null,
+          "publisher": null,
           "read_status": "Tavily正文"
         },
         {
           "id": 2,
-          "url": "http://www.moe.gov.cn/jyb_xwfb/xw_zt/moe_357/2026/2026_zt05/cgfb/202605/t20260514_1436509.html",
-          "title": "数字教育研究全球十大热点（2026）发布 - 中华人民共和国教育部政府门户网站",
-          "search_estimated_date": "Wed, 13 May 2026 00:00:00 GMT",
+          "url": "https://epaper.naer.edu.tw/history",
+          "title": "國家教育研究院電子報 - 各期電子報",
+          "search_estimated_date": null,
           "publication_date": null,
           "author": null,
+          "publisher": null,
           "read_status": "Tavily正文"
         },
         {
@@ -31,78 +33,49 @@
           "search_estimated_date": null,
           "publication_date": null,
           "author": null,
+          "publisher": null,
           "read_status": "Tavily正文"
         },
         {
           "id": 4,
-          "url": "https://www.hanspub.org/journal/paperinformation?paperID=150295",
-          "title": "教育数字化研究现状、热点及趋势——基于可视化分析",
-          "search_estimated_date": "Thu, 10 Sep 2026 00:00:00 GMT",
-          "publication_date": null,
-          "author": null,
-          "read_status": "Tavily正文"
-        },
-        {
-          "id": 5,
-          "url": "http://zgdhjy.juqk.net",
-          "title": "《中国电化教育》编辑部-首页",
+          "url": "https://ericdata.com/tw/Journal_list.aspx?no=728",
+          "title": "中國電化教育,ERICDATA高等教育知識庫",
           "search_estimated_date": null,
           "publication_date": null,
           "author": null,
+          "publisher": null,
           "read_status": "Tavily正文"
         }
       ],
-      "rejections": []
+      "rejections": [
+        "跳过已收录或重复链接"
+      ],
+      "failed": true
     },
     {
       "account": "教育技术学",
       "query": "\"教育技术学\" 微信公众号 最新文章",
-      "status": "服务失败：api.deepseek.com: HTTP 503（请检查密钥、余额和服务状态）",
+      "status": "服务失败：api.deepseek.com: HTTP 503（服务端暂不可用；请稍后重试，此状态不能证明密钥或余额有问题）",
       "sources": [
         {
+          "id": 5,
+          "url": "https://mp.weixin.qq.com/s/C39ozPVflEO2QjDRu4-iww",
+          "title": "AI时代的组织形态变革与个人能力重构",
+          "search_estimated_date": "Sat, 31 Oct 2026 10:33:50 GMT",
+          "publication_date": "2026-05-11T11:59:38+08:00",
+          "author": "Tabriss",
+          "publisher": "Flame Stealer",
+          "read_status": "微信正文读取成功"
+        },
+        {
           "id": 6,
-          "url": "https://pssxiv.cn/newsdetail.htm?id=11244",
-          "title": "预印本｜快速发布 . 连接作者与期刊",
-          "search_estimated_date": "Tue, 03 Nov 2026 02:00:00 GMT",
-          "publication_date": null,
-          "author": null,
-          "read_status": "Tavily正文"
-        },
-        {
-          "id": 7,
-          "url": "https://sfs.cczu.edu.cn/2026/1103/c17081a424767/page.htm",
-          "title": "外国语学院关于征集“人工智能+高等教育”典型案例的通知",
-          "search_estimated_date": "Tue, 03 Nov 2026 03:00:00 GMT",
-          "publication_date": null,
-          "author": null,
-          "read_status": "Tavily正文"
-        },
-        {
-          "id": 8,
-          "url": "https://www.lnmec.net.cn/info/1661/46751.htm",
-          "title": "2025-2026学年度辽宁机电职业技术学院信息公开工作年度报告-辽宁机电职业技术学院",
-          "search_estimated_date": "Sat, 31 Oct 2026 09:00:00 GMT",
-          "publication_date": null,
-          "author": null,
-          "read_status": "Tavily正文"
-        },
-        {
-          "id": 9,
-          "url": "https://news.wtu.edu.cn/info/1002/145037.htm",
-          "title": "武汉纺织大学微信公众号影响力排行榜（10月）发布",
-          "search_estimated_date": "Tue, 03 Nov 2026 03:00:00 GMT",
-          "publication_date": null,
-          "author": null,
-          "read_status": "仅搜索摘要"
-        },
-        {
-          "id": 10,
-          "url": "https://zj.huatu.com/2026/1101/1972931.html",
-          "title": "㽭ʡĹڹ2026°깫ƸԽ_ҵλ_ͼ",
-          "search_estimated_date": "Sun, 01 Nov 2026 05:00:00 GMT",
-          "publication_date": null,
-          "author": null,
-          "read_status": "Tavily正文"
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "read_status": "微信正文读取成功"
         }
       ],
       "rejections": [],
@@ -111,39 +84,35 @@
     {
       "account": "教育数字化100人",
       "query": "\"教育数字化100人\" 微信公众号 最新文章",
-      "status": "收录 2 条",
+      "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 11,
-          "url": "https://www.ncsti.gov.cn/kjdt/xwjj/202611/t20261102_260698.html",
-          "title": "磐石、DPA、OpenComplex各显身手，北京科学模型生态成势",
-          "search_estimated_date": "Mon, 02 Nov 2026 00:00:00 GMT",
-          "publication_date": null,
-          "author": null,
-          "read_status": "Tavily正文"
+          "id": 7,
+          "url": "https://mp.weixin.qq.com/s/HUlm2gfwLbDOrMWTms0FNQ",
+          "title": "Codex派活，Workbuddy干活，这条工作流我跑通了（附教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 06:47:36 GMT",
+          "publication_date": "2026-10-25T20:28:00+08:00",
+          "author": "彤彤",
+          "publisher": "彤彤笔记簿",
+          "read_status": "微信正文读取成功"
         },
         {
-          "id": 12,
-          "url": "https://www.jfdaily.com/sgh/detail?id=4086591",
-          "title": "学AI、当主播：上海老年人的新课表，太潮啦！_上观新闻",
-          "search_estimated_date": null,
-          "publication_date": null,
-          "author": null,
-          "read_status": "Tavily正文"
-        },
-        {
-          "id": 13,
-          "url": "https://www.lnmec.net.cn/info/1661/46751.htm",
-          "title": "2025-2026学年度辽宁机电职业技术学院信息公开工作年度报告-辽宁机电职业技术学院",
-          "search_estimated_date": null,
-          "publication_date": null,
-          "author": null,
-          "read_status": "Tavily正文"
+          "id": 8,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "read_status": "微信正文读取成功"
         }
       ],
-      "rejections": []
+      "rejections": [
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
     }
   ],
-  "included": 3,
-  "report": "情报简报_2026-11-03_174648_41613763952_1.md"
+  "included": 0,
+  "confirmed": 0,
+  "report": "情报简报_2026-11-03_175524_41614926554_1.md"
 }
