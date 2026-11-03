@@ -1330,10 +1330,11 @@
   },
   "included": 0,
   "confirmed": 0,
-  "report": "latest.md",
+  "report": "2026-11-03_latest.md",
   "expanded": 0,
   "merged_entries": 4,
-  "current_entries": 3,
+  "current_entries": 1,
   "new_entries": 0,
-  "archived_reports": 11
+  "archived_reports": 1,
+  "briefing_error": ""
 }
