@@ -1,0 +1,66 @@
+name: EduTech Digest
+
+on:
+  workflow_dispatch:
+    inputs:
+      account_limit:
+        description: "试运行填3；正式运行填25"
+        required: true
+        default: "3"
+        type: choice
+        options:
+          - "3"
+          - "25"
+  schedule:
+    # UTC 00:17 = 北京时间08:17。每日运行，可能受GitHub调度影响延迟。
+    - cron: '17 0 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: edutech-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check date filtering and deduplication
+        run: python -m unittest discover -s tests -v
+      - name: Generate digest
+        env:
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL || 'deepseek-flash' }}
+          ACCOUNT_LIMIT: ${{ inputs.account_limit || '25' }}
+          PYTHONUTF8: '1'
+        run: python scripts/run_digest.py --limit "$ACCOUNT_LIMIT"
+      - name: Save reports and deduplication state
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/ state/
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "Update education technology digest [skip ci]"
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
+      - name: Upload report backup
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: edutech-digest-${{ github.run_id }}-${{ github.run_attempt }}
+          path: reports/
+          retention-days: 30
+          if-no-files-found: ignore
+      - name: Flag partial provider failures
+        run: |
+          python -c "import json; from pathlib import Path; s=json.loads(Path('reports/latest_status.json').read_text(encoding='utf-8')); print('Included:',s['included']); raise SystemExit(1 if s['failed'] else 0)"
