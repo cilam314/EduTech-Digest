@@ -12,8 +12,8 @@ on:
           - "3"
           - "25"
   schedule:
-    # UTC 00:17 = 北京时间08:17。每日运行，可能受GitHub调度影响延迟。
-    - cron: '17 0 * * *'
+  # 北京时间每周一、三、五、日09:00
+  - cron: '0 1 * * 0,1,3,5'
 
 permissions:
   contents: write
