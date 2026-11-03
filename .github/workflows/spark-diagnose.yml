@@ -1,0 +1,102 @@
+name: Spark Search Diagnose
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Compare Spark search response formats
+        env:
+          SPARK_API_KEY: ${{ secrets.SPARK_API_KEY }}
+          PYTHONUTF8: '1'
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import re
+          from urllib.request import Request, urlopen
+          from urllib.error import HTTPError, URLError
+
+          key = os.environ.get('SPARK_API_KEY', '').strip()
+          if not key:
+              raise SystemExit('缺少仓库Secret SPARK_API_KEY')
+
+          def clean(value):
+              text = str(value).replace(key, '[REDACTED]')
+              return re.sub(r'(?i)Bearer\s+\S+', 'Bearer [REDACTED]', text)
+
+          def shape(value, depth=0):
+              if depth > 7:
+                  return type(value).__name__
+              if isinstance(value, dict):
+                  return {clean(k): shape(v, depth+1) for k, v in list(value.items())[:35]}
+              if isinstance(value, list):
+                  return {'length': len(value), 'first_items': [shape(v, depth+1) for v in value[:3]]}
+              return type(value).__name__
+
+          def inspect(value, path='$', findings=None):
+              if findings is None:
+                  findings = []
+              if isinstance(value, dict):
+                  for field in ('type', 'status', 'finish_reason', 'code', 'name'):
+                      if isinstance(value.get(field), (str, int)):
+                          findings.append({'path': path+'.'+field, 'value': clean(value[field])[:150]})
+                  for field in ('content', 'text', 'message'):
+                      if isinstance(value.get(field), str) and value[field]:
+                          findings.append({'path': path+'.'+field, 'preview': clean(value[field])[:350]})
+                  for k, v in value.items():
+                      if k in ('arguments', 'results', 'output') and isinstance(v, str):
+                          try:
+                              parsed = json.loads(v)
+                              findings.append({'path': path+'.'+k, 'parsed_json_shape': shape(parsed)})
+                          except (ValueError, TypeError):
+                              pass
+                      inspect(v, path+'.'+clean(k), findings)
+              elif isinstance(value, list):
+                  for i, v in enumerate(value[:8]):
+                      inspect(v, path+'['+str(i)+']', findings)
+              return findings[:65]
+
+          query = '请实际调用联网搜索，查找教育技术或游戏化教学相关的微信公众号文章，返回2个原始文章链接及来源标题。若无法调用搜索工具或没有结果，请明确说明，不要凭记忆编造链接。'
+          for model in ('spark-x2.5-4b', 'spark-x2.5-1.7b'):
+              for protocol in ('responses', 'chat'):
+                  if protocol == 'responses':
+                      url = 'https://maas-api.cn-huabei-1.xf-yun.com/v1/responses'
+                      payload = {'model': model, 'input': query, 'tools': [{'type': 'web_search'}],
+                                 'tool_choice': 'required', 'reasoning': {'effort': 'none'}, 'stream': False}
+                  else:
+                      url = 'https://maas-api.cn-huabei-1.xf-yun.com/v2/chat/completions'
+                      payload = {'model': model, 'messages': [{'role': 'user', 'content': query}],
+                                 'tools': [{'type': 'web_search', 'web_search': {'enable': True}}],
+                                 'tool_choice': 'required', 'thinking': {'type': 'disabled'},
+                                 'max_completion_tokens': 1536, 'stream': False}
+                  result = {'model': model, 'protocol': protocol}
+                  request = Request(url, data=json.dumps(payload).encode('utf-8'), headers={
+                      'Content-Type': 'application/json', 'Authorization': 'Bearer '+key})
+                  try:
+                      with urlopen(request, timeout=120) as response:
+                          raw = response.read(1024*1024)
+                          result['http_status'] = response.status
+                      data = json.loads(raw)
+                      result['response_shape'] = shape(data)
+                      result['response_findings'] = inspect(data)
+                  except HTTPError as exc:
+                      result['http_status'] = exc.code
+                      try:
+                          error_data = json.loads(exc.read(16384))
+                          result['error_shape'] = shape(error_data)
+                          result['error_findings'] = inspect(error_data)
+                      except Exception:
+                          result['error'] = '非JSON错误响应，未输出原始内容'
+                  except (URLError, TimeoutError):
+                      result['error'] = '网络失败或超时，未输出请求与认证信息'
+                  except (ValueError, TypeError):
+                      result['error'] = '响应不是有效JSON，未输出原始内容'
+                  print(json.dumps(result, ensure_ascii=False, indent=2), flush=True)
+          PY
