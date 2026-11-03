@@ -5,6 +5,7 @@ import sys
 import tempfile
 import unittest
 from unittest.mock import patch
+from urllib.error import HTTPError
 from datetime import datetime, timedelta
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
@@ -27,11 +28,54 @@ class DigestTests(unittest.TestCase):
         self.assertEqual(str(day), '2026-11-03')
 
     def test_wechat_epoch_and_verification_page(self):
-        html = '<meta property="og:title" content="测试"><meta name="author" content="教育技术学"><div id="js_content"><p>研究正文</p></div><script>var ct = "1793664000";</script>'
+        html = '<meta property="og:title" content="测试"><meta name="author" content="撰稿人"><a id="js_name">教育技术学</a><div id="js_content"><p>研究正文</p></div><script>var ct = "1793664000";</script>'
         article = d.extract_wechat(html, 'https://mp.weixin.qq.com/s/test')
         self.assertIn('+08:00', article['published_at'])
+        self.assertEqual(article['publisher'], '教育技术学')
+        self.assertEqual(article['author'], '撰稿人')
         with self.assertRaises(ValueError):
             d.extract_wechat('<html>请完成验证</html>', 'https://mp.weixin.qq.com/s/test')
+
+    def test_503_retries_and_safe_diagnostic(self):
+        error = HTTPError('https://api.deepseek.com/chat/completions', 503, 'private body', {}, None)
+        with patch.object(d, 'urlopen', side_effect=error) as opened, patch.object(d.time, 'sleep') as slept:
+            with self.assertRaises(d.ServiceError) as caught:
+                d.post_json('https://api.deepseek.com/chat/completions', 'secret-do-not-log', {})
+            self.assertEqual(opened.call_count, 4)
+            self.assertEqual(slept.call_count, 3)
+            self.assertIn('服务端暂不可用', str(caught.exception))
+            self.assertNotIn('secret-do-not-log', str(caught.exception))
+            self.assertNotIn('private body', str(caught.exception))
+
+    def test_old_ministry_news_is_not_a_journal_supplement(self):
+        source = {'id': 1, 'url': 'https://www.moe.gov.cn/news', 'title': '数字教育研究全球十大热点发布',
+                  'body': '发布日期：2026-05-13 新闻正文', 'publication_date': None,
+                  'author': None, 'publisher': None, 'read_status': 'Tavily正文'}
+        entry = {'source_id': 1, 'publication_date': '2026-05-13', 'date_evidence': '发布日期：2026-05-13'}
+        record, reason = d.validate_entry(entry, [source], '电化教育研究', 'A', datetime(2026, 11, 3, tzinfo=d.CN), {})
+        self.assertIsNone(record)
+        self.assertIn('超出本期', reason)
+
+    def test_related_news_is_not_an_account_update(self):
+        source = {'id': 1, 'url': 'https://news.example.org/article', 'title': 'AI教育新课程',
+                  'body': '发布日期：2026-11-02 新闻正文', 'publication_date': None,
+                  'author': '教育数字化100人', 'publisher': None, 'read_status': 'Tavily正文'}
+        entry = {'source_id': 1, 'publication_date': '2026-11-02', 'date_evidence': '发布日期：2026-11-02'}
+        now = datetime(2026, 11, 3, tzinfo=d.CN)
+        record, _ = d.validate_entry(entry, [source], '教育数字化100人', 'D', now, {})
+        self.assertEqual(record['relation'], 'related')
+        self.assertEqual(record['source_label'], 'news.example.org')
+        report = d.render(now, [record], [], 3, 25, {'overview': [], 'trends': []})
+        domain_section = report.split('## 相关领域动态')[1]
+        account_section = report.split('## D 类')[1].split('## E 类')[0]
+        self.assertIn('AI教育新课程', domain_section)
+        self.assertNotIn('AI教育新课程', account_section)
+        source.update(url='https://mp.weixin.qq.com/s/a', read_status='微信正文读取成功')
+        record, _ = d.validate_entry(entry, [source], '教育数字化100人', 'D', now, {})
+        self.assertEqual(record['relation'], 'related')  # author credit alone is insufficient
+        source['publisher'] = '教育数字化100人'
+        record, _ = d.validate_entry(entry, [source], '教育数字化100人', 'D', now, {})
+        self.assertEqual(record['relation'], 'confirmed')
 
     def test_end_to_end_dedup_and_retryable_failure(self):
         now = datetime.now(d.CN)
