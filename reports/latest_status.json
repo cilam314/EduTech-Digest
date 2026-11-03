@@ -14,6 +14,7 @@
           "publication_date": null,
           "author": null,
           "publisher": null,
+          "biz": null,
           "read_status": "Tavily正文"
         },
         {
@@ -24,6 +25,7 @@
           "publication_date": null,
           "author": null,
           "publisher": null,
+          "biz": null,
           "read_status": "Tavily正文"
         },
         {
@@ -34,6 +36,7 @@
           "publication_date": null,
           "author": null,
           "publisher": null,
+          "biz": null,
           "read_status": "Tavily正文"
         },
         {
@@ -44,6 +47,7 @@
           "publication_date": null,
           "author": null,
           "publisher": null,
+          "biz": null,
           "read_status": "Tavily正文"
         }
       ],
@@ -54,70 +58,96 @@
     },
     {
       "account": "教育技术学",
-      "query": "\"教育技术学\" 微信公众号 最新文章",
-      "status": "未检索到可收录更新（或重复/总数限制）",
+      "query": "\"教育技术学\" 微信公众号 最新文章；补充微信号：\"JYJSX2014\"；已知样例入口（不代表发现了后续文章）",
+      "status": "确认目标账号来源 1 条；期刊线索/领域补充 0 条",
       "sources": [
         {
           "id": 5,
+          "url": "https://mp.weixin.qq.com/s/Y-v5io7KoD4sd4b8c7Llbw",
+          "title": "专业理论 | 大语言模型赋能职前教师协作问题解决的实证研究",
+          "search_estimated_date": null,
+          "publication_date": "2026-11-03T10:00:00+08:00",
+          "author": "向启萌",
+          "publisher": "教育技术学",
+          "biz": "MjM5MDgyNjYzNQ==",
+          "read_status": "微信正文读取成功"
+        },
+        {
+          "id": 6,
           "url": "https://mp.weixin.qq.com/s/C39ozPVflEO2QjDRu4-iww",
           "title": "AI时代的组织形态变革与个人能力重构",
           "search_estimated_date": "Sat, 31 Oct 2026 10:33:50 GMT",
           "publication_date": "2026-05-11T11:59:38+08:00",
           "author": "Tabriss",
           "publisher": "Flame Stealer",
+          "biz": "MzI0ODMzMDAyMA==",
           "read_status": "微信正文读取成功"
         },
         {
-          "id": 6,
+          "id": 7,
           "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
           "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
           "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
           "publication_date": "2026-10-29T18:00:04+08:00",
           "author": "鹿先森",
           "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
           "read_status": "微信正文读取成功"
         }
       ],
       "rejections": [
-        "日期未知或超出本期；且不是明确标有目标期刊名的期号/目录",
-        "日期未知或超出本期；且不是明确标有目标期刊名的期号/目录",
-        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+        "候选6：账号标识不匹配或不可核实，未调用模型",
+        "候选7：账号标识不匹配或不可核实，未调用模型"
       ]
     },
     {
       "account": "教育数字化100人",
-      "query": "\"教育数字化100人\" 微信公众号 最新文章",
+      "query": "\"教育数字化100人\" 微信公众号 最新文章；补充微信号：\"wuxianclassroom\"；已知样例入口（不代表发现了后续文章）",
       "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 7,
+          "id": 8,
+          "url": "https://mp.weixin.qq.com/s/zIBQHN4Li45OR15ZVMwEOg",
+          "title": "第一批把作业外包给 AI 的中学生，中高考成绩暴跌",
+          "search_estimated_date": null,
+          "publication_date": "2026-09-21T11:50:00+08:00",
+          "author": "编辑部",
+          "publisher": "教育数字化100人",
+          "biz": "MzI2NzQ2NzE1NQ==",
+          "read_status": "微信正文读取成功"
+        },
+        {
+          "id": 9,
           "url": "https://mp.weixin.qq.com/s/HUlm2gfwLbDOrMWTms0FNQ",
           "title": "Codex派活，Workbuddy干活，这条工作流我跑通了（附教程）",
           "search_estimated_date": "Sat, 31 Oct 2026 06:47:36 GMT",
           "publication_date": "2026-10-25T20:28:00+08:00",
           "author": "彤彤",
           "publisher": "彤彤笔记簿",
+          "biz": "MzU3NDgzNjgwOQ==",
           "read_status": "微信正文读取成功"
         },
         {
-          "id": 8,
+          "id": 10,
           "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
           "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
           "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
           "publication_date": "2026-10-29T18:00:04+08:00",
           "author": "鹿先森",
           "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
           "read_status": "微信正文读取成功"
         }
       ],
       "rejections": [
-        "日期未知或超出本期；且不是明确标有目标期刊名的期号/目录",
-        "日期未知或超出本期；且不是明确标有目标期刊名的期号/目录",
+        "候选8：页面发布日期2026-09-21超出本期，未调用模型",
+        "候选9：账号标识不匹配或不可核实，未调用模型",
+        "候选10：账号标识不匹配或不可核实，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     }
   ],
-  "included": 0,
-  "confirmed": 0,
-  "report": "情报简报_2026-11-03_180311_41615986022_1.md"
+  "included": 1,
+  "confirmed": 1,
+  "report": "情报简报_2026-11-03_181116_41617129018_1.md"
 }
