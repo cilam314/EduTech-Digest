@@ -61,12 +61,292 @@
       ]
     },
     {
+      "account": "开放教育研究",
+      "query": "\"开放教育研究\" 2026 最新一期 目录",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 5,
+          "url": "https://openedu.sou.edu.cn",
+          "title": "开放教育研究",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 6,
+          "url": "https://openlearn.bjou.edu.cn",
+          "title": "开放学习研究",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 7,
+          "url": "http://a.xueshu.baidu.com/usercenter/journal/baseinfo?entity_id=260b14b840d2f099a6e39ae8f20c28f8",
+          "title": "《开放教育研究》- 百度学术",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 8,
+          "url": "https://jyyj.cnaes.edu.cn/zzjs",
+          "title": "杂志介绍 - 中国教育科学研究院-教育研究",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 9,
+          "url": "https://www.cqvip.com/journal/80620X/detail",
+          "title": "开放教育研究 | 期刊-维普官网",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "现代远程教育研究",
+      "query": "\"现代远程教育研究\" 2026 最新一期 目录",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 10,
+          "url": "https://baike.baidu.com/item/%E7%8E%B0%E4%BB%A3%E8%BF%9C%E7%A8%8B%E6%95%99%E8%82%B2%E7%A0%94%E7%A9%B6/1493627",
+          "title": "现代远程教育研究",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 11,
+          "url": "http://xdjyjs.ndhx.net",
+          "title": "《现代教育技术》杂志社-投稿主页",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 12,
+          "url": "https://www.cernet.edu.cn/xxh/fei/bztx/zd/200603/t20060323_67662.shtml",
+          "title": "教育部发布开展现代远程教育的最新政策-中国教育和科研计算机网CERNET",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 13,
+          "url": "https://de.nju.edu.cn",
+          "title": "南京大学现代远程教育",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 14,
+          "url": "https://dnycy.aqikan.net",
+          "title": "《现代远程教育研究》杂志 | 在线投稿",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "远程教育杂志",
+      "query": "\"远程教育杂志\" 2026 最新一期 目录",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 15,
+          "url": "https://ycjy.mlunwen.com",
+          "title": "远程教育杂志社官网投稿",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 16,
+          "url": "https://www.ais.cn/news/featured/2644",
+          "title": "中国远程教育杂志是什么期刊_艾思科蓝",
+          "search_estimated_date": "Wed, 15 Jul 2020 00:00:00 GMT",
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 17,
+          "url": "https://baike.baidu.com/item/%E8%BF%9C%E7%A8%8B%E6%95%99%E8%82%B2%E6%9D%82%E5%BF%97/945459",
+          "title": "远程教育杂志",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 18,
+          "url": "https://dnycy.aqikan.net",
+          "title": "《现代远程教育研究》杂志 | 在线投稿",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 19,
+          "url": "http://zhycjy.juqk.net",
+          "title": "《中国远程教育》编辑部-首页",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "现代教育论丛",
+      "query": "\"现代教育论丛\" 2026 最新一期 目录",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 20,
+          "url": "https://mue.csu.edu.cn",
+          "title": "现代大学教育",
+          "search_estimated_date": "Tue, 13 Oct 2026 10:00:00 GMT",
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 21,
+          "url": "https://www.zazhilin.cn/xiandaijiaoyuluncong",
+          "title": "现代教育论丛杂志订阅，现代教育论丛2026年杂志征订优惠",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 22,
+          "url": "https://ojs.s-p.sg/index.php/xdjyjz",
+          "title": "现代教育进展",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 23,
+          "url": "https://baike.baidu.com/item/%E7%8E%B0%E4%BB%A3%E6%95%99%E8%82%B2%E8%AE%BA%E4%B8%9B/17202571",
+          "title": "现代教育论丛",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 24,
+          "url": "http://xdjyjs.ndhx.net",
+          "title": "《现代教育技术》杂志社-投稿主页",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
       "account": "教育技术学",
       "query": "\"教育技术学\" 微信公众号 最新文章；补充微信号：\"JYJSX2014\"；已知样例入口（不代表发现了后续文章）",
       "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 5,
+          "id": 25,
           "url": "https://mp.weixin.qq.com/s/C39ozPVflEO2QjDRu4-iww",
           "title": "AI时代的组织形态变革与个人能力重构",
           "search_estimated_date": "Sat, 31 Oct 2026 10:33:50 GMT",
@@ -78,7 +358,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 6,
+          "id": 26,
           "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
           "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
           "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
@@ -92,8 +372,303 @@
       ],
       "rejections": [
         "跳过已收录或重复链接",
-        "候选5：账号标识不匹配或不可核实，未调用模型",
-        "候选6：账号标识不匹配或不可核实，未调用模型",
+        "候选25：账号标识不匹配或不可核实，未调用模型",
+        "候选26：账号标识不匹配或不可核实，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "西大教技",
+      "query": "\"西大教技\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 27,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选27：页面发布日期2026-10-29超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "国际与比较教育研究所",
+      "query": "\"国际与比较教育研究所\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 28,
+          "url": "https://mp.weixin.qq.com/s/C39ozPVflEO2QjDRu4-iww",
+          "title": "AI时代的组织形态变革与个人能力重构",
+          "search_estimated_date": "Sat, 31 Oct 2026 10:33:50 GMT",
+          "publication_date": "2026-05-11T11:59:38+08:00",
+          "author": "Tabriss",
+          "publisher": "Flame Stealer",
+          "biz": "MzI0ODMzMDAyMA==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 29,
+          "url": "https://mp.weixin.qq.com/s/HUlm2gfwLbDOrMWTms0FNQ",
+          "title": "Codex派活，Workbuddy干活，这条工作流我跑通了（附教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 06:47:36 GMT",
+          "publication_date": "2026-10-25T20:28:00+08:00",
+          "author": "彤彤",
+          "publisher": "彤彤笔记簿",
+          "biz": "MzU3NDgzNjgwOQ==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 30,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选28：页面发布日期2026-05-11超出本期，未调用模型",
+        "候选29：页面发布日期2026-10-25超出本期，未调用模型",
+        "候选30：页面发布日期2026-10-29超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "数字游戏学习研究",
+      "query": "\"数字游戏学习研究\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 31,
+          "url": "https://mp.weixin.qq.com/s/mbBRE-NzFKASPpq4J9yo3A",
+          "title": "做多人游戏，最贵的不是美术是后端！这个开源项目直接把服务器干掉了，25.2k星",
+          "search_estimated_date": "Sat, 31 Oct 2026 04:03:02 GMT",
+          "publication_date": "2026-09-16T07:52:10+08:00",
+          "author": "数字生命卡兹克",
+          "publisher": "AI开源探索者GYX",
+          "biz": "MzY4NDMwMzg5MQ==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 32,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选31：页面发布日期2026-09-16超出本期，未调用模型",
+        "候选32：页面发布日期2026-10-29超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "e2lab",
+      "query": "\"e2lab\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 33,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "微信读取失败；使用Tavily正文",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "人文社科论文速览",
+      "query": "\"人文社科论文速览\" 微信公众号 最新文章（优先限定mp.weixin.qq.com）；无结果后补充：\"人文社科论文速览\" 教育技术 教育数字化",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 34,
+          "url": "https://www.hist.edu.cn/info/2781/428851.htm",
+          "title": "教育科学学院举办“研途共话”学术沙龙系列活动-河南科技学院",
+          "search_estimated_date": "Mon, 02 Nov 2026 10:00:00 GMT",
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 35,
+          "url": "http://www.news.cn/tech/20261103/786fdd0ce7434d16b2dd9d44e4bbf713/c.html",
+          "title": "瞭望 | 基础研究新局-新华网",
+          "search_estimated_date": "Tue, 03 Nov 2026 00:00:00 GMT",
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 36,
+          "url": "https://www.shobserver.com/staticsg/res/html/web/newsDetail.html?id=1200495",
+          "title": "二胡演奏家马晓辉：恩师临终托琴_上观新闻",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 37,
+          "url": "https://news.southcn.com/node_ac2b0b62a4/04b989fdc3.shtml",
+          "title": "“科技尖货”进入日常生活_南方网",
+          "search_estimated_date": "Mon, 02 Nov 2026 00:00:00 GMT",
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 38,
+          "url": "https://molihua.org/mh-4197743",
+          "title": "复旦公益讲坛谈AI：张浩认为科研评价上，论文的作用可能慢慢消失 · 茉莉花新闻网",
+          "search_estimated_date": "Sat, 31 Oct 2026 15:27:36 GMT",
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "学士讲科研",
+      "query": "\"学士讲科研\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 39,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选39：页面发布日期2026-10-29超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "简小杰做科研",
+      "query": "\"简小杰做科研\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 40,
+          "url": "https://mp.weixin.qq.com/s/UdrSCRmbrNOnqXfIXgOJUw?scene=1",
+          "title": "我用 WorkBuddy 做了 4 个提效工具，体验感很惊艳，AI小白来了都能学会！（附实操和提示词）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:19 GMT",
+          "publication_date": "2026-10-29T07:33:35+08:00",
+          "author": "KT AI实战笔记",
+          "publisher": "KT的AI实战笔记",
+          "biz": "MzY4MzQ0ODM0Mw==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 41,
+          "url": "https://mp.weixin.qq.com/s/HUlm2gfwLbDOrMWTms0FNQ",
+          "title": "Codex派活，Workbuddy干活，这条工作流我跑通了（附教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 06:47:36 GMT",
+          "publication_date": "2026-10-25T20:28:00+08:00",
+          "author": "彤彤",
+          "publisher": "彤彤笔记簿",
+          "biz": "MzU3NDgzNjgwOQ==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 42,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选40：页面发布日期2026-10-29超出本期，未调用模型",
+        "候选41：页面发布日期2026-10-25超出本期，未调用模型",
+        "候选42：页面发布日期2026-10-29超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "ET学术小站",
+      "query": "\"ET学术小站\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 43,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选43：页面发布日期2026-10-29超出本期，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
@@ -103,7 +678,7 @@
       "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 7,
+          "id": 44,
           "url": "https://mp.weixin.qq.com/s/zIBQHN4Li45OR15ZVMwEOg",
           "title": "第一批把作业外包给 AI 的中学生，中高考成绩暴跌",
           "search_estimated_date": null,
@@ -115,7 +690,7 @@
           "search_provider": "用户样例/未记录"
         },
         {
-          "id": 8,
+          "id": 45,
           "url": "https://mp.weixin.qq.com/s/HUlm2gfwLbDOrMWTms0FNQ",
           "title": "Codex派活，Workbuddy干活，这条工作流我跑通了（附教程）",
           "search_estimated_date": "Sat, 31 Oct 2026 06:47:36 GMT",
@@ -127,7 +702,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 9,
+          "id": 46,
           "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
           "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
           "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
@@ -140,9 +715,291 @@
         }
       ],
       "rejections": [
-        "候选7：页面发布日期2026-09-21超出本期，未调用模型",
-        "候选8：账号标识不匹配或不可核实，未调用模型",
-        "候选9：账号标识不匹配或不可核实，未调用模型",
+        "候选44：页面发布日期2026-09-21超出本期，未调用模型",
+        "候选45：账号标识不匹配或不可核实，未调用模型",
+        "候选46：账号标识不匹配或不可核实，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "Citedu全媒",
+      "query": "\"Citedu全媒\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 47,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选47：页面发布日期2026-10-29超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "智慧教育 Smart Education",
+      "query": "\"智慧教育 Smart Education\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 48,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选48：页面发布日期2026-10-29超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "数教新知",
+      "query": "\"数教新知\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 49,
+          "url": "https://mp.weixin.qq.com/s/HUlm2gfwLbDOrMWTms0FNQ",
+          "title": "Codex派活，Workbuddy干活，这条工作流我跑通了（附教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 06:47:36 GMT",
+          "publication_date": "2026-10-25T20:28:00+08:00",
+          "author": "彤彤",
+          "publisher": "彤彤笔记簿",
+          "biz": "MzU3NDgzNjgwOQ==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 50,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选49：页面发布日期2026-10-25超出本期，未调用模型",
+        "候选50：页面发布日期2026-10-29超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "教育技术学自留地",
+      "query": "\"教育技术学自留地\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 51,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选51：页面发布日期2026-10-29超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "智慧教与学小能手",
+      "query": "\"智慧教与学小能手\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 52,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选52：页面发布日期2026-10-29超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "视频课程与教师发展",
+      "query": "\"视频课程与教师发展\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 53,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 54,
+          "url": "https://mp.weixin.qq.com/s/HUlm2gfwLbDOrMWTms0FNQ",
+          "title": "Codex派活，Workbuddy干活，这条工作流我跑通了（附教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 06:47:36 GMT",
+          "publication_date": "2026-10-25T20:28:00+08:00",
+          "author": "彤彤",
+          "publisher": "彤彤笔记簿",
+          "biz": "MzU3NDgzNjgwOQ==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选53：页面发布日期2026-10-29超出本期，未调用模型",
+        "候选54：页面发布日期2026-10-25超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "关于设计的",
+      "query": "\"关于设计的\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 55,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选55：页面发布日期2026-10-29超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "温州信息技术教研",
+      "query": "\"温州信息技术教研\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 56,
+          "url": "https://mp.weixin.qq.com/s/C39ozPVflEO2QjDRu4-iww",
+          "title": "AI时代的组织形态变革与个人能力重构",
+          "search_estimated_date": "Sat, 31 Oct 2026 10:33:50 GMT",
+          "publication_date": "2026-05-11T11:59:38+08:00",
+          "author": "Tabriss",
+          "publisher": "Flame Stealer",
+          "biz": "MzI0ODMzMDAyMA==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 57,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选56：页面发布日期2026-05-11超出本期，未调用模型",
+        "候选57：页面发布日期2026-10-29超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "欢喜莳",
+      "query": "\"欢喜莳\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 58,
+          "url": "https://mp.weixin.qq.com/s/HUlm2gfwLbDOrMWTms0FNQ",
+          "title": "Codex派活，Workbuddy干活，这条工作流我跑通了（附教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 06:47:36 GMT",
+          "publication_date": "2026-10-25T20:28:00+08:00",
+          "author": "彤彤",
+          "publisher": "彤彤笔记簿",
+          "biz": "MzU3NDgzNjgwOQ==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 59,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选58：页面发布日期2026-10-25超出本期，未调用模型",
+        "候选59：页面发布日期2026-10-29超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "PsyEcho 芯声",
+      "query": "\"PsyEcho 芯声\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 60,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选60：页面发布日期2026-10-29超出本期，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
@@ -152,7 +1009,7 @@
       "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 10,
+          "id": 61,
           "url": "https://mp.weixin.qq.com/s/HUlm2gfwLbDOrMWTms0FNQ",
           "title": "Codex派活，Workbuddy干活，这条工作流我跑通了（附教程）",
           "search_estimated_date": "Sat, 31 Oct 2026 06:47:36 GMT",
@@ -164,7 +1021,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 11,
+          "id": 62,
           "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
           "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
           "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
@@ -177,13 +1034,154 @@
         }
       ],
       "rejections": [
-        "候选10：页面发布日期2026-10-25超出本期，未调用模型",
-        "候选11：页面发布日期2026-10-29超出本期，未调用模型",
+        "候选61：页面发布日期2026-10-25超出本期，未调用模型",
+        "候选62：页面发布日期2026-10-29超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "数智教育",
+      "query": "\"数智教育\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 63,
+          "url": "https://mp.weixin.qq.com/s/HUlm2gfwLbDOrMWTms0FNQ",
+          "title": "Codex派活，Workbuddy干活，这条工作流我跑通了（附教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 06:47:36 GMT",
+          "publication_date": "2026-10-25T20:28:00+08:00",
+          "author": "彤彤",
+          "publisher": "彤彤笔记簿",
+          "biz": "MzU3NDgzNjgwOQ==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 64,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选63：页面发布日期2026-10-25超出本期，未调用模型",
+        "候选64：页面发布日期2026-10-29超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "游戏化教学",
+      "query": "\"游戏化教学\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 65,
+          "url": "https://mp.weixin.qq.com/s/mbBRE-NzFKASPpq4J9yo3A",
+          "title": "做多人游戏，最贵的不是美术是后端！这个开源项目直接把服务器干掉了，25.2k星",
+          "search_estimated_date": "Sat, 31 Oct 2026 04:03:02 GMT",
+          "publication_date": "2026-09-16T07:52:10+08:00",
+          "author": "数字生命卡兹克",
+          "publisher": "AI开源探索者GYX",
+          "biz": "MzY4NDMwMzg5MQ==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 66,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选65：页面发布日期2026-09-16超出本期，未调用模型",
+        "候选66：页面发布日期2026-10-29超出本期，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "创客教育",
+      "query": "\"创客教育\" 微信公众号 最新文章",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 67,
+          "url": "https://mp.weixin.qq.com/s/HUlm2gfwLbDOrMWTms0FNQ",
+          "title": "Codex派活，Workbuddy干活，这条工作流我跑通了（附教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 06:47:36 GMT",
+          "publication_date": "2026-10-25T20:28:00+08:00",
+          "author": "彤彤",
+          "publisher": "彤彤笔记簿",
+          "biz": "MzU3NDgzNjgwOQ==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 68,
+          "url": "https://mp.weixin.qq.com/s/rPShzKxb-4MwemGdvfBt7Q",
+          "title": "30分钟，我用Workbuddy做出一个能上线的微信小程序（附详细教程）",
+          "search_estimated_date": "Sat, 31 Oct 2026 11:16:17 GMT",
+          "publication_date": "2026-10-29T18:00:04+08:00",
+          "author": "鹿先森",
+          "publisher": "鹿途AI智能体",
+          "biz": "Mzk2NDIyOTAwMg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 69,
+          "url": "https://mp.weixin.qq.com/s/GPn3G6ICXZE_ljRmRy4Rxw",
+          "title": "每个创造者都要有自己的 Github",
+          "search_estimated_date": "Sat, 31 Oct 2026 12:11:32 GMT",
+          "publication_date": "2026-10-31T20:00:20+08:00",
+          "author": "安猪",
+          "publisher": "安猪的实验室",
+          "biz": "MzI0MTM5ODU0OA==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选67：页面发布日期2026-10-25超出本期，未调用模型",
+        "候选68：页面发布日期2026-10-29超出本期，未调用模型",
+        "候选69：页面发布日期2026-10-31超出本期，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     }
   ],
   "search_events": [
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 5
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 5
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 5
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 5
+    },
     {
       "provider": "Tavily",
       "status": "ok",
@@ -202,6 +1200,51 @@
     {
       "provider": "Tavily",
       "status": "ok",
+      "results": 1
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 3
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 2
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 1
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 5
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 1
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 3
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 1
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
       "results": 2
     },
     {
@@ -212,16 +1255,81 @@
     {
       "provider": "Tavily",
       "status": "ok",
+      "results": 1
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 1
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
       "results": 2
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 1
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 1
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 2
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 1
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 2
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 2
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 1
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 2
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 2
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 2
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 3
     }
   ],
   "search_requests": {
-    "Tavily": 6,
+    "Tavily": 32,
     "spark-x2.5-4b": 0,
     "spark-x2.5-1.7b": 0
   },
   "included": 0,
   "confirmed": 0,
-  "report": "情报简报_2026-11-03_221451_41651771884_1.md",
+  "report": "情报简报_2026-11-03_221757_41652274197_1.md",
   "expanded": 0
 }
