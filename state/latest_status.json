@@ -175,11 +175,11 @@
           "url": "https://mp.weixin.qq.com/s/6nKL2ySngMoqgnQHJFvt4Q",
           "title": "开源我的：公众号文章/ Skill /教程/资料包/提示词",
           "search_estimated_date": null,
-          "publication_date": "2026-09-03T22:37:16+08:00",
-          "author": "你旺哥",
-          "publisher": "AI应用实战派pro",
-          "biz": "MzY4NDA4MDUwMA==",
-          "read_status": "微信正文读取成功",
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "微信读取失败；使用Tavily正文",
           "search_provider": "Tavily"
         },
         {
@@ -263,11 +263,11 @@
           "url": "https://mp.weixin.qq.com/s/BQslbZ_lBLwvXDMNMkh7Rg",
           "title": "发现一个公众号排版神器：文章丢给 WorkBuddy，排版直接完成",
           "search_estimated_date": null,
-          "publication_date": null,
-          "author": null,
-          "publisher": null,
-          "biz": null,
-          "read_status": "微信读取失败；使用Tavily正文",
+          "publication_date": "2026-07-10T14:36:04+08:00",
+          "author": "Agony",
+          "publisher": "新知笔谈",
+          "biz": "MzkzNTk0Mjc1Nw==",
+          "read_status": "微信正文读取成功",
           "search_provider": "Tavily"
         },
         {
@@ -423,13 +423,13 @@
         {
           "id": 30,
           "url": "https://mp.weixin.qq.com/s/r2HdwVqrtjhNHTQ8X3Ye1w",
-          "title": "用户提供的账号样例",
+          "title": "「年终学术盛宴」2026年度中国教育学十大学术热点评选活动开始啦！",
           "search_estimated_date": null,
-          "publication_date": null,
-          "author": null,
-          "publisher": null,
-          "biz": null,
-          "read_status": "微信读取失败；仅有搜索摘要",
+          "publication_date": "2026-11-03T17:34:39+08:00",
+          "author": "人大书报资料中心",
+          "publisher": "现代教育论丛",
+          "biz": "Mzg3NzU1MTQ4MA==",
+          "read_status": "微信正文读取成功",
           "search_provider": "用户样例/未记录"
         },
         {
@@ -494,7 +494,6 @@
         }
       ],
       "rejections": [
-        "候选30：账号标识不匹配或不可核实，未调用模型",
         "候选31：账号标识不匹配或不可核实，未调用模型",
         "候选32：账号标识不匹配或不可核实，未调用模型",
         "候选33：账号标识不匹配或不可核实，未调用模型",
@@ -726,11 +725,11 @@
           "url": "https://mp.weixin.qq.com/s/PVfm1H46R7uvEzpg6QuRHg",
           "title": "加州州立大学系统向全系统46万名学生和6.3万教职工提供ChatGPT Edu",
           "search_estimated_date": null,
-          "publication_date": "2025-02-06T21:39:52+08:00",
-          "author": "RichChat檬查查",
-          "publisher": "檬查查",
-          "biz": "MzAwNDA1MTA1NQ==",
-          "read_status": "微信正文读取成功",
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "微信读取失败；使用Tavily正文",
           "search_provider": "Tavily"
         },
         {
@@ -836,22 +835,10 @@
     {
       "account": "数字游戏学习研究",
       "query": "\"数字游戏学习研究\" 微信公众号 最新文章；补充微信号/原始ID：\"ldmr0418\"；已知样例入口（不代表发现了后续文章）",
-      "status": "确认目标账号来源 1 条；期刊线索/领域补充 0 条",
+      "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
           "id": 59,
-          "url": "https://mp.weixin.qq.com/s/5DaOCS9CQ8TiGydtQqJBbw",
-          "title": "[游戏化学习 531] 输血知识要怎么教呢？动画、游戏与角色扮演的三组比较",
-          "search_estimated_date": null,
-          "publication_date": "2026-11-03T14:06:30+08:00",
-          "author": "靓点迷人",
-          "publisher": "数字游戏学习研究",
-          "biz": "MzIyMjE3NTMyNw==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "用户样例/未记录"
-        },
-        {
-          "id": 60,
           "url": "http://mp.weixin.qq.com/s?__biz=MzIzMjQyNzQ5MA%3D%3D&mid=2247491155&idx=1&sn=993a5e0f5c8958a4ec070f8503bb46d7&chksm=e89444dedfe3cdc8fe62ecb3fb0fd86849b752d5a4dd0f7582d117600f77758d16159cbf7dda&scene=21",
           "title": "玩游戏也能做科研？网游EVE online霸气登顶Nature子刊封面！",
           "search_estimated_date": null,
@@ -863,7 +850,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 61,
+          "id": 60,
           "url": "https://mp.weixin.qq.com/s/T6WPWi8i9aHNSx6U-q0yJg",
           "title": "Hassabis的思维游戏：从思考游戏到思考“通用学习机器”",
           "search_estimated_date": null,
@@ -875,7 +862,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 62,
+          "id": 61,
           "url": "https://mp.weixin.qq.com/s/UtFeYfJzbc-0JEGF5mQOvg",
           "title": "Notebooklm 将微信公众号文章变成知识库",
           "search_estimated_date": null,
@@ -887,7 +874,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 63,
+          "id": 62,
           "url": "https://mp.weixin.qq.com/s/XCZ3xOZa7x1lfdoiHOLqrw",
           "title": "官方｜TensorFlow微信公众号发布",
           "search_estimated_date": null,
@@ -899,7 +886,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 64,
+          "id": 63,
           "url": "https://mp.weixin.qq.com/s/SLMNOaOXALJWmxjvsnyEmg",
           "title": "聊着聊着，OpenClaw能帮我发微信公众号文章了",
           "search_estimated_date": null,
@@ -912,32 +899,22 @@
         }
       ],
       "rejections": [
+        "跳过已收录或重复链接",
+        "候选59：账号标识不匹配或不可核实，未调用模型",
         "候选60：账号标识不匹配或不可核实，未调用模型",
         "候选61：账号标识不匹配或不可核实，未调用模型",
         "候选62：账号标识不匹配或不可核实，未调用模型",
         "候选63：账号标识不匹配或不可核实，未调用模型",
-        "候选64：账号标识不匹配或不可核实，未调用模型"
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "e2lab",
       "query": "\"e2lab\" 微信公众号 最新文章；补充微信号/原始ID：\"gh_20d97d24cc32\"；已知样例入口（不代表发现了后续文章）",
-      "status": "确认目标账号来源 1 条；期刊线索/领域补充 0 条",
+      "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 65,
-          "url": "https://mp.weixin.qq.com/s/p756Q-6-i99scZIT8WgDUw",
-          "title": "优秀课例分享第262期｜我帮食堂定菜品——初识决策树",
-          "search_estimated_date": null,
-          "publication_date": "2026-11-03T19:30:00+08:00",
-          "author": "e2lab",
-          "publisher": "e2lab",
-          "biz": "MzIyMDEzMzA1MQ==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "用户样例/未记录"
-        },
-        {
-          "id": 66,
+          "id": 64,
           "url": "https://mp.weixin.qq.com/s/y-I5OZkLtgsHomw1OD9FFA",
           "title": "重磅更新：R-Markdown支持直接保存文章到微信公众号草稿箱了",
           "search_estimated_date": null,
@@ -949,7 +926,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 67,
+          "id": 65,
           "url": "https://mp.weixin.qq.com/s/B9zTvBJUDIeBn4NVVPIgaw",
           "title": "利用微信同步obsidian插件，随时把公众号文章和灵感变为知识库内容",
           "search_estimated_date": null,
@@ -961,7 +938,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 68,
+          "id": 66,
           "url": "https://mp.weixin.qq.com/s/UtFeYfJzbc-0JEGF5mQOvg",
           "title": "Notebooklm 将微信公众号文章变成知识库",
           "search_estimated_date": null,
@@ -973,7 +950,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 69,
+          "id": 67,
           "url": "https://mp.weixin.qq.com/s/7g0EJsR4Vai7aOI7tnDpYg",
           "title": "用 OpenClaw 打造微信公众号文章阅读助手：一个自动抓取、查询、推送全流程的Skill",
           "search_estimated_date": null,
@@ -985,7 +962,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 70,
+          "id": 68,
           "url": "https://mp.weixin.qq.com/s/t1mNC8ivNdMjw-LqxFfszg",
           "title": "微信公众号文章批量下载工具wechat-article-exporter",
           "search_estimated_date": null,
@@ -998,32 +975,22 @@
         }
       ],
       "rejections": [
+        "跳过已收录或重复链接",
+        "候选64：账号标识不匹配或不可核实，未调用模型",
+        "候选65：账号标识不匹配或不可核实，未调用模型",
         "候选66：账号标识不匹配或不可核实，未调用模型",
         "候选67：账号标识不匹配或不可核实，未调用模型",
         "候选68：账号标识不匹配或不可核实，未调用模型",
-        "候选69：账号标识不匹配或不可核实，未调用模型",
-        "候选70：账号标识不匹配或不可核实，未调用模型"
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "人文社科论文速览",
       "query": "\"人文社科论文速览\" 微信公众号 最新文章；补充微信号/原始ID：\"gh_28787020eb96\"；已知样例入口（不代表发现了后续文章）",
-      "status": "确认目标账号来源 1 条；期刊线索/领域补充 0 条",
+      "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 71,
-          "url": "https://mp.weixin.qq.com/s/rXMQIIc_Xf2H0HpilcqzzQ",
-          "title": "【SSCI】教育学期刊《  Journal of the Learning Sciences》最新论文推送（2026年10月）",
-          "search_estimated_date": null,
-          "publication_date": "2026-11-03T00:00:00+08:00",
-          "author": null,
-          "publisher": "人文社科论文速览",
-          "biz": "MzI1MjE5MzQ0NQ==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "用户样例/未记录"
-        },
-        {
-          "id": 72,
+          "id": 69,
           "url": "https://mp.weixin.qq.com/s/B9zTvBJUDIeBn4NVVPIgaw",
           "title": "利用微信同步obsidian插件，随时把公众号文章和灵感变为知识库内容",
           "search_estimated_date": null,
@@ -1035,7 +1002,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 73,
+          "id": 70,
           "url": "https://mp.weixin.qq.com/s/UtFeYfJzbc-0JEGF5mQOvg",
           "title": "Notebooklm 将微信公众号文章变成知识库",
           "search_estimated_date": null,
@@ -1047,7 +1014,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 74,
+          "id": 71,
           "url": "https://mp.weixin.qq.com/s/0HI56aDxmB3wBAxo-footQ",
           "title": "文科小白实测：1小时不到解决3个大坑，OpenClaw公众号写作工作流终于跑通了",
           "search_estimated_date": null,
@@ -1059,7 +1026,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 75,
+          "id": 72,
           "url": "https://mp.weixin.qq.com/s/7g0EJsR4Vai7aOI7tnDpYg",
           "title": "用 OpenClaw 打造微信公众号文章阅读助手：一个自动抓取、查询、推送全流程的Skill",
           "search_estimated_date": null,
@@ -1071,7 +1038,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 76,
+          "id": 73,
           "url": "https://mp.weixin.qq.com/s/y-I5OZkLtgsHomw1OD9FFA",
           "title": "重磅更新：R-Markdown支持直接保存文章到微信公众号草稿箱了",
           "search_estimated_date": null,
@@ -1084,11 +1051,13 @@
         }
       ],
       "rejections": [
+        "跳过已收录或重复链接",
+        "候选69：账号标识不匹配或不可核实，未调用模型",
+        "候选70：账号标识不匹配或不可核实，未调用模型",
+        "候选71：账号标识不匹配或不可核实，未调用模型",
         "候选72：账号标识不匹配或不可核实，未调用模型",
         "候选73：账号标识不匹配或不可核实，未调用模型",
-        "候选74：账号标识不匹配或不可核实，未调用模型",
-        "候选75：账号标识不匹配或不可核实，未调用模型",
-        "候选76：账号标识不匹配或不可核实，未调用模型"
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
@@ -1097,7 +1066,7 @@
       "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 77,
+          "id": 74,
           "url": "https://mp.weixin.qq.com/s/PkS2ZiU8LdfGXi3NOXfWuA",
           "title": "fsQCA投稿前必须检查什么？一份可以直接使用的审稿人自查清单",
           "search_estimated_date": null,
@@ -1109,7 +1078,7 @@
           "search_provider": "用户样例/未记录"
         },
         {
-          "id": 78,
+          "id": 75,
           "url": "https://mp.weixin.qq.com/s?__biz=MzUxODUwMjc5NQ%3D%3D&mid=2247485004&idx=1&sn=7493af758b8e86c8a7086d1423b8ee69&chksm=f81253c0816edb903f213061d0de6a88ec784c5f6726ea7e692ddc52aefb551ebd729631e0a3&mpshare=1&scene=24&srcid=0517G2ApvIeoauakobCwSQpQ&sharer_shareinfo=a00f9d4f5c10db4fbd04ff2c066d5e6d&sharer_shareinfo_first=a00f9d4f5c10db4fbd04ff2c066d5e6d#rd",
           "title": "一行命令搞定公众号文章：wx-cli让我重新理解了什么叫「信息获取」",
           "search_estimated_date": null,
@@ -1121,7 +1090,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 79,
+          "id": 76,
           "url": "http://mp.weixin.qq.com/s?__biz=MzUxNjcxMjQxNg%3D%3D&mid=2247639604&idx=1&sn=43b9d33929ac2a7a9bd2834acec8294c&chksm=f9afd0bbced859ade5f869ac455809f6197aa175911f4c945456f2bb630f1004c05e284b9795",
           "title": "添加微信号：CVer2233，小助手拉你进群！** **扫描下方二维码，加入CVer学术星球！****可以获得最新顶会/顶刊上的论文idea****和CV从入门到精通资料及应用！发论文/搞科研/涨薪，强烈推荐！",
           "search_estimated_date": null,
@@ -1133,7 +1102,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 80,
+          "id": 77,
           "url": "https://mp.weixin.qq.com/s?__biz=Mzk0MDMwMzQyOA%3D%3D&amp=&amp=&amp=&amp=&chksm=c2e11234f5969b22a0d7fd50ec32be9df13e2caeef186b30b5d653836b0725def8ccd58a56cf&idx=1&mid=2247493407&sn=41b8782a3bdc75b211206b06e1929a58",
           "title": "关于作者 & 公众号",
           "search_estimated_date": null,
@@ -1145,7 +1114,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 81,
+          "id": 78,
           "url": "https://mp.weixin.qq.com/s?__biz=MzI1NTczMjc0OQ%3D%3D&mid=2247526951&idx=1&sn=45b65fb743debf2fda8a5f831eb2acfe&chksm=eb2697387e98cbfb1b8edc09b6f77025cb3b18bca499cb1b89d066fbefe373f2c24d68a72de0&mpshare=1&scene=23&srcid=0928r55bdkrCM9cVsx1weTm4&sharer_shareinfo=b6d9c5f46b6581a4dcff59befa15c077&sharer_shareinfo_first=8a3841f0892228b004c996227ac7e034#rd",
           "title": "宣讲通知｜西安电子科技大学 × 香港科技大学工学院MSc研究生招生宣讲会",
           "search_estimated_date": null,
@@ -1157,7 +1126,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 82,
+          "id": 79,
           "url": "https://mp.weixin.qq.com/s/aBF20HuP6vxKgcGfDuHWtQ",
           "title": "宣讲通知｜西安电子科技大学 × 香港科技大学工学院MSc研究生招生宣讲会",
           "search_estimated_date": null,
@@ -1170,12 +1139,12 @@
         }
       ],
       "rejections": [
-        "候选77：页面发布日期2026-10-09超出本期，未调用模型",
+        "候选74：页面发布日期2026-10-09超出本期，未调用模型",
+        "候选75：账号标识不匹配或不可核实，未调用模型",
+        "候选76：账号标识不匹配或不可核实，未调用模型",
+        "候选77：账号标识不匹配或不可核实，未调用模型",
         "候选78：账号标识不匹配或不可核实，未调用模型",
         "候选79：账号标识不匹配或不可核实，未调用模型",
-        "候选80：账号标识不匹配或不可核实，未调用模型",
-        "候选81：账号标识不匹配或不可核实，未调用模型",
-        "候选82：账号标识不匹配或不可核实，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
@@ -1185,7 +1154,7 @@
       "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 83,
+          "id": 80,
           "url": "https://mp.weixin.qq.com/s/cHc9aaC4jBnIaHFToS1oPg",
           "title": "从搜题软件到协作伙伴：如何通过教学干预让学生学会使用AI？",
           "search_estimated_date": null,
@@ -1197,7 +1166,7 @@
           "search_provider": "用户样例/未记录"
         },
         {
-          "id": 84,
+          "id": 81,
           "url": "https://mp.weixin.qq.com/s?__biz=MzUxODUwMjc5NQ%3D%3D&mid=2247485004&idx=1&sn=7493af758b8e86c8a7086d1423b8ee69&chksm=f81253c0816edb903f213061d0de6a88ec784c5f6726ea7e692ddc52aefb551ebd729631e0a3&mpshare=1&scene=24&srcid=0517G2ApvIeoauakobCwSQpQ&sharer_shareinfo=a00f9d4f5c10db4fbd04ff2c066d5e6d&sharer_shareinfo_first=a00f9d4f5c10db4fbd04ff2c066d5e6d#rd",
           "title": "一行命令搞定公众号文章：wx-cli让我重新理解了什么叫「信息获取」",
           "search_estimated_date": null,
@@ -1209,7 +1178,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 85,
+          "id": 82,
           "url": "https://mp.weixin.qq.com/s/DODlDg90VuvO8GSeSoyhLQ",
           "title": "一行命令搞定公众号文章：wx-cli让我重新理解了什么叫「信息获取」",
           "search_estimated_date": null,
@@ -1221,7 +1190,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 86,
+          "id": 83,
           "url": "https://mp.weixin.qq.com/s/sJTujDhEBopo8kqv4tsoTA",
           "title": "GitHub开源神器：这个微信公众号RSS工具，让你一键打包所有文章！",
           "search_estimated_date": null,
@@ -1233,7 +1202,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 87,
+          "id": 84,
           "url": "https://mp.weixin.qq.com/s/UtFeYfJzbc-0JEGF5mQOvg",
           "title": "Notebooklm 将微信公众号文章变成知识库",
           "search_estimated_date": null,
@@ -1245,7 +1214,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 88,
+          "id": 85,
           "url": "https://mp.weixin.qq.com/s/SLMNOaOXALJWmxjvsnyEmg",
           "title": "聊着聊着，OpenClaw能帮我发微信公众号文章了",
           "search_estimated_date": null,
@@ -1258,12 +1227,12 @@
         }
       ],
       "rejections": [
-        "候选83：页面发布日期2026-10-07超出本期，未调用模型",
+        "候选80：页面发布日期2026-10-07超出本期，未调用模型",
+        "候选81：账号标识不匹配或不可核实，未调用模型",
+        "候选82：账号标识不匹配或不可核实，未调用模型",
+        "候选83：账号标识不匹配或不可核实，未调用模型",
         "候选84：账号标识不匹配或不可核实，未调用模型",
         "候选85：账号标识不匹配或不可核实，未调用模型",
-        "候选86：账号标识不匹配或不可核实，未调用模型",
-        "候选87：账号标识不匹配或不可核实，未调用模型",
-        "候选88：账号标识不匹配或不可核实，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
@@ -1273,7 +1242,7 @@
       "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 89,
+          "id": 86,
           "url": "https://mp.weixin.qq.com/s/lUsGUqKcUn1NjY8nm9SS8w",
           "title": "【学术快报】《Learning and Instruction》Volume107",
           "search_estimated_date": null,
@@ -1285,7 +1254,7 @@
           "search_provider": "用户样例/未记录"
         },
         {
-          "id": 90,
+          "id": 87,
           "url": "https://mp.weixin.qq.com/s?__biz=Mzk0MDMwMzQyOA%3D%3D&amp=&amp=&amp=&amp=&chksm=c2e11234f5969b22a0d7fd50ec32be9df13e2caeef186b30b5d653836b0725def8ccd58a56cf&idx=1&mid=2247493407&sn=41b8782a3bdc75b211206b06e1929a58",
           "title": "关于作者 & 公众号",
           "search_estimated_date": null,
@@ -1297,7 +1266,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 91,
+          "id": 88,
           "url": "https://mp.weixin.qq.com/s/B9zTvBJUDIeBn4NVVPIgaw",
           "title": "利用微信同步obsidian插件，随时把公众号文章和灵感变为知识库内容",
           "search_estimated_date": null,
@@ -1309,7 +1278,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 92,
+          "id": 89,
           "url": "http://mp.weixin.qq.com/s?__biz=Mzg5MzY5ODMwNA%3D%3D&mid=2247488769&idx=1&sn=0643a41ad3facc5d0a8fc4791f264fba&chksm=c02bbd6ef75c3478ca7513dec54173aa20f599ac8ac7f547ff77d52f41e80cfbbb1e3fa61436&scene=21",
           "title": "微信公众号接入kimi大模型:五大能力重磅升级，欢迎来聊天",
           "search_estimated_date": null,
@@ -1321,7 +1290,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 93,
+          "id": 90,
           "url": "https://mp.weixin.qq.com/s/UtFeYfJzbc-0JEGF5mQOvg",
           "title": "Notebooklm 将微信公众号文章变成知识库",
           "search_estimated_date": null,
@@ -1333,7 +1302,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 94,
+          "id": 91,
           "url": "https://mp.weixin.qq.com/s/ESF2Pp96kEyCXk9wYtT8Ew",
           "title": "用OpenClaw自动追踪公众号，每天获取最新AI资讯",
           "search_estimated_date": null,
@@ -1346,12 +1315,12 @@
         }
       ],
       "rejections": [
-        "候选89：页面发布日期2026-11-01超出本期，未调用模型",
+        "候选86：页面发布日期2026-11-01超出本期，未调用模型",
+        "候选87：账号标识不匹配或不可核实，未调用模型",
+        "候选88：账号标识不匹配或不可核实，未调用模型",
+        "候选89：账号标识不匹配或不可核实，未调用模型",
         "候选90：账号标识不匹配或不可核实，未调用模型",
         "候选91：账号标识不匹配或不可核实，未调用模型",
-        "候选92：账号标识不匹配或不可核实，未调用模型",
-        "候选93：账号标识不匹配或不可核实，未调用模型",
-        "候选94：账号标识不匹配或不可核实，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
@@ -1361,7 +1330,7 @@
       "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 95,
+          "id": 92,
           "url": "https://mp.weixin.qq.com/s/zIBQHN4Li45OR15ZVMwEOg",
           "title": "第一批把作业外包给 AI 的中学生，中高考成绩暴跌",
           "search_estimated_date": null,
@@ -1373,7 +1342,7 @@
           "search_provider": "用户样例/未记录"
         },
         {
-          "id": 96,
+          "id": 93,
           "url": "https://mp.weixin.qq.com/s/BQslbZ_lBLwvXDMNMkh7Rg",
           "title": "发现一个公众号排版神器：文章丢给 WorkBuddy，排版直接完成",
           "search_estimated_date": null,
@@ -1385,7 +1354,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 97,
+          "id": 94,
           "url": "https://mp.weixin.qq.com/s/B9zTvBJUDIeBn4NVVPIgaw",
           "title": "利用微信同步obsidian插件，随时把公众号文章和灵感变为知识库内容",
           "search_estimated_date": null,
@@ -1397,7 +1366,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 98,
+          "id": 95,
           "url": "https://mp.weixin.qq.com/s?__biz=MzI4MzM2MDgyMQ%3D%3D&amp=&amp=&amp=&amp=&amp=&chksm=eb8abd22dcfd343482e19d4a62b263a1aad14aa1b4c01978de8214a9c3726b5b6eb7d20d68c6&idx=1&mid=2247489144&scene=21&sn=ba2bae8e5b104d5d77e0b715b8e60a9a",
           "title": "Python文件操作与matplotlib数据可视化案例一则",
           "search_estimated_date": null,
@@ -1409,7 +1378,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 99,
+          "id": 96,
           "url": "https://mp.weixin.qq.com/s/UtFeYfJzbc-0JEGF5mQOvg",
           "title": "Notebooklm 将微信公众号文章变成知识库",
           "search_estimated_date": null,
@@ -1421,7 +1390,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 100,
+          "id": 97,
           "url": "https://mp.weixin.qq.com/s/t1mNC8ivNdMjw-LqxFfszg",
           "title": "微信公众号文章批量下载工具wechat-article-exporter",
           "search_estimated_date": null,
@@ -1434,34 +1403,22 @@
         }
       ],
       "rejections": [
-        "候选95：页面发布日期2026-09-21超出本期，未调用模型",
+        "候选92：页面发布日期2026-09-21超出本期，未调用模型",
+        "候选93：账号标识不匹配或不可核实，未调用模型",
+        "候选94：账号标识不匹配或不可核实，未调用模型",
+        "候选95：账号标识不匹配或不可核实，未调用模型",
         "候选96：账号标识不匹配或不可核实，未调用模型",
         "候选97：账号标识不匹配或不可核实，未调用模型",
-        "候选98：账号标识不匹配或不可核实，未调用模型",
-        "候选99：账号标识不匹配或不可核实，未调用模型",
-        "候选100：账号标识不匹配或不可核实，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "Citedu全媒",
       "query": "\"Citedu全媒\" 微信公众号 最新文章；补充微信号/原始ID：\"chinaitedu\"；已知样例入口（不代表发现了后续文章）",
-      "status": "确认目标账号来源 1 条；期刊线索/领域补充 0 条",
+      "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 101,
-          "url": "https://mp.weixin.qq.com/s/-bDjj_kwFhJrSj-XkRZYRw",
-          "title": "QuickForm结合通用智能体升级“听写神器”——能自动批改的英语单词听写检查工具",
-          "search_estimated_date": null,
-          "publication_date": "2026-11-03T10:30:00+08:00",
-          "author": "谢作如",
-          "publisher": "Citedu全媒",
-          "biz": "MzIzNDE2NzQwOA==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "用户样例/未记录"
-        },
-        {
-          "id": 102,
+          "id": 98,
           "url": "https://mp.weixin.qq.com/s?__biz=MzUxODUwMjc5NQ%3D%3D&mid=2247485004&idx=1&sn=7493af758b8e86c8a7086d1423b8ee69&chksm=f81253c0816edb903f213061d0de6a88ec784c5f6726ea7e692ddc52aefb551ebd729631e0a3&mpshare=1&scene=24&srcid=0517G2ApvIeoauakobCwSQpQ&sharer_shareinfo=a00f9d4f5c10db4fbd04ff2c066d5e6d&sharer_shareinfo_first=a00f9d4f5c10db4fbd04ff2c066d5e6d#rd",
           "title": "一行命令搞定公众号文章：wx-cli让我重新理解了什么叫「信息获取」",
           "search_estimated_date": null,
@@ -1473,7 +1430,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 103,
+          "id": 99,
           "url": "https://mp.weixin.qq.com/s/DODlDg90VuvO8GSeSoyhLQ",
           "title": "一行命令搞定公众号文章：wx-cli让我重新理解了什么叫「信息获取」",
           "search_estimated_date": null,
@@ -1483,6 +1440,70 @@
           "biz": "MzUxODUwMjc5NQ==",
           "read_status": "微信正文读取成功",
           "search_provider": "Tavily"
+        },
+        {
+          "id": 100,
+          "url": "https://mp.weixin.qq.com/s/B9zTvBJUDIeBn4NVVPIgaw",
+          "title": "利用微信同步obsidian插件，随时把公众号文章和灵感变为知识库内容",
+          "search_estimated_date": null,
+          "publication_date": "2026-07-12T21:33:16+08:00",
+          "author": null,
+          "publisher": "AI乱学随记",
+          "biz": "MzY5MDI5MjY1Ng==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 101,
+          "url": "https://mp.weixin.qq.com/s/UtFeYfJzbc-0JEGF5mQOvg",
+          "title": "Notebooklm 将微信公众号文章变成知识库",
+          "search_estimated_date": null,
+          "publication_date": "2025-12-28T20:38:34+08:00",
+          "author": "请教",
+          "publisher": "大个青椒",
+          "biz": "MzIyODcxODg0NQ==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 102,
+          "url": "https://mp.weixin.qq.com/s/t1mNC8ivNdMjw-LqxFfszg",
+          "title": "微信公众号文章批量下载工具wechat-article-exporter",
+          "search_estimated_date": null,
+          "publication_date": "2026-01-02T19:00:00+08:00",
+          "author": "杨浦老苏",
+          "publisher": "各种折腾",
+          "biz": "MzI1NTQxMzc3MA==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "跳过已收录或重复链接",
+        "候选98：账号标识不匹配或不可核实，未调用模型",
+        "候选99：账号标识不匹配或不可核实，未调用模型",
+        "候选100：账号标识不匹配或不可核实，未调用模型",
+        "候选101：账号标识不匹配或不可核实，未调用模型",
+        "候选102：账号标识不匹配或不可核实，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "智慧教育 Smart Education",
+      "query": "\"智慧教育 Smart Education\" 微信公众号 最新文章；补充微信号/原始ID：\"ZHJY_20260328\"；已知样例入口（不代表发现了后续文章）",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 103,
+          "url": "https://mp.weixin.qq.com/s/mTJ2GSbsvf7D7YYksemZiw",
+          "title": "AI+STEM：中小学科学教育可持续生态体系建构",
+          "search_estimated_date": null,
+          "publication_date": "2026-10-28T12:00:00+08:00",
+          "author": "赵哲 王彬",
+          "publisher": "智慧教育 Smart Education",
+          "biz": "MzcwODI0Nzc1Ng==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "用户样例/未记录"
         },
         {
           "id": 104,
@@ -1519,71 +1540,9 @@
           "biz": "MzI1NTQxMzc3MA==",
           "read_status": "微信正文读取成功",
           "search_provider": "Tavily"
-        }
-      ],
-      "rejections": [
-        "候选102：账号标识不匹配或不可核实，未调用模型",
-        "候选103：账号标识不匹配或不可核实，未调用模型",
-        "候选104：账号标识不匹配或不可核实，未调用模型",
-        "候选105：账号标识不匹配或不可核实，未调用模型",
-        "候选106：账号标识不匹配或不可核实，未调用模型"
-      ]
-    },
-    {
-      "account": "智慧教育 Smart Education",
-      "query": "\"智慧教育 Smart Education\" 微信公众号 最新文章；补充微信号/原始ID：\"ZHJY_20260328\"；已知样例入口（不代表发现了后续文章）",
-      "status": "未检索到可收录更新（或重复/总数限制）",
-      "sources": [
+        },
         {
           "id": 107,
-          "url": "https://mp.weixin.qq.com/s/mTJ2GSbsvf7D7YYksemZiw",
-          "title": "AI+STEM：中小学科学教育可持续生态体系建构",
-          "search_estimated_date": null,
-          "publication_date": "2026-10-28T12:00:00+08:00",
-          "author": "赵哲 王彬",
-          "publisher": "智慧教育 Smart Education",
-          "biz": "MzcwODI0Nzc1Ng==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "用户样例/未记录"
-        },
-        {
-          "id": 108,
-          "url": "https://mp.weixin.qq.com/s/B9zTvBJUDIeBn4NVVPIgaw",
-          "title": "利用微信同步obsidian插件，随时把公众号文章和灵感变为知识库内容",
-          "search_estimated_date": null,
-          "publication_date": "2026-07-12T21:33:16+08:00",
-          "author": null,
-          "publisher": "AI乱学随记",
-          "biz": "MzY5MDI5MjY1Ng==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 109,
-          "url": "https://mp.weixin.qq.com/s/UtFeYfJzbc-0JEGF5mQOvg",
-          "title": "Notebooklm 将微信公众号文章变成知识库",
-          "search_estimated_date": null,
-          "publication_date": "2025-12-28T20:38:34+08:00",
-          "author": "请教",
-          "publisher": "大个青椒",
-          "biz": "MzIyODcxODg0NQ==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 110,
-          "url": "https://mp.weixin.qq.com/s/t1mNC8ivNdMjw-LqxFfszg",
-          "title": "微信公众号文章批量下载工具wechat-article-exporter",
-          "search_estimated_date": null,
-          "publication_date": "2026-01-02T19:00:00+08:00",
-          "author": "杨浦老苏",
-          "publisher": "各种折腾",
-          "biz": "MzI1NTQxMzc3MA==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 111,
           "url": "https://mp.weixin.qq.com/s/SLMNOaOXALJWmxjvsnyEmg",
           "title": "聊着聊着，OpenClaw能帮我发微信公众号文章了",
           "search_estimated_date": null,
@@ -1595,7 +1554,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 112,
+          "id": 108,
           "url": "https://mp.weixin.qq.com/s/7g0EJsR4Vai7aOI7tnDpYg",
           "title": "用 OpenClaw 打造微信公众号文章阅读助手：一个自动抓取、查询、推送全流程的Skill",
           "search_estimated_date": null,
@@ -1608,34 +1567,22 @@
         }
       ],
       "rejections": [
-        "候选107：页面发布日期2026-10-28超出本期，未调用模型",
+        "候选103：页面发布日期2026-10-28超出本期，未调用模型",
+        "候选104：账号标识不匹配或不可核实，未调用模型",
+        "候选105：账号标识不匹配或不可核实，未调用模型",
+        "候选106：账号标识不匹配或不可核实，未调用模型",
+        "候选107：账号标识不匹配或不可核实，未调用模型",
         "候选108：账号标识不匹配或不可核实，未调用模型",
-        "候选109：账号标识不匹配或不可核实，未调用模型",
-        "候选110：账号标识不匹配或不可核实，未调用模型",
-        "候选111：账号标识不匹配或不可核实，未调用模型",
-        "候选112：账号标识不匹配或不可核实，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "数教新知",
       "query": "\"数教新知\" 微信公众号 最新文章；补充微信号/原始ID：\"gh_ab0c709da6c5\"；已知样例入口（不代表发现了后续文章）",
-      "status": "确认目标账号来源 1 条；期刊线索/领域补充 0 条",
+      "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 113,
-          "url": "https://mp.weixin.qq.com/s/Hj385-4n9Nipp6MFzIwQDw",
-          "title": "【论文导读】比较支持者、论证者与综合辩论者：AI辩论智能体角色如何影响批判性思维",
-          "search_estimated_date": null,
-          "publication_date": "2026-11-03T10:00:00+08:00",
-          "author": null,
-          "publisher": "数教新知",
-          "biz": "Mzg5NDY3OTMyOQ==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "用户样例/未记录"
-        },
-        {
-          "id": 114,
+          "id": 109,
           "url": "https://mp.weixin.qq.com/s/B9zTvBJUDIeBn4NVVPIgaw",
           "title": "利用微信同步obsidian插件，随时把公众号文章和灵感变为知识库内容",
           "search_estimated_date": null,
@@ -1647,7 +1594,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 115,
+          "id": 110,
           "url": "https://mp.weixin.qq.com/s/UtFeYfJzbc-0JEGF5mQOvg",
           "title": "Notebooklm 将微信公众号文章变成知识库",
           "search_estimated_date": null,
@@ -1659,7 +1606,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 116,
+          "id": 111,
           "url": "https://mp.weixin.qq.com/s/DODlDg90VuvO8GSeSoyhLQ",
           "title": "一行命令搞定公众号文章：wx-cli让我重新理解了什么叫「信息获取」",
           "search_estimated_date": null,
@@ -1671,7 +1618,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 117,
+          "id": 112,
           "url": "https://mp.weixin.qq.com/s?__biz=MzUxODUwMjc5NQ%3D%3D&mid=2247485004&idx=1&sn=7493af758b8e86c8a7086d1423b8ee69&chksm=f81253c0816edb903f213061d0de6a88ec784c5f6726ea7e692ddc52aefb551ebd729631e0a3&mpshare=1&scene=24&srcid=0517G2ApvIeoauakobCwSQpQ&sharer_shareinfo=a00f9d4f5c10db4fbd04ff2c066d5e6d&sharer_shareinfo_first=a00f9d4f5c10db4fbd04ff2c066d5e6d#rd",
           "title": "一行命令搞定公众号文章：wx-cli让我重新理解了什么叫「信息获取」",
           "search_estimated_date": null,
@@ -1683,7 +1630,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 118,
+          "id": 113,
           "url": "https://mp.weixin.qq.com/s/t1mNC8ivNdMjw-LqxFfszg",
           "title": "微信公众号文章批量下载工具wechat-article-exporter",
           "search_estimated_date": null,
@@ -1696,32 +1643,22 @@
         }
       ],
       "rejections": [
-        "候选114：账号标识不匹配或不可核实，未调用模型",
-        "候选115：账号标识不匹配或不可核实，未调用模型",
-        "候选116：账号标识不匹配或不可核实，未调用模型",
-        "候选117：账号标识不匹配或不可核实，未调用模型",
-        "候选118：账号标识不匹配或不可核实，未调用模型"
+        "跳过已收录或重复链接",
+        "候选109：账号标识不匹配或不可核实，未调用模型",
+        "候选110：账号标识不匹配或不可核实，未调用模型",
+        "候选111：账号标识不匹配或不可核实，未调用模型",
+        "候选112：账号标识不匹配或不可核实，未调用模型",
+        "候选113：账号标识不匹配或不可核实，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "教育技术学自留地",
       "query": "\"教育技术学自留地\" 微信公众号 最新文章；补充微信号/原始ID：\"ET2018A\"；已知样例入口（不代表发现了后续文章）",
-      "status": "确认目标账号来源 1 条；期刊线索/领域补充 0 条",
+      "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 119,
-          "url": "https://mp.weixin.qq.com/s/w4S0NqyQOZQvAWvuapiLTQ",
-          "title": "最好的学的方式是去做，最糟糕的教的方式是说教。而在我看来，“比说教式的教，更加恶劣的，是教学式的教师培训”",
-          "search_estimated_date": null,
-          "publication_date": "2026-11-03T08:02:00+08:00",
-          "author": "自留地君",
-          "publisher": "教育技术学自留地",
-          "biz": "MzUxMjA0NTU4Mw==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "用户样例/未记录"
-        },
-        {
-          "id": 120,
+          "id": 114,
           "url": "https://mp.weixin.qq.com/s/BQslbZ_lBLwvXDMNMkh7Rg",
           "title": "发现一个公众号排版神器：文章丢给 WorkBuddy，排版直接完成",
           "search_estimated_date": null,
@@ -1733,7 +1670,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 121,
+          "id": 115,
           "url": "https://mp.weixin.qq.com/s?__biz=MzU4NjU5NTY2MA%3D%3D&amp=&amp=&amp=&amp=&amp=&chksm=fdf9a901ca8e201785893f89a5c960686600d23baf81776dcde9123f8a40458257aaa671af4c&idx=6&mid=2247484706&scene=21&sn=554fdd0530378b84e46b943c44c4b76f",
           "title": "问津学术自媒体联盟，一键直达！",
           "search_estimated_date": null,
@@ -1745,7 +1682,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 122,
+          "id": 116,
           "url": "https://mp.weixin.qq.com/s/S3LM5CljQQ8xU93itbi2Bg",
           "title": "wx-mp-rss-core：轻量级公众号文章信息流",
           "search_estimated_date": null,
@@ -1757,7 +1694,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 123,
+          "id": 117,
           "url": "https://mp.weixin.qq.com/s/XCZ3xOZa7x1lfdoiHOLqrw",
           "title": "官方｜TensorFlow微信公众号发布",
           "search_estimated_date": null,
@@ -1769,24 +1706,26 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 124,
+          "id": 118,
           "url": "https://mp.weixin.qq.com/s/Qn4t-orKrWAPVKZu10fGqA",
           "title": "零代码全自动发文！Hermes Agent+腾讯IMA知识库+微信开放平台API 组合，一键实现公众号 AI 学习写稿 + 自动存稿 + 定时发布",
           "search_estimated_date": null,
-          "publication_date": "2026-07-08T18:14:18+08:00",
-          "author": "Kayden",
-          "publisher": "码一段",
-          "biz": "MzE5ODcxMTg5OA==",
-          "read_status": "微信正文读取成功",
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "微信读取失败；使用Tavily正文",
           "search_provider": "Tavily"
         }
       ],
       "rejections": [
-        "候选120：账号标识不匹配或不可核实，未调用模型",
-        "候选121：账号标识不匹配或不可核实，未调用模型",
-        "候选122：账号标识不匹配或不可核实，未调用模型",
-        "候选123：账号标识不匹配或不可核实，未调用模型",
-        "候选124：账号标识不匹配或不可核实，未调用模型"
+        "跳过已收录或重复链接",
+        "候选114：账号标识不匹配或不可核实，未调用模型",
+        "候选115：账号标识不匹配或不可核实，未调用模型",
+        "候选116：账号标识不匹配或不可核实，未调用模型",
+        "候选117：账号标识不匹配或不可核实，未调用模型",
+        "候选118：账号标识不匹配或不可核实，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
@@ -1795,7 +1734,7 @@
       "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 125,
+          "id": 119,
           "url": "https://mp.weixin.qq.com/s/d-o-gcKv_-x_7R2zoUaO1A",
           "title": "学生把AI当伙伴，还是答案机器？",
           "search_estimated_date": null,
@@ -1807,31 +1746,7 @@
           "search_provider": "用户样例/未记录"
         },
         {
-          "id": 126,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzA4NjU4NzM4Nw%3D%3D&mid=2247485619&idx=1&sn=3344d6e683499f3f0ec5f2adacd16ca9&scene=21",
-          "title": "https://mp.weixin.qq.com/s?__biz=MzA4NjU4NzM4Nw==&...",
-          "search_estimated_date": null,
-          "publication_date": null,
-          "author": null,
-          "publisher": null,
-          "biz": null,
-          "read_status": "微信读取失败；仅有搜索摘要",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 127,
-          "url": "https://mp.weixin.qq.com/miniprogram/landing_page/app/terms?lang=en",
-          "title": "Terms of Service<!-- --> | WeChat Go",
-          "search_estimated_date": null,
-          "publication_date": null,
-          "author": null,
-          "publisher": null,
-          "biz": null,
-          "read_status": "微信读取失败；使用Tavily正文",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 128,
+          "id": 120,
           "url": "https://mp.weixin.qq.com/s/izahIdrGOUPrGAn30wjz6g",
           "title": "@Siaser：AI助手“智小西”加强版来啦！",
           "search_estimated_date": null,
@@ -1843,7 +1758,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 129,
+          "id": 121,
           "url": "http://mp.weixin.qq.com/s?__biz=Mzg5MzY5ODMwNA%3D%3D&mid=2247488574&idx=1&sn=e61938336902039fd11c7a97acb1f962&chksm=c02bbc51f75c3547a9d3dc1002ef87b351115234135d19beda9f52c1dc3ce86fc3c8038adc4b&scene=21",
           "title": "手把手教你将月之暗面Kimi大模型接入微信公众号、飞书、掘金平台，完全免费，界面化操作，只需要三分钟就可定制化个人AI助手",
           "search_estimated_date": null,
@@ -1855,7 +1770,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 130,
+          "id": 122,
           "url": "https://mp.weixin.qq.com/s/Qn4t-orKrWAPVKZu10fGqA",
           "title": "零代码全自动发文！Hermes Agent+腾讯IMA知识库+微信开放平台API 组合，一键实现公众号 AI 学习写稿 + 自动存稿 + 定时发布",
           "search_estimated_date": null,
@@ -1867,7 +1782,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 131,
+          "id": 123,
           "url": "https://mp.weixin.qq.com/s/B9zTvBJUDIeBn4NVVPIgaw",
           "title": "利用微信同步obsidian插件，随时把公众号文章和灵感变为知识库内容",
           "search_estimated_date": null,
@@ -1879,7 +1794,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 132,
+          "id": 124,
           "url": "https://mp.weixin.qq.com/s/UtFeYfJzbc-0JEGF5mQOvg",
           "title": "Notebooklm 将微信公众号文章变成知识库",
           "search_estimated_date": null,
@@ -1892,14 +1807,12 @@
         }
       ],
       "rejections": [
-        "候选125：页面发布日期2026-10-16超出本期，未调用模型",
-        "候选126：账号标识不匹配或不可核实，未调用模型",
-        "候选127：账号标识不匹配或不可核实，未调用模型",
-        "候选128：账号标识不匹配或不可核实，未调用模型",
-        "候选129：账号标识不匹配或不可核实，未调用模型",
-        "候选130：账号标识不匹配或不可核实，未调用模型",
-        "候选131：账号标识不匹配或不可核实，未调用模型",
-        "候选132：账号标识不匹配或不可核实，未调用模型",
+        "候选119：页面发布日期2026-10-16超出本期，未调用模型",
+        "候选120：账号标识不匹配或不可核实，未调用模型",
+        "候选121：账号标识不匹配或不可核实，未调用模型",
+        "候选122：账号标识不匹配或不可核实，未调用模型",
+        "候选123：账号标识不匹配或不可核实，未调用模型",
+        "候选124：账号标识不匹配或不可核实，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
@@ -1909,7 +1822,7 @@
       "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 133,
+          "id": 125,
           "url": "https://mp.weixin.qq.com/s/s8S7CY8EGANT6Xdv67IDPg",
           "title": "实时热点 ｜ 《2026智能教育发展蓝皮书——人工智能助力打造未来课堂》精华报告",
           "search_estimated_date": null,
@@ -1921,7 +1834,7 @@
           "search_provider": "用户样例/未记录"
         },
         {
-          "id": 134,
+          "id": 126,
           "url": "https://mp.weixin.qq.com/s/kKFlGdEHVDjOYzLCTfZfhg",
           "title": "全国高校青教赛（第三、四、五、六届）一、二等奖获奖课程实录视频（共149个）",
           "search_estimated_date": null,
@@ -1933,7 +1846,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 135,
+          "id": 127,
           "url": "http://mp.weixin.qq.com/s?__biz=MzIxMTUzNzM5Ng%3D%3D&mid=2247487746&idx=1&sn=d2d5d8b309cef1ba72026d502cc71c4a&chksm=97528d99a025048f7c4ef3421478e186728284f03f8c755d8a851472dbf1c319e75babd356a9&scene=21",
           "title": "C#/.NET/.NET Core学习视频汇总",
           "search_estimated_date": null,
@@ -1945,7 +1858,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 136,
+          "id": 128,
           "url": "https://mp.weixin.qq.com/s/GOLvYj_fPKUpXUsLyZbruA",
           "title": "我用 Codex 把公众号文章做成视频生产线",
           "search_estimated_date": null,
@@ -1957,7 +1870,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 137,
+          "id": 129,
           "url": "https://mp.weixin.qq.com/s/XCZ3xOZa7x1lfdoiHOLqrw",
           "title": "官方｜TensorFlow微信公众号发布",
           "search_estimated_date": null,
@@ -1969,7 +1882,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 138,
+          "id": 130,
           "url": "https://mp.weixin.qq.com/s/5tQa6Jh8EquoZxmWQd7AtA",
           "title": "Muse 实操教程：把公众号文章抓成 Markdown + JSON",
           "search_estimated_date": null,
@@ -1982,12 +1895,12 @@
         }
       ],
       "rejections": [
-        "候选133：页面发布日期2026-11-02超出本期，未调用模型",
-        "候选134：账号标识不匹配或不可核实，未调用模型",
-        "候选135：账号标识不匹配或不可核实，未调用模型",
-        "候选136：账号标识不匹配或不可核实，未调用模型",
-        "候选137：账号标识不匹配或不可核实，未调用模型",
-        "候选138：账号标识不匹配或不可核实，未调用模型",
+        "候选125：页面发布日期2026-11-02超出本期，未调用模型",
+        "候选126：账号标识不匹配或不可核实，未调用模型",
+        "候选127：账号标识不匹配或不可核实，未调用模型",
+        "候选128：账号标识不匹配或不可核实，未调用模型",
+        "候选129：账号标识不匹配或不可核实，未调用模型",
+        "候选130：账号标识不匹配或不可核实，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
@@ -1997,7 +1910,7 @@
       "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 139,
+          "id": 131,
           "url": "https://mp.weixin.qq.com/s/dBfgPWa9OnMGP-EOs5ckFA",
           "title": "CHI'26交互设计顶会论文 | Best Paper Award | AI 当健身搭子，有用吗？",
           "search_estimated_date": null,
@@ -2009,7 +1922,7 @@
           "search_provider": "用户样例/未记录"
         },
         {
-          "id": 140,
+          "id": 132,
           "url": "https://mp.weixin.qq.com/s/Roba3oLQZqEKV7yFw5ZBug",
           "title": "中产挤爆一折特卖场，“线下版唯品会”诞生了吗？",
           "search_estimated_date": null,
@@ -2021,7 +1934,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 141,
+          "id": 133,
           "url": "http://mp.weixin.qq.com/s/3OEcM8kNX3IjBbsH6OYCNw",
           "title": "应用笔记 | 基本半导体碳化硅功率器件在125kW工商业储能PCS中的应用",
           "search_estimated_date": null,
@@ -2033,7 +1946,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 142,
+          "id": 134,
           "url": "https://mp.weixin.qq.com/s/Mkfey3yFWdeeZTYbZz-uJw",
           "title": "pdf-inspector：Firecrawl 开源的 PDF 解析利器，别再把文本 PDF 送进 OCR",
           "search_estimated_date": null,
@@ -2045,7 +1958,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 143,
+          "id": 135,
           "url": "https://mp.weixin.qq.com/s/W1zjNm2FcaUM5Pg_DVmF4g",
           "title": "我在美国最爱的“寻宝三姐妹”：TJ Maxx, Ross & Marshall's 淘货攻略！",
           "search_estimated_date": null,
@@ -2057,7 +1970,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 144,
+          "id": 136,
           "url": "https://mp.weixin.qq.com/s/MY3ha7T0zkiz4qwARWLjsw",
           "title": "Meta 不想造下一台 AI 硬件，它想让全世界替它造！",
           "search_estimated_date": null,
@@ -2065,6 +1978,123 @@
           "author": "James TJ Lee",
           "publisher": "DUNE VENTURE 沙丘创投",
           "biz": "MzcwMDQzNDg1OQ==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 137,
+          "url": "https://mp.weixin.qq.com/s?__biz=Mzk0MDMwMzQyOA%3D%3D&amp=&amp=&amp=&amp=&chksm=c2e11234f5969b22a0d7fd50ec32be9df13e2caeef186b30b5d653836b0725def8ccd58a56cf&idx=1&mid=2247493407&sn=41b8782a3bdc75b211206b06e1929a58",
+          "title": "关于作者 & 公众号",
+          "search_estimated_date": null,
+          "publication_date": "2022-03-27T11:32:52+08:00",
+          "author": "ConardLi",
+          "publisher": "code秘密花园",
+          "biz": "Mzk0MDMwMzQyOA==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 138,
+          "url": "https://mp.weixin.qq.com",
+          "title": "微信公众平台",
+          "search_estimated_date": "Thu, 02 Apr 2026 14:52:07 GMT",
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "微信读取失败；使用Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 139,
+          "url": "https://mp.weixin.qq.com/s/7g0EJsR4Vai7aOI7tnDpYg",
+          "title": "用 OpenClaw 打造微信公众号文章阅读助手：一个自动抓取、查询、推送全流程的Skill",
+          "search_estimated_date": null,
+          "publication_date": "2026-04-13T17:38:47+08:00",
+          "author": "REITs研习小助手",
+          "publisher": "REITs研习笔记",
+          "biz": "MzkyMzcwMzcwMw==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 140,
+          "url": "https://mp.weixin.qq.com/s/FLeoLp0JrvYaelxG_u80OQ",
+          "title": "AI 驱动的微信公众号监测神器来了——WeRSS 深度体验",
+          "search_estimated_date": null,
+          "publication_date": "2026-05-03T19:26:34+08:00",
+          "author": "善忘技术夹",
+          "publisher": "善忘技术夹",
+          "biz": "MjM5ODc4MjY2MQ==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 141,
+          "url": "https://mp.weixin.qq.com/s/-xrXHT4ZBfxOxGVx_hZtMg",
+          "title": "推荐 4 个微信公众号 GitHub 开源项目，绝了。",
+          "search_estimated_date": null,
+          "publication_date": "2025-07-10T15:04:00+08:00",
+          "author": "逛逛",
+          "publisher": "逛逛GitHub",
+          "biz": "MzUxNjg4NDEzNA==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        }
+      ],
+      "rejections": [
+        "候选131：页面发布日期2026-11-02超出本期，未调用模型",
+        "候选132：账号标识不匹配或不可核实，未调用模型",
+        "候选133：账号标识不匹配或不可核实，未调用模型",
+        "候选134：账号标识不匹配或不可核实，未调用模型",
+        "候选135：账号标识不匹配或不可核实，未调用模型",
+        "候选136：账号标识不匹配或不可核实，未调用模型",
+        "候选137：账号标识不匹配或不可核实，未调用模型",
+        "候选138：账号标识不匹配或不可核实，未调用模型",
+        "候选139：账号标识不匹配或不可核实，未调用模型",
+        "候选140：账号标识不匹配或不可核实，未调用模型",
+        "候选141：账号标识不匹配或不可核实，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
+      ]
+    },
+    {
+      "account": "温州信息技术教研",
+      "query": "\"温州信息技术教研\" 微信公众号 最新文章；补充微信号/原始ID：\"gh_cb2503511d73\"；已知样例入口（不代表发现了后续文章）",
+      "status": "未检索到可收录更新（或重复/总数限制）",
+      "sources": [
+        {
+          "id": 142,
+          "url": "https://mp.weixin.qq.com/s/uFV3wYiCjAF9r7AaPwggTA",
+          "title": "一个网页，替老师干完了点名、积分、排座和成绩分析",
+          "search_estimated_date": null,
+          "publication_date": "2026-10-14T11:48:16+08:00",
+          "author": "Teacher FengJH",
+          "publisher": "温州信息技术教研",
+          "biz": "Mzg2NjE3Njg0Mg==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "用户样例/未记录"
+        },
+        {
+          "id": 143,
+          "url": "https://mp.weixin.qq.com/s/DODlDg90VuvO8GSeSoyhLQ",
+          "title": "一行命令搞定公众号文章：wx-cli让我重新理解了什么叫「信息获取」",
+          "search_estimated_date": null,
+          "publication_date": "2026-05-16T16:36:50+08:00",
+          "author": null,
+          "publisher": "明见如是",
+          "biz": "MzUxODUwMjc5NQ==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 144,
+          "url": "https://mp.weixin.qq.com/s?__biz=MzUxODUwMjc5NQ%3D%3D&mid=2247485004&idx=1&sn=7493af758b8e86c8a7086d1423b8ee69&chksm=f81253c0816edb903f213061d0de6a88ec784c5f6726ea7e692ddc52aefb551ebd729631e0a3&mpshare=1&scene=24&srcid=0517G2ApvIeoauakobCwSQpQ&sharer_shareinfo=a00f9d4f5c10db4fbd04ff2c066d5e6d&sharer_shareinfo_first=a00f9d4f5c10db4fbd04ff2c066d5e6d#rd",
+          "title": "一行命令搞定公众号文章：wx-cli让我重新理解了什么叫「信息获取」",
+          "search_estimated_date": null,
+          "publication_date": "2026-05-16T16:36:50+08:00",
+          "author": null,
+          "publisher": "明见如是",
+          "biz": "MzUxODUwMjc5NQ==",
           "read_status": "微信正文读取成功",
           "search_provider": "Tavily"
         },
@@ -2082,123 +2112,6 @@
         },
         {
           "id": 146,
-          "url": "https://mp.weixin.qq.com",
-          "title": "微信公众平台",
-          "search_estimated_date": "Thu, 02 Apr 2026 14:52:07 GMT",
-          "publication_date": null,
-          "author": null,
-          "publisher": null,
-          "biz": null,
-          "read_status": "微信读取失败；使用Tavily正文",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 147,
-          "url": "https://mp.weixin.qq.com/s/7g0EJsR4Vai7aOI7tnDpYg",
-          "title": "用 OpenClaw 打造微信公众号文章阅读助手：一个自动抓取、查询、推送全流程的Skill",
-          "search_estimated_date": null,
-          "publication_date": "2026-04-13T17:38:47+08:00",
-          "author": "REITs研习小助手",
-          "publisher": "REITs研习笔记",
-          "biz": "MzkyMzcwMzcwMw==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 148,
-          "url": "https://mp.weixin.qq.com/s/FLeoLp0JrvYaelxG_u80OQ",
-          "title": "AI 驱动的微信公众号监测神器来了——WeRSS 深度体验",
-          "search_estimated_date": null,
-          "publication_date": "2026-05-03T19:26:34+08:00",
-          "author": "善忘技术夹",
-          "publisher": "善忘技术夹",
-          "biz": "MjM5ODc4MjY2MQ==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 149,
-          "url": "https://mp.weixin.qq.com/s/-xrXHT4ZBfxOxGVx_hZtMg",
-          "title": "推荐 4 个微信公众号 GitHub 开源项目，绝了。",
-          "search_estimated_date": null,
-          "publication_date": "2025-07-10T15:04:00+08:00",
-          "author": "逛逛",
-          "publisher": "逛逛GitHub",
-          "biz": "MzUxNjg4NDEzNA==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        }
-      ],
-      "rejections": [
-        "候选139：页面发布日期2026-11-02超出本期，未调用模型",
-        "候选140：账号标识不匹配或不可核实，未调用模型",
-        "候选141：账号标识不匹配或不可核实，未调用模型",
-        "候选142：账号标识不匹配或不可核实，未调用模型",
-        "候选143：账号标识不匹配或不可核实，未调用模型",
-        "候选144：账号标识不匹配或不可核实，未调用模型",
-        "候选145：账号标识不匹配或不可核实，未调用模型",
-        "候选146：账号标识不匹配或不可核实，未调用模型",
-        "候选147：账号标识不匹配或不可核实，未调用模型",
-        "候选148：账号标识不匹配或不可核实，未调用模型",
-        "候选149：账号标识不匹配或不可核实，未调用模型",
-        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
-      ]
-    },
-    {
-      "account": "温州信息技术教研",
-      "query": "\"温州信息技术教研\" 微信公众号 最新文章；补充微信号/原始ID：\"gh_cb2503511d73\"；已知样例入口（不代表发现了后续文章）",
-      "status": "未检索到可收录更新（或重复/总数限制）",
-      "sources": [
-        {
-          "id": 150,
-          "url": "https://mp.weixin.qq.com/s/uFV3wYiCjAF9r7AaPwggTA",
-          "title": "一个网页，替老师干完了点名、积分、排座和成绩分析",
-          "search_estimated_date": null,
-          "publication_date": "2026-10-14T11:48:16+08:00",
-          "author": "Teacher FengJH",
-          "publisher": "温州信息技术教研",
-          "biz": "Mzg2NjE3Njg0Mg==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "用户样例/未记录"
-        },
-        {
-          "id": 151,
-          "url": "https://mp.weixin.qq.com/s/DODlDg90VuvO8GSeSoyhLQ",
-          "title": "一行命令搞定公众号文章：wx-cli让我重新理解了什么叫「信息获取」",
-          "search_estimated_date": null,
-          "publication_date": "2026-05-16T16:36:50+08:00",
-          "author": null,
-          "publisher": "明见如是",
-          "biz": "MzUxODUwMjc5NQ==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 152,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzUxODUwMjc5NQ%3D%3D&mid=2247485004&idx=1&sn=7493af758b8e86c8a7086d1423b8ee69&chksm=f81253c0816edb903f213061d0de6a88ec784c5f6726ea7e692ddc52aefb551ebd729631e0a3&mpshare=1&scene=24&srcid=0517G2ApvIeoauakobCwSQpQ&sharer_shareinfo=a00f9d4f5c10db4fbd04ff2c066d5e6d&sharer_shareinfo_first=a00f9d4f5c10db4fbd04ff2c066d5e6d#rd",
-          "title": "一行命令搞定公众号文章：wx-cli让我重新理解了什么叫「信息获取」",
-          "search_estimated_date": null,
-          "publication_date": "2026-05-16T16:36:50+08:00",
-          "author": null,
-          "publisher": "明见如是",
-          "biz": "MzUxODUwMjc5NQ==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 153,
-          "url": "https://mp.weixin.qq.com/s?__biz=Mzk0MDMwMzQyOA%3D%3D&amp=&amp=&amp=&amp=&chksm=c2e11234f5969b22a0d7fd50ec32be9df13e2caeef186b30b5d653836b0725def8ccd58a56cf&idx=1&mid=2247493407&sn=41b8782a3bdc75b211206b06e1929a58",
-          "title": "关于作者 & 公众号",
-          "search_estimated_date": null,
-          "publication_date": "2022-03-27T11:32:52+08:00",
-          "author": "ConardLi",
-          "publisher": "code秘密花园",
-          "biz": "Mzk0MDMwMzQyOA==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 154,
           "url": "https://mp.weixin.qq.com/s/RwvjDVdlu2dpUk2f1NJ21Q",
           "title": "微信数据终于能喂给AI了，这两个工具杀疯了",
           "search_estimated_date": null,
@@ -2210,7 +2123,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 155,
+          "id": 147,
           "url": "https://mp.weixin.qq.com/s/S3LM5CljQQ8xU93itbi2Bg",
           "title": "wx-mp-rss-core：轻量级公众号文章信息流",
           "search_estimated_date": null,
@@ -2223,34 +2136,22 @@
         }
       ],
       "rejections": [
-        "候选150：页面发布日期2026-10-14超出本期，未调用模型",
-        "候选151：账号标识不匹配或不可核实，未调用模型",
-        "候选152：账号标识不匹配或不可核实，未调用模型",
-        "候选153：账号标识不匹配或不可核实，未调用模型",
-        "候选154：账号标识不匹配或不可核实，未调用模型",
-        "候选155：账号标识不匹配或不可核实，未调用模型",
+        "候选142：页面发布日期2026-10-14超出本期，未调用模型",
+        "候选143：账号标识不匹配或不可核实，未调用模型",
+        "候选144：账号标识不匹配或不可核实，未调用模型",
+        "候选145：账号标识不匹配或不可核实，未调用模型",
+        "候选146：账号标识不匹配或不可核实，未调用模型",
+        "候选147：账号标识不匹配或不可核实，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "欢喜莳",
       "query": "\"欢喜莳\" 微信公众号 最新文章；补充微信号/原始ID：\"gh_1a330a62ffc7\"；已知样例入口（不代表发现了后续文章）",
-      "status": "确认目标账号来源 1 条；期刊线索/领域补充 0 条",
+      "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 156,
-          "url": "https://mp.weixin.qq.com/s/o6nfig3VhDgGx8aylBZLoQ",
-          "title": "【研究方法】教育虚构：概念、特点、实施路径与研究案例",
-          "search_estimated_date": null,
-          "publication_date": "2026-11-03T11:00:00+08:00",
-          "author": "Sala",
-          "publisher": "欢喜莳",
-          "biz": "MzU4ODkxMTU0Mg==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "用户样例/未记录"
-        },
-        {
-          "id": 157,
+          "id": 148,
           "url": "https://mp.weixin.qq.com/s/S3LM5CljQQ8xU93itbi2Bg",
           "title": "wx-mp-rss-core：轻量级公众号文章信息流",
           "search_estimated_date": null,
@@ -2262,7 +2163,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 158,
+          "id": 149,
           "url": "https://mp.weixin.qq.com/s/t1mNC8ivNdMjw-LqxFfszg",
           "title": "微信公众号文章批量下载工具wechat-article-exporter",
           "search_estimated_date": null,
@@ -2274,7 +2175,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 159,
+          "id": 150,
           "url": "https://mp.weixin.qq.com/s/UtFeYfJzbc-0JEGF5mQOvg",
           "title": "Notebooklm 将微信公众号文章变成知识库",
           "search_estimated_date": null,
@@ -2286,7 +2187,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 160,
+          "id": 151,
           "url": "https://mp.weixin.qq.com/s/SLMNOaOXALJWmxjvsnyEmg",
           "title": "聊着聊着，OpenClaw能帮我发微信公众号文章了",
           "search_estimated_date": null,
@@ -2298,7 +2199,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 161,
+          "id": 152,
           "url": "https://mp.weixin.qq.com/s/7g0EJsR4Vai7aOI7tnDpYg",
           "title": "用 OpenClaw 打造微信公众号文章阅读助手：一个自动抓取、查询、推送全流程的Skill",
           "search_estimated_date": null,
@@ -2311,11 +2212,13 @@
         }
       ],
       "rejections": [
-        "候选157：账号标识不匹配或不可核实，未调用模型",
-        "候选158：账号标识不匹配或不可核实，未调用模型",
-        "候选159：账号标识不匹配或不可核实，未调用模型",
-        "候选160：账号标识不匹配或不可核实，未调用模型",
-        "候选161：账号标识不匹配或不可核实，未调用模型"
+        "跳过已收录或重复链接",
+        "候选148：账号标识不匹配或不可核实，未调用模型",
+        "候选149：账号标识不匹配或不可核实，未调用模型",
+        "候选150：账号标识不匹配或不可核实，未调用模型",
+        "候选151：账号标识不匹配或不可核实，未调用模型",
+        "候选152：账号标识不匹配或不可核实，未调用模型",
+        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
@@ -2324,7 +2227,7 @@
       "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 162,
+          "id": 153,
           "url": "https://mp.weixin.qq.com/s/qy79cKSfB3U2gsgjcVxDlA",
           "title": "Computers in Human Behavior | 批判性思维如何帮助学生识别AI生成的错误信息？两项实验给出答案",
           "search_estimated_date": null,
@@ -2336,7 +2239,7 @@
           "search_provider": "用户样例/未记录"
         },
         {
-          "id": 163,
+          "id": 154,
           "url": "https://mp.weixin.qq.com/s/B9zTvBJUDIeBn4NVVPIgaw",
           "title": "利用微信同步obsidian插件，随时把公众号文章和灵感变为知识库内容",
           "search_estimated_date": null,
@@ -2348,7 +2251,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 164,
+          "id": 155,
           "url": "https://mp.weixin.qq.com/s/t1mNC8ivNdMjw-LqxFfszg",
           "title": "微信公众号文章批量下载工具wechat-article-exporter",
           "search_estimated_date": null,
@@ -2360,7 +2263,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 165,
+          "id": 156,
           "url": "https://mp.weixin.qq.com/s/UtFeYfJzbc-0JEGF5mQOvg",
           "title": "Notebooklm 将微信公众号文章变成知识库",
           "search_estimated_date": null,
@@ -2372,7 +2275,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 166,
+          "id": 157,
           "url": "https://mp.weixin.qq.com/s/SLMNOaOXALJWmxjvsnyEmg",
           "title": "聊着聊着，OpenClaw能帮我发微信公众号文章了",
           "search_estimated_date": null,
@@ -2384,7 +2287,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 167,
+          "id": 158,
           "url": "https://mp.weixin.qq.com/s/7g0EJsR4Vai7aOI7tnDpYg",
           "title": "用 OpenClaw 打造微信公众号文章阅读助手：一个自动抓取、查询、推送全流程的Skill",
           "search_estimated_date": null,
@@ -2397,12 +2300,12 @@
         }
       ],
       "rejections": [
-        "候选162：页面发布日期2026-11-02超出本期，未调用模型",
-        "候选163：账号标识不匹配或不可核实，未调用模型",
-        "候选164：账号标识不匹配或不可核实，未调用模型",
-        "候选165：账号标识不匹配或不可核实，未调用模型",
-        "候选166：账号标识不匹配或不可核实，未调用模型",
-        "候选167：账号标识不匹配或不可核实，未调用模型",
+        "候选153：页面发布日期2026-11-02超出本期，未调用模型",
+        "候选154：账号标识不匹配或不可核实，未调用模型",
+        "候选155：账号标识不匹配或不可核实，未调用模型",
+        "候选156：账号标识不匹配或不可核实，未调用模型",
+        "候选157：账号标识不匹配或不可核实，未调用模型",
+        "候选158：账号标识不匹配或不可核实，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
@@ -2412,7 +2315,7 @@
       "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 168,
+          "id": 159,
           "url": "https://mp.weixin.qq.com/s/NA2739MwOEzgh8VYfLV_sw?token=346811416&clicktag=bar_share&scene=294&clickpos=210&from_safari=0",
           "title": "先建免费 Discord 群，再做 MCP，最后才开官网：一个 1.3 万月访网站分析工具的 MVP 路径",
           "search_estimated_date": "Sun, 01 Nov 2026 00:24:53 GMT",
@@ -2425,7 +2328,7 @@
         }
       ],
       "rejections": [
-        "候选168：页面发布日期2026-10-31超出本期，未调用模型",
+        "候选159：页面发布日期2026-10-31超出本期，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
@@ -2435,7 +2338,7 @@
       "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 169,
+          "id": 160,
           "url": "https://mp.weixin.qq.com/s/NA2739MwOEzgh8VYfLV_sw?token=346811416&clicktag=bar_share&scene=294&clickpos=210&from_safari=0",
           "title": "先建免费 Discord 群，再做 MCP，最后才开官网：一个 1.3 万月访网站分析工具的 MVP 路径",
           "search_estimated_date": "Sun, 01 Nov 2026 00:24:53 GMT",
@@ -2448,7 +2351,7 @@
         }
       ],
       "rejections": [
-        "候选169：页面发布日期2026-10-31超出本期，未调用模型",
+        "候选160：页面发布日期2026-10-31超出本期，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
@@ -2458,7 +2361,19 @@
       "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 170,
+          "id": 161,
+          "url": "https://m.sohu.com/a/1096191214_121956425?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "title": "如何利用人工智能提升教学质量？四平市教育学院的探索之路_搜狐网",
+          "search_estimated_date": "Mon, 02 Nov 2026 17:08:30 GMT",
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 162,
           "url": "http://www.edunet.org.cn",
           "title": "中国教育科研信息网",
           "search_estimated_date": "Tue, 03 Nov 2026 08:00:00 GMT",
@@ -2470,39 +2385,39 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 171,
-          "url": "https://kuku.baidu.com/landing/tscp_doc/391a3e73d2ea085a750339ca9484c2a1",
-          "title": "Eduten是什么？芬兰数学游戏化学习平台功能与特点全解析",
-          "search_estimated_date": "Mon, 02 Nov 2026 01:00:00 GMT",
+          "id": 163,
+          "url": "https://www.sohu.com/a/1096215073_120578424?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "title": "从经验到循证教研共同体为成长赋能_教学_课堂_数字化",
+          "search_estimated_date": "Mon, 02 Nov 2026 18:07:00 GMT",
           "publication_date": null,
           "author": null,
           "publisher": null,
           "biz": null,
-          "read_status": "仅搜索摘要",
+          "read_status": "Tavily正文",
           "search_provider": "Tavily"
         },
         {
-          "id": 172,
-          "url": "https://www.researchgate.net/publication/417193408_Research_on_the_Innovative_Practice_of_Digital_Empowerment_of_Smart_Sports_Classrooms",
-          "title": "(PDF) Research on the Innovative Practice of Digital ...",
-          "search_estimated_date": "Mon, 02 Nov 2026 01:00:00 GMT",
+          "id": 164,
+          "url": "https://news.qq.com/rain/a/20261102A0BONG00",
+          "title": "从经验到循证教研共同体为成长赋能_腾讯新闻",
+          "search_estimated_date": "Mon, 02 Nov 2026 18:54:53 GMT",
           "publication_date": null,
           "author": null,
           "publisher": null,
           "biz": null,
-          "read_status": "仅搜索摘要",
+          "read_status": "Tavily正文",
           "search_provider": "Tavily"
         },
         {
-          "id": 173,
-          "url": "https://www.fhps.net/zh-CN/departments/instruction/course-description-guides/central-middle-school",
-          "title": "中央中学课程描述指南- 森林山公立学校",
-          "search_estimated_date": "Sun, 01 Nov 2026 01:00:00 GMT",
+          "id": 165,
+          "url": "https://www.msc.org.mo/zh/article-detail/52/4e26b816b7117a1065623cb697f91718",
+          "title": "2026年11月教師培訓課程資料 - 澳門科學館 CENTRO DE CIENCIA DE MACAU MACAO SCIENCE CENTER",
+          "search_estimated_date": "Tue, 03 Nov 2026 22:00:00 GMT",
           "publication_date": null,
           "author": null,
           "publisher": null,
           "biz": null,
-          "read_status": "仅搜索摘要",
+          "read_status": "Tavily正文",
           "search_provider": "Tavily"
         }
       ],
@@ -2516,7 +2431,7 @@
       "status": "未检索到可收录更新（或重复/总数限制）",
       "sources": [
         {
-          "id": 174,
+          "id": 166,
           "url": "https://finance.sina.com.cn/wm/2026-11-02/doc-inixipxc9412966.shtml",
           "title": "拥抱人工智能 培育独立思考——AI时代数学教育的边界重构与主体性成长_新浪财经_新浪网",
           "search_estimated_date": "Mon, 02 Nov 2026 07:37:37 GMT",
@@ -2528,7 +2443,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 175,
+          "id": 167,
           "url": "https://e.huawei.com/cn/case-studies/industries/commercial-market/202611-itsc",
           "title": "ITSC：校园网络与智慧教室升级，推动多米尼加技术教育数字化转型 - 华为企业业务",
           "search_estimated_date": "Mon, 02 Nov 2026 01:00:00 GMT",
@@ -2540,7 +2455,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 176,
+          "id": 168,
           "url": "http://edu.people.com.cn/n1/2026/1103/c1006-40826634.html",
           "title": "教师育人主导权不可让渡给人工智能--教育--人民网",
           "search_estimated_date": "Tue, 03 Nov 2026 00:00:00 GMT",
@@ -2552,7 +2467,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 177,
+          "id": 169,
           "url": "https://m.sohu.com/a/1095811274_100116740?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
           "title": "全省AI教育盛会在韩师启幕_搜狐网",
           "search_estimated_date": "Sun, 01 Nov 2026 22:39:46 GMT",
@@ -2564,7 +2479,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 178,
+          "id": 170,
           "url": "http://www.xinhuanet.com/photo/20261102/47dc0bd3b2224a24bf29b4bf530b6dc0/c.html",
           "title": "探访AI领航科创中心 感受数字化智能化转型-新华网",
           "search_estimated_date": "Mon, 02 Nov 2026 00:00:00 GMT",
@@ -2577,7 +2492,7 @@
         }
       ],
       "rejections": [
-        "主题扩展缺少与教育技术直接相关的正文证据",
+        "主题扩展未核实微信公众号身份，暂不加入候选关注",
         "主题扩展缺少与教育技术直接相关的正文证据",
         "主题扩展缺少与教育技术直接相关的正文证据",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
@@ -2783,7 +2698,7 @@
     {
       "provider": "Tavily",
       "status": "ok",
-      "results": 2
+      "results": 0
     },
     {
       "provider": "Tavily",
@@ -2853,7 +2768,7 @@
     {
       "provider": "Tavily",
       "status": "ok",
-      "results": 4
+      "results": 5
     },
     {
       "provider": "Tavily",
@@ -2871,13 +2786,13 @@
     "spark-x2.5-4b": 0,
     "spark-x2.5-1.7b": 0
   },
-  "included": 7,
-  "confirmed": 7,
+  "included": 0,
+  "confirmed": 0,
   "report": "2026-11-04_latest.md",
   "expanded": 0,
   "merged_entries": 11,
   "current_entries": 8,
-  "new_entries": 7,
-  "archived_reports": 1,
+  "new_entries": 0,
+  "archived_reports": 0,
   "briefing_error": ""
 }
