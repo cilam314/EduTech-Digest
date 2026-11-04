@@ -8,8 +8,8 @@
 DeepSeek基于去重后的本期已确认条目生成导读；内容未变化时复用已有导读，避免重复调用。
 
 - 历次有效条目按原文链接合并去重，同一链接只保留更新后的条目。
-- 当前日期范围展示最近25条，往期条目折叠；全部条目保存在archive/entries.json。
-- 历史dated报告移入archive/reports，原文逐字节核对后才从reports移走，保留核查依据。
+- 当前日期范围展示最近25条，往期条目折叠；全部条目索引保存在state/digest_entries.json，导读缓存保存在state/briefing.json。
+- 历史dated报告移入reports/往期清单，原文逐字节核对后才从reports移走，保留核查依据。
 - 同一天更新同一份日期_latest.md；跨天后旧文件先归档，reports仅保留最新日期的文件。没有新条目时，不会清空本期已有内容。
 - 旧版来源误归类不会在迁移时被自动纠正为已核实来源；旧条目保守标记为历史导入待复核。
 - 搜索记录放在清单底部的折叠区域，详细诊断更新到state/latest_status.json。
@@ -22,6 +22,6 @@ EduTech Digest是正式定时工作流；Spark Search Diagnose仅在手动点击
 它是每周固定四天，不是严格每48小时。工作流在默认分支main且Actions启用时由GitHub自动触发，电脑无需开机，也无需每次手动点运行。
 GitHub调度可能延迟。手动Run workflow用于临时更新/测试，重跑旧任务会使用旧提交和旧参数。
 
-本次清理保留所有运行历史和旧报告归档。以后如需删除archive里的历史文件，可在核对最新清单和备份后再单独清理。
+本次清理保留所有运行历史和往期清单，根目录不再使用archive。请保留state目录中的索引和去重记录。
 
 官方定时说明：https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule

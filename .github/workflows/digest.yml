@@ -56,7 +56,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A -- reports/ state/ archive/
+          git add -A -- reports/ state/
           if git diff --cached --quiet; then
             echo "No changes"
           else
@@ -71,7 +71,6 @@ jobs:
           name: edutech-digest-${{ github.run_id }}-${{ github.run_attempt }}
           path: |
             reports/
-            archive/
             state/
           retention-days: 30
           if-no-files-found: ignore

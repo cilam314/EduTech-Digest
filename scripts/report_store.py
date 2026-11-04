@@ -90,7 +90,7 @@ def briefing_markdown(index, now, diagnostics_markdown, briefing):
     past = [r for r in ordered if not start <= r['date'] <= end]
     for r in past[:50]:
         lines.append(f"- 往期：{r['date'] or '日期未知'} · [{r['title']}]({r['url']})")
-    lines += ['', '全部去重条目和历史报告保存在 archive 中。', '', '</details>', '',
+    lines += ['', '往期报告保存在 reports/往期清单，条目索引保存在 state/digest_entries.json。', '', '</details>', '',
               '<details>', '<summary>本次检索与服务状态</summary>', '']
     marker = '## 本期未检索到可收录更新 / 检索记录'
     diagnostics = diagnostics_markdown.split(marker, 1)[-1] if marker in diagnostics_markdown else '本次仅调整排版，未发起新的检索。'
@@ -134,7 +134,7 @@ def archive_file(source, root):
     reports = (root / 'reports').resolve()
     if source.is_symlink() or source.resolve().parent != reports:
         raise ValueError('Report archive path is outside reports directory')
-    folder = root / 'archive' / 'reports'
+    folder = reports / '往期清单'
     folder.mkdir(parents=True, exist_ok=True)
     data = source.read_bytes()
     digest = hashlib.sha256(data).hexdigest()
@@ -152,10 +152,10 @@ def consolidate(root, now, current_markdown, key_for_url, synthesize_callback=No
     root = Path(root)
     reports = root / 'reports'
     reports.mkdir(exist_ok=True)
-    index_path = root / 'archive' / 'entries.json'
+    index_path = root / 'state' / 'digest_entries.json'
     index = json.loads(index_path.read_text(encoding='utf-8')) if index_path.exists() else {}
     if not isinstance(index, dict):
-        raise ValueError('archive/entries.json must be an object; no reports were moved')
+        raise ValueError('state/digest_entries.json must be an object; no reports were moved')
     report_name = f'{now:%Y-%m-%d}_latest.md'
     legacy = sorted(p for p in reports.glob('*.md') if p.name != report_name and
                     (p.name == 'latest.md' or re.fullmatch(r'(?:情报简报_[\d_-]+|\d{4}-\d{2}-\d{2}_latest)\.md', p.name)))
@@ -175,7 +175,7 @@ def consolidate(root, now, current_markdown, key_for_url, synthesize_callback=No
     evidence = [{**item, 'source_label': item['source'], 'relation': 'confirmed', 'journal_supplement': False}
                 for item in verified]
     fingerprint = hashlib.sha256(json.dumps(evidence, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
-    cache_path = root/'archive/briefing.json'
+    cache_path = root/'state/briefing.json'
     cache = json.loads(cache_path.read_text(encoding='utf-8')) if cache_path.exists() else {}
     briefing, briefing_error = {}, ''
     if cache.get('fingerprint') == fingerprint and cache.get('mode') == 'deepseek':
