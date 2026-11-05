@@ -263,6 +263,18 @@
     "sample_published_at": "2026-11-01T20:00:00+08:00",
     "verified_on": "2026-11-03"
   },
+  "EDU开源行动计划": {
+    "publisher": "EDU开源行动计划",
+    "biz": "MzY4NjM2NTU1NQ==",
+    "wechat_id": "THU-MAIC",
+    "original_id": "gh_982a4c4baed4",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/S2_XhSLUvfhLxfj9PmNqlw",
+      "https://mp.weixin.qq.com/s/MT18w-Fg__ZssGKsx1DehA"
+    ],
+    "sample_published_at": "2026-11-05T10:03:06+08:00",
+    "verified_on": "2026-11-05"
+  },
   "e2lab": {
     "publisher": "e2lab",
     "biz": "MzIyMDEzMzA1MQ==",

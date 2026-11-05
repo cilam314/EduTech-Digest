@@ -111,15 +111,31 @@ class DigestTests(unittest.TestCase):
         self.assertIn('Y-v5io7KoD4sd4b8c7Llbw', results[0]['url'])
         self.assertIn('已知样例入口', query)
 
-    def test_all_25_profiles_are_verified_and_match_targets(self):
+    def test_all_profiles_are_verified_and_match_targets(self):
         targets = {name for _, names in d.GROUPS.values() for name in names}
         self.assertEqual(set(d.PROFILES), targets)
-        self.assertEqual(len({p['biz'] for p in d.PROFILES.values()}), 25)
+        self.assertEqual(len(targets), 26)
+        self.assertEqual(len({p['biz'] for p in d.PROFILES.values()}), len(targets))
         for profile in d.PROFILES.values():
             self.assertTrue(profile['publisher'])
             self.assertTrue(profile.get('wechat_id') or profile.get('original_id'))
-            self.assertEqual(len(profile['sample_urls']), 1)
-            self.assertTrue(profile['sample_urls'][0].startswith('https://mp.weixin.qq.com/s/'))
+            self.assertTrue(profile['sample_urls'])
+            self.assertTrue(all(url.startswith('https://mp.weixin.qq.com/s/') for url in profile['sample_urls']))
+
+    def test_full_run_includes_new_account_and_preserves_existing_accounts(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            (root/'prompt.md').write_text('测试', encoding='utf-8')
+            with patch.dict(os.environ, {'DEEPSEEK_API_KEY': 'dummy', 'TAVILY_API_KEY': 'dummy'}), \
+                    patch.object(d, 'discover', return_value=('测试', [])) as discover, \
+                    patch.object(d, 'synthesize', return_value={'overview': [], 'trends': []}):
+                status = d.main([], root)
+            calls = [(call.args[0], call.args[1]) for call in discover.call_args_list]
+            expected = [(g, n) for g, (_, names) in d.GROUPS.items() for n in names]
+            self.assertEqual(calls[:len(expected)], expected)
+            self.assertIn(('B', 'EDU开源行动计划'), calls)
+            report = (root/'reports'/status['report']).read_text(encoding='utf-8')
+            self.assertIn('### EDU开源行动计划', report)
 
     def test_discovery_uses_original_id_if_public_wechat_id_missing(self):
         profile = {'publisher': '核验后的页面账号名', 'biz': 'test-biz', 'wechat_id': '',

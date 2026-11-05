@@ -4,13 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       account_limit:
-        description: "试运行填3；正式运行填25"
+        description: "试运行填3；正式运行填26"
         required: true
         default: "3"
         type: choice
         options:
           - "3"
-          - "25"
+          - "26"
       search_test_provider:
         description: "正常运行选auto；另两项只用于验证星火备用搜索"
         required: true
@@ -49,7 +49,7 @@ jobs:
           SEARCH_TEST_PROVIDER: ${{ inputs.search_test_provider || 'auto' }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL || 'deepseek-flash' }}
-          ACCOUNT_LIMIT: ${{ inputs.account_limit || '25' }}
+          ACCOUNT_LIMIT: ${{ inputs.account_limit || '26' }}
           PYTHONUTF8: '1'
         run: python scripts/run_digest.py --limit "$ACCOUNT_LIMIT"
       - name: Save reports and deduplication state

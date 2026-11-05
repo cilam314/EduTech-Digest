@@ -28,7 +28,7 @@ PROFILE_PATH = Path(__file__).with_name("account_profiles.json")
 PROFILES = json.loads(PROFILE_PATH.read_text(encoding="utf-8")) if PROFILE_PATH.exists() else {}
 GROUPS = {
     "A": ("权威学术期刊", ["电化教育研究", "开放教育研究", "现代远程教育研究", "远程教育杂志", "现代教育论丛"]),
-    "B": ("机构与团队", ["教育技术学", "西大教技", "国际与比较教育研究所", "数字游戏学习研究", "e2lab"]),
+    "B": ("机构与团队", ["教育技术学", "西大教技", "国际与比较教育研究所", "数字游戏学习研究", "e2lab", "EDU开源行动计划"]),
     "C": ("科研方法", ["人文社科论文速览", "学士讲科研", "简小杰做科研", "ET学术小站"]),
     "D": ("政策与行业", ["教育数字化100人", "Citedu全媒", "智慧教育 Smart Education", "数教新知", "教育技术学自留地"]),
     "E": ("教学实践", ["智慧教与学小能手", "视频课程与教师发展", "关于设计的", "温州信息技术教研", "欢喜莳", "PsyEcho 芯声"]),
@@ -310,7 +310,7 @@ def validate_entry(entry, sources, name, group, now, seen):
               "biz": source.get("biz"),
               "read_status": source["read_status"], "journal_supplement": journal_lead and not in_window}
     if group == "F":
-        record["credibility"] = "✅ 主题扩展发现的微信来源（页面账号及标识已读取；尚未加入原25号名单）"
+        record["credibility"] = "✅ 主题扩展发现的微信来源（页面账号及标识已读取；尚未加入关注名单）"
         record["display_group"] = entry.get("category") if entry.get("category") in {"A", "B", "C", "D", "E"} else "F"
     for field in ("summary", "research", "technology", "applications", "reflection"):
         value = entry.get(field)
@@ -409,7 +409,7 @@ def render(now, records, diagnostics, limit, total_accounts, synthesis, search_e
     if not journal_items:
         lines.append("本次无可用目录线索。")
     lines += ["", "## 主题扩展 · 新发现的公众号文章", "",
-              "以下来自主题搜索，已读取发布账号；不冒充原25个公众号更新。新账号保存在候选关注列表中。", ""]
+              "以下来自主题搜索，已读取发布账号；不冒充关注名单中的公众号更新。新账号保存在候选关注列表中。", ""]
     expanded = [r for r in records if r["relation"] == "discovered"]
     append_items(expanded)
     if not expanded:
@@ -438,16 +438,18 @@ def render(now, records, diagnostics, limit, total_accounts, synthesis, search_e
             lines.append(f"- {event['provider']}：{message}")
         lines.append("")
     if limit < total_accounts:
-        lines.append("**这是部分账号试运行，不代表全部25个公众号的检索结果。**\n")
+        lines.append(f"**这是部分账号试运行，不代表全部{total_accounts}个公众号的检索结果。**\n")
     return "\n".join(lines)
 
 
 def main(argv=None, root=ROOT):
+    all_accounts = [(g, n) for g, (_, names) in GROUPS.items() for n in names]
+    total_accounts = len(all_accounts)
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--limit", type=int, default=25)
+    parser.add_argument("--limit", type=int, default=total_accounts)
     args = parser.parse_args(argv)
-    if not 1 <= args.limit <= 25:
-        parser.error("--limit 必须在1–25之间")
+    if not 1 <= args.limit <= total_accounts:
+        parser.error(f"--limit 必须在1–{total_accounts}之间")
     for name in ("DEEPSEEK_API_KEY",):
         if not os.getenv(name, "").strip():
             raise ServiceError(f"缺少 GitHub Secret: {name}")
@@ -463,13 +465,13 @@ def main(argv=None, root=ROOT):
     seen = json.loads(state_path.read_text(encoding="utf-8")) if state_path.exists() else {}
     if not isinstance(seen, dict):
         raise ServiceError("state/seen_articles.json 格式错误，必须是JSON对象")
-    accounts = [(g, n) for g, (_, names) in GROUPS.items() for n in names]
+    accounts = all_accounts
     # Trial covers different source types rather than only journals.
     if args.limit == 3:
         accounts = [("A", GROUPS["A"][1][0]), ("B", GROUPS["B"][1][0]), ("D", GROUPS["D"][1][0])]
     else:
         accounts = accounts[:args.limit]
-    # Preserve all 25 original accounts. Trial adds one topic; full run adds four.
+    # Preserve every configured account. Trial adds one topic; full run adds four.
     topics = EXPANSION_TOPICS[:1] if args.limit == 3 else EXPANSION_TOPICS
     accounts += [("F", topic) for topic in topics]
     diagnostics, by_account = [], []
@@ -534,7 +536,7 @@ def main(argv=None, root=ROOT):
             d["status"] = f"确认目标账号来源 {matched} 条；期刊线索/领域补充 {count-matched} 条" if count else "未检索到可收录更新（或重复/总数限制）"
     output = reports / f'{now:%Y-%m-%d}_latest.md'
     synthesis = {"overview": [], "trends": []}
-    merged = consolidate(root, now, render(now, records, diagnostics, args.limit, 25, synthesis, router.events), article_key,
+    merged = consolidate(root, now, render(now, records, diagnostics, args.limit, total_accounts, synthesis, router.events), article_key,
                          synthesize_callback=lambda evidence: synthesize(evidence, os.environ["DEEPSEEK_API_KEY"]))
     # Save state only for entries actually written to the report; failures remain retryable.
     for r in records:
