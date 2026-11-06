@@ -19,6 +19,7 @@ from urllib.request import Request, urlopen
 import read_article
 from search_backends import SearchRouter
 from report_store import consolidate
+from collection_window import load_window, save_cursor
 
 ROOT = Path(__file__).resolve().parents[1]
 CN = timezone(timedelta(hours=8))
@@ -124,6 +125,9 @@ def discover(group, name, now, key, router=None):
     search_name = profile.get("publisher") or name
     query = (f'"{search_name}" 微信公众号 最新文章' if profile or group != "A"
              else f'"{name}" {now.year} 最新一期 目录')
+    window_start = getattr(router, 'window_start', None)
+    if window_start:
+        query += f' {window_start.isoformat()} 至 {now:%Y-%m-%d}'
     payload = {"query": query, "topic": "general", "search_depth": "basic",
                "max_results": 5, "include_raw_content": "text", "include_answer": False,
                "include_published_date": True, "auto_parameters": False}
@@ -133,6 +137,8 @@ def discover(group, name, now, key, router=None):
         # Broad retrieval; actual publication dates are independently checked later.
         payload["start_date"] = (now - timedelta(days=3)).date().isoformat()
         payload["end_date"] = (now + timedelta(days=1)).date().isoformat()
+        if window_start:
+            payload["start_date"] = window_start.isoformat()
     data = router.search(payload)
     if not isinstance(data.get("results"), list):
         raise ServiceError("Tavily 未返回有效 results")
@@ -140,6 +146,8 @@ def discover(group, name, now, key, router=None):
         # Search a verified public WeChat ID as a separate query, not merely an ambiguous name.
         identifier = profile.get("wechat_id") or profile.get("original_id")
         payload["query"] = f'"{identifier}"' if identifier else f'"{search_name}"'
+        if window_start:
+            payload["query"] += f' {window_start.isoformat()} 至 {now:%Y-%m-%d}'
         extra = router.search(payload) if identifier else {"results": []}
         if not isinstance(extra.get("results"), list):
             raise ServiceError("Tavily 微信号检索未返回有效 results")
@@ -250,7 +258,8 @@ def get_date(source, entry):
     return parsed, "正文日期片段（模型识别，建议复核）"
 
 
-def prefilter_sources(sources, name, group, now):
+def prefilter_sources(sources, name, group, now, window_start=None):
+    window_start = window_start or now.date() - timedelta(days=1)
     usable, reasons = [], []
     profile = PROFILES.get(name)
     for source in sources:
@@ -258,14 +267,15 @@ def prefilter_sources(sources, name, group, now):
             reasons.append(f"候选{source['id']}：账号标识不匹配或不可核实，未调用模型")
             continue
         day, _ = get_date(source, {})
-        if group != "A" and day and not now.date() - timedelta(days=1) <= day <= now.date():
+        if group != "A" and day and not window_start <= day <= now.date():
             reasons.append(f"候选{source['id']}：页面发布日期{day}超出本期，未调用模型")
             continue
         usable.append(source)
     return usable, reasons
 
 
-def validate_entry(entry, sources, name, group, now, seen):
+def validate_entry(entry, sources, name, group, now, seen, window_start=None):
+    window_start = window_start or now.date() - timedelta(days=1)
     if not isinstance(entry, dict) or type(entry.get("source_id")) is not int:
         return None, "模型来源编号无效"
     source = next((s for s in sources if s["id"] == entry["source_id"]), None)
@@ -286,8 +296,7 @@ def validate_entry(entry, sources, name, group, now, seen):
     day, basis = get_date(source, entry)
     if day and day > now.date():
         return None, "未来日期，不计入本期"
-    # Two calendar days, explicitly stated in every report (not a rolling 48-hour claim).
-    in_window = bool(day and now.date() - timedelta(days=1) <= day <= now.date())
+    in_window = bool(day and window_start <= day <= now.date())
     normalized = lambda text: re.sub(r"\s+", "", text or "").casefold()
     confirmed = (source["read_status"] == "微信正文读取成功"
                  and bool(source.get("publisher"))
@@ -366,10 +375,10 @@ def synthesize(records, key):
         raise ServiceError("DeepSeek 速览/趋势输出格式异常") from None
 
 
-def render(now, records, diagnostics, limit, total_accounts, synthesis, search_events=None):
-    start = now.date() - timedelta(days=1)
+def render(now, records, diagnostics, limit, total_accounts, synthesis, search_events=None, window_start=None):
+    start = window_start or now.date() - timedelta(days=1)
     lines = [f"# 教育技术情报简报 · {now:%Y-%m-%d}", "",
-             f"> 覆盖北京时间 {start} 00:00 至 {now:%Y-%m-%d %H:%M}（昨日与今日两个自然日）。",
+             f"> 覆盖北京时间 {start} 00:00 至 {now:%Y-%m-%d %H:%M}（连续覆盖并保留一天重叠，按原文链接去重）。",
              "> 期刊补充不计为本期新发布；正文日期由模型识别的条目请复核。搜索结果不能保证完整覆盖公众号。", "",
              f"本次检索 {limit}/{total_accounts} 个账号线索，并执行主题扩展；收录 {len(records)} 条；其中确认目标账号来源 {sum(r['relation'] == 'confirmed' for r in records)} 条，主题扩展 {sum(r['relation'] == 'discovered' for r in records)} 条。", ""]
     if len(records) < 5:
@@ -458,6 +467,8 @@ def main(argv=None, root=ROOT):
     router = SearchRouter(post_json, ServiceError)
     prompt = (root / "prompt.md").read_text(encoding="utf-8-sig")
     now = datetime.now(CN)
+    window_start, _ = load_window(root, now)
+    router.window_start = window_start
     reports = root / "reports"
     state_path = root / "state" / "seen_articles.json"
     reports.mkdir(exist_ok=True)
@@ -497,12 +508,12 @@ def main(argv=None, root=ROOT):
                 if source:
                     sources.append(source)
             d["sources"] = [{k: v for k, v in s.items() if k not in {"body", "search_excerpt"}} for s in sources]
-            usable, reasons = prefilter_sources(sources, name, group, now)
+            usable, reasons = prefilter_sources(sources, name, group, now, window_start)
             d["rejections"].extend(reasons)
             entries = analyze(name, usable, prompt, os.environ["DEEPSEEK_API_KEY"])
             accepted_keys = set()
             for entry in entries:
-                record, reason = validate_entry(entry, sources, name, group, now, seen)
+                record, reason = validate_entry(entry, sources, name, group, now, seen, window_start)
                 if record and article_key(record["url"]) not in accepted_keys:
                     accepted_keys.add(article_key(record["url"]))
                     accepted.append(record)
@@ -536,8 +547,8 @@ def main(argv=None, root=ROOT):
             d["status"] = f"确认目标账号来源 {matched} 条；期刊线索/领域补充 {count-matched} 条" if count else "未检索到可收录更新（或重复/总数限制）"
     output = reports / f'{now:%Y-%m-%d}_latest.md'
     synthesis = {"overview": [], "trends": []}
-    merged = consolidate(root, now, render(now, records, diagnostics, args.limit, total_accounts, synthesis, router.events), article_key,
-                         synthesize_callback=lambda evidence: synthesize(evidence, os.environ["DEEPSEEK_API_KEY"]))
+    merged = consolidate(root, now, render(now, records, diagnostics, args.limit, total_accounts, synthesis, router.events, window_start), article_key,
+                         synthesize_callback=lambda evidence: synthesize(evidence, os.environ["DEEPSEEK_API_KEY"]), window_start=window_start)
     # Save state only for entries actually written to the report; failures remain retryable.
     for r in records:
         seen[article_key(r["url"])] = {"url": canonical_url(r["url"]), "reported_at": now.isoformat()}
@@ -563,6 +574,16 @@ def main(argv=None, root=ROOT):
     health["expanded"] = sum(r["relation"] == "discovered" for r in records)
     health.update(merged)
     health['failed'] = health['failed'] or bool(merged.get('briefing_error'))
+    health['window_start'] = window_start.isoformat()
+    health['window_end'] = now.isoformat()
+    all_accepted = {article_key(r['url']) for entries in by_account for r in entries}
+    health['deferred_entries'] = len(all_accepted - run_keys)
+    # Trials, provider failures, and capacity-limited runs must leave the coverage cursor retryable.
+    health['cursor_advanced'] = (args.limit == total_accounts and not health['failed']
+                                 and not health['deferred_entries']
+                                 and os.getenv('SEARCH_TEST_PROVIDER', 'auto') == 'auto')
+    if health['cursor_advanced']:
+        save_cursor(root, now, window_start)
     (state_path.parent / "latest_status.json").write_text(json.dumps(health, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"已保存简报：{output.name}；收录 {len(records)} 条", flush=True)
     return health

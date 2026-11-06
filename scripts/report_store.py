@@ -30,15 +30,16 @@ def enrich(item):
     return item
 
 
-def briefing_markdown(index, now, diagnostics_markdown, briefing):
-    start = (now.date() - timedelta(days=1)).isoformat()
+def briefing_markdown(index, now, diagnostics_markdown, briefing, window_start=None):
+    start = (window_start or now.date() - timedelta(days=1)).isoformat()
     end = now.date().isoformat()
     ordered = sorted(index.values(), key=lambda r: (r['date'], r['title']), reverse=True)
     recent = [r for r in ordered if start <= r['date'] <= end]
     verified = [r for r in recent if r['confirmed'] and r['group'] in LABELS][:25]
     supplementary = [r for r in recent if not (r['confirmed'] and r['group'] in LABELS)]
     lines = [f'# 教育技术情报简报 · {now:%Y-%m-%d}', '',
-             f'> 更新于北京时间 {now:%Y-%m-%d %H:%M}；覆盖 {start} 至 {end}。',
+             f'> 更新于北京时间 {now:%Y-%m-%d %H:%M}；覆盖 {start} 00:00 至 {now:%Y-%m-%d %H:%M}。',
+             '> 范围从上次成功全量运行所在日期的前一天起连续覆盖；首次启用回补三天。',
              '> 已收录内容按原文链接合并去重。以下仅依据已获得的文章，不能代表公众号全部更新。', '',
              f'本期已确认来源 **{len(verified)}** 条；其他来源待核实 **{len(supplementary)}** 条。', '', '## 本期速览', '']
     def points(key):
@@ -148,7 +149,7 @@ def archive_file(source, root):
     source.unlink()  # Only after an identical archive copy is verified.
 
 
-def consolidate(root, now, current_markdown, key_for_url, synthesize_callback=None):
+def consolidate(root, now, current_markdown, key_for_url, synthesize_callback=None, window_start=None):
     root = Path(root)
     reports = root / 'reports'
     reports.mkdir(exist_ok=True)
@@ -171,7 +172,7 @@ def consolidate(root, now, current_markdown, key_for_url, synthesize_callback=No
         item['legacy_import'] = False
         index[key] = item
     index = {key: enrich(item) for key, item in index.items()}
-    _, verified = briefing_markdown(index, now, current_markdown, {})
+    _, verified = briefing_markdown(index, now, current_markdown, {}, window_start)
     evidence = [{**item, 'source_label': item['source'], 'relation': 'confirmed', 'journal_supplement': False}
                 for item in verified]
     fingerprint = hashlib.sha256(json.dumps(evidence, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
@@ -187,7 +188,7 @@ def consolidate(root, now, current_markdown, key_for_url, synthesize_callback=No
                                                ensure_ascii=False, indent=2)+'\n')
         except RuntimeError as exc:
             briefing_error = str(exc)
-    markdown, verified = briefing_markdown(index, now, current_markdown, briefing)
+    markdown, verified = briefing_markdown(index, now, current_markdown, briefing, window_start)
     # Both durable data and the reading list are saved before any old report is moved.
     atomic_write(index_path, json.dumps(index, ensure_ascii=False, indent=2)+'\n')
     atomic_write(reports/report_name, markdown)

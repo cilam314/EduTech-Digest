@@ -1,12 +1,17 @@
 name: EduTech Digest
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/digest.yml'
   workflow_dispatch:
     inputs:
       account_limit:
         description: "试运行填3；正式运行填26"
         required: true
-        default: "3"
+        default: "26"
         type: choice
         options:
           - "3"
