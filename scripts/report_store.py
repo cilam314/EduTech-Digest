@@ -35,13 +35,21 @@ def briefing_markdown(index, now, diagnostics_markdown, briefing, window_start=N
     end = now.date().isoformat()
     ordered = sorted(index.values(), key=lambda r: (r['date'], r['title']), reverse=True)
     recent = [r for r in ordered if start <= r['date'] <= end]
-    verified = [r for r in recent if r['confirmed'] and r['group'] in LABELS][:25]
+    verified, per_source = [], {}
+    for item in recent:
+        if not (item['confirmed'] and item['group'] in LABELS):
+            continue
+        source_key = ''.join(item['source'].split()).casefold()
+        if per_source.get(source_key, 0) < 3:
+            verified.append(item)
+            per_source[source_key] = per_source.get(source_key, 0) + 1
     supplementary = [r for r in recent if not (r['confirmed'] and r['group'] in LABELS)]
     lines = [f'# 教育技术情报简报 · {now:%Y-%m-%d}', '',
              f'> 更新于北京时间 {now:%Y-%m-%d %H:%M}；覆盖 {start} 00:00 至 {now:%Y-%m-%d %H:%M}。',
              '> 范围从上次成功全量运行所在日期的前一天起连续覆盖；首次启用回补三天。',
              '> 已收录内容按原文链接合并去重。以下仅依据已获得的文章，不能代表公众号全部更新。', '',
-             f'本期已确认来源 **{len(verified)}** 条；其他来源待核实 **{len(supplementary)}** 条。', '', '## 本期速览', '']
+             f'本期已确认来源 **{len(verified)}** 条，来自 **{len(per_source)}** 个账号；其他来源待核实 **{len(supplementary)}** 条。',
+             '> 每个账号最多展示3篇，总篇数不设上限；未展示的已存条目仍保留在完整索引中。', '', '## 本期速览', '']
     def points(key):
         for point in briefing.get(key, []):
             refs = point.get('refs', [])

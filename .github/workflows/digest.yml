@@ -56,6 +56,7 @@ jobs:
           DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL || 'deepseek-flash' }}
           ACCOUNT_LIMIT: ${{ inputs.account_limit || '26' }}
           PYTHONUTF8: '1'
+          PUBLIC_WECHAT_INDEX_URL: 'https://yaoverse.top'
         run: python scripts/run_digest.py --limit "$ACCOUNT_LIMIT"
       - name: Save reports and deduplication state
         run: |

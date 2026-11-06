@@ -20,6 +20,7 @@ import read_article
 from search_backends import SearchRouter
 from report_store import consolidate
 from collection_window import load_window, save_cursor
+from public_article_index import PublicArticleIndex
 
 ROOT = Path(__file__).resolve().parents[1]
 CN = timezone(timedelta(hours=8))
@@ -122,13 +123,15 @@ def extract_wechat(html, url):
 def discover(group, name, now, key, router=None):
     router = router or SearchRouter(post_json, ServiceError, tavily_key=key)
     profile = PROFILES.get(name, {})
+    index = getattr(router, 'article_index', None)
+    pointers = index.get(name) if index and profile else []
     search_name = profile.get("publisher") or name
     query = (f'"{search_name}" 微信公众号 最新文章' if profile or group != "A"
              else f'"{name}" {now.year} 最新一期 目录')
     window_start = getattr(router, 'window_start', None)
     if window_start:
         query += f' {window_start.isoformat()} 至 {now:%Y-%m-%d}'
-    payload = {"query": query, "topic": "general", "search_depth": "basic",
+    payload = {"query": query, "topic": "general", "search_depth": "basic", "exact_match": True,
                "max_results": 5, "include_raw_content": "text", "include_answer": False,
                "include_published_date": True, "auto_parameters": False}
     if profile or group != "A":
@@ -139,7 +142,12 @@ def discover(group, name, now, key, router=None):
         payload["end_date"] = (now + timedelta(days=1)).date().isoformat()
         if window_start:
             payload["start_date"] = window_start.isoformat()
-    data = router.search(payload)
+    try:
+        data = router.search(payload)
+    except ServiceError:
+        if pointers:
+            return query + '；搜索服务失败，使用公开索引原文入口继续核验', pointers
+        raise
     if not isinstance(data.get("results"), list):
         raise ServiceError("Tavily 未返回有效 results")
     if profile:
@@ -148,15 +156,22 @@ def discover(group, name, now, key, router=None):
         payload["query"] = f'"{identifier}"' if identifier else f'"{search_name}"'
         if window_start:
             payload["query"] += f' {window_start.isoformat()} 至 {now:%Y-%m-%d}'
-        extra = router.search(payload) if identifier else {"results": []}
+        try:
+            extra = router.search(payload) if identifier else {"results": []}
+        except ServiceError:
+            if not pointers and not data['results']:
+                raise
+            extra = {"results": []}
         if not isinstance(extra.get("results"), list):
             raise ServiceError("Tavily 微信号检索未返回有效 results")
         # Known samples verify ingestion even if the search index has missed the article.
         samples = [{"url": url, "title": "用户提供的账号样例", "content": "", "raw_content": ""}
                    for url in profile.get("sample_urls", [])]
-        data["results"] = samples + extra["results"] + data["results"]
+        data["results"] = pointers + samples + extra["results"] + data["results"]
         query += (f'；补充微信号/原始ID："{identifier}"' if identifier else '；未提供公开微信号/原始ID，不进行空ID查询')
         query += '；已知样例入口（不代表发现了后续文章）'
+        if index:
+            query += f'；公开索引原文入口 {len(pointers)} 条（逐篇核验账号及日期）'
     elif group != "A" and not data["results"]:
         # A separate fallback produces domain news, never a claimed account update.
         payload.pop("include_domains")
@@ -182,13 +197,17 @@ def prepare(result, source_id):
             "read_status": "Tavily正文" if text else "仅搜索摘要"}
     item["search_provider"] = result.get("search_provider", "用户样例/未记录")
     if urlsplit(url).hostname == "mp.weixin.qq.com":
-        try:
-            article = extract_wechat(read_article.download(url), url)
-            text = article["content"]
-            item.update(title=article["title"], author=article["author"], publisher=article["publisher"], biz=article["biz"],
-                        publication_date=article["published_at"], read_status="微信正文读取成功")
-        except Exception:
-            item["read_status"] = "微信读取失败；" + ("使用Tavily正文" if text else "仅有搜索摘要")
+        for attempt in range(2):
+            try:
+                article = extract_wechat(read_article.download(url), url)
+                text = article["content"]
+                item.update(title=article["title"], author=article["author"], publisher=article["publisher"], biz=article["biz"],
+                            publication_date=article["published_at"], read_status="微信正文读取成功")
+                break
+            except Exception:
+                item["read_status"] = "微信读取失败；" + ("使用Tavily正文" if text else "仅有搜索摘要")
+                if attempt == 0:
+                    time.sleep(1)
     item["body"] = text[:10000]
     return item
 
@@ -469,6 +488,8 @@ def main(argv=None, root=ROOT):
     now = datetime.now(CN)
     window_start, _ = load_window(root, now)
     router.window_start = window_start
+    index_url = os.getenv('PUBLIC_WECHAT_INDEX_URL', '').strip()
+    router.article_index = PublicArticleIndex(index_url, now, window_start) if index_url else None
     reports = root / "reports"
     state_path = root / "state" / "seen_articles.json"
     reports.mkdir(exist_ok=True)
@@ -528,13 +549,13 @@ def main(argv=None, root=ROOT):
             d["failed"] = True
         diagnostics.append(d)
         by_account.append(accepted)
-    # Round-robin gives each account a chance before reaching the total cap.
+    # Keep up to three records per account; there is no global article cap.
     records, run_keys = [], set()
     for priority in ("confirmed", "journal_lead", "discovered", "related"):
         for position in range(3):
             for entries in by_account:
                 filtered = [r for r in entries if r["relation"] == priority]
-                if position < len(filtered) and len(records) < 25:
+                if position < len(filtered):
                     record = filtered[position]
                     key = article_key(record["url"])
                     if key not in run_keys:
@@ -544,7 +565,7 @@ def main(argv=None, root=ROOT):
         count = sum(r["account"] == d["account"] for r in records)
         matched = sum(r["account"] == d["account"] and r["relation"] == "confirmed" for r in records)
         if not d.get("failed"):
-            d["status"] = f"确认目标账号来源 {matched} 条；期刊线索/领域补充 {count-matched} 条" if count else "未检索到可收录更新（或重复/总数限制）"
+            d["status"] = f"确认目标账号来源 {matched} 条；期刊线索/领域补充 {count-matched} 条" if count else "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）"
     output = reports / f'{now:%Y-%m-%d}_latest.md'
     synthesis = {"overview": [], "trends": []}
     merged = consolidate(root, now, render(now, records, diagnostics, args.limit, total_accounts, synthesis, router.events, window_start), article_key,
@@ -576,6 +597,11 @@ def main(argv=None, root=ROOT):
     health['failed'] = health['failed'] or bool(merged.get('briefing_error'))
     health['window_start'] = window_start.isoformat()
     health['window_end'] = now.isoformat()
+    health['discovery_events'] = router.article_index.events if router.article_index else []
+    health['discovery_incomplete'] = any(e['status'] in {'fetch_failed', 'empty_or_structure_changed',
+                                                       'page_limit_reached', 'account_limit_reached'}
+                                         for e in health['discovery_events'])
+    health['failed'] = health['failed'] or health['discovery_incomplete']
     all_accepted = {article_key(r['url']) for entries in by_account for r in entries}
     health['deferred_entries'] = len(all_accepted - run_keys)
     # Trials, provider failures, and capacity-limited runs must leave the coverage cursor retryable.

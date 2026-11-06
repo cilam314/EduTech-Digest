@@ -96,7 +96,7 @@ class CollectionWindowTests(unittest.TestCase):
                 self.assertFalse(failed['cursor_advanced'])
                 self.assertEqual((root/'state/collection_cursor.json').read_bytes(), previous)
 
-    def test_capacity_limited_run_leaves_cursor_retryable(self):
+    def test_full_run_has_no_global_article_cap(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder)
             (root/'prompt.md').write_text('测试', encoding='utf-8')
@@ -113,12 +113,13 @@ class CollectionWindowTests(unittest.TestCase):
                     patch.object(d, 'analyze', side_effect=lambda name, sources, prompt, key: [{'source_id': s['id']} for s in sources]), \
                     patch.object(d, 'synthesize', return_value={'overview': [], 'trends': []}):
                 result = d.main([], root)
-                self.assertEqual(result['included'], 25)
-                self.assertEqual(result['deferred_entries'], 1)
-                self.assertFalse(result['cursor_advanced'])
-                self.assertFalse((root/'state/collection_cursor.json').exists())
+                self.assertEqual(result['included'], 26)
+                self.assertEqual(result['current_entries'], 26)
+                self.assertEqual(result['deferred_entries'], 0)
+                self.assertTrue(result['cursor_advanced'])
+                self.assertTrue((root/'state/collection_cursor.json').exists())
                 retried = d.main([], root)
-                self.assertEqual(retried['included'], 1)
+                self.assertEqual(retried['included'], 0)
                 self.assertTrue(retried['cursor_advanced'])
 
 
