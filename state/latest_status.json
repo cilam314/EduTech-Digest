@@ -3,7 +3,7 @@
   "accounts": [
     {
       "account": "电化教育研究",
-      "query": "\"电化教育研究\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"e-EducationResearch\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"电化教育研究\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"e-EducationResearch\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
@@ -38,7 +38,7 @@
     },
     {
       "account": "开放教育研究",
-      "query": "\"开放教育研究\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"gh_4f7e73e58c41\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"开放教育研究\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"gh_4f7e73e58c41\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
@@ -55,6 +55,18 @@
         },
         {
           "id": 4,
+          "url": "https://mp.weixin.qq.com/s/gJzAqULBC-UsVg8LuiTzXw",
+          "title": "人工智能与未来教育前沿研究｜杨海燕 李涛：ChatGPT教学应用：场景、局限与突破策略",
+          "search_estimated_date": null,
+          "publication_date": "2023-08-24T10:43:48+08:00",
+          "author": "编辑部",
+          "publisher": "中国教育信息化",
+          "biz": "MjM5MDExNTE2Nw==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 5,
           "url": "https://mp.weixin.qq.com/s/v_s_QaGSaozyZLV7ojb-sw",
           "title": "“未来共创 教育向新：AI时代的全球教育趋势对问”主题论坛圆满落幕",
           "search_estimated_date": null,
@@ -68,17 +80,18 @@
       ],
       "rejections": [
         "候选4：账号标识不匹配或不可核实，未调用模型",
+        "候选5：账号标识不匹配或不可核实，未调用模型",
         "日期未知或超出本期；且不是明确标有目标期刊名的期号/目录",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "现代远程教育研究",
-      "query": "\"现代远程教育研究\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"xdyjyj\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"现代远程教育研究\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"xdyjyj\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
-          "id": 5,
+          "id": 6,
           "url": "https://mp.weixin.qq.com/s/Ng8lK8QeHvnpHZCNQng69Q",
           "title": "「年终学术盛宴」2026年度中国教育学十大学术热点评选活动开始啦！",
           "search_estimated_date": null,
@@ -90,7 +103,7 @@
           "search_provider": "用户样例/未记录"
         },
         {
-          "id": 6,
+          "id": 7,
           "url": "https://mp.weixin.qq.com/s/7y-3LTC3rRdxVBRlltfHcQ",
           "title": "周六开播 | 兰州交通大学：GenAI时代的翻译产学新生态沙龙",
           "search_estimated_date": null,
@@ -98,18 +111,6 @@
           "author": null,
           "publisher": "翻译技术教育研究院",
           "biz": "Mzg5NzcyMzQ3Nw==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 7,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzIwMTQzMjY3OA%3D%3D&mid=2649594137&idx=1&sn=c75c4580dccebef11a8b1c3852124de0&chksm=8ef73210b980bb0642a4a3748c86b88e6e36044fba48df5f931c068440bf9f01191d65b39de4&scene=27",
-          "title": "王佑镁等｜“阿拉丁神灯”还是“潘多拉魔盒”：ChatGPT教育应用的潜能与风险",
-          "search_estimated_date": null,
-          "publication_date": "2023-03-29T06:30:00+08:00",
-          "author": null,
-          "publisher": "现代远程教育研究",
-          "biz": "MzIwMTQzMjY3OA==",
           "read_status": "微信正文读取成功",
           "search_provider": "Tavily"
         },
@@ -127,15 +128,14 @@
         }
       ],
       "rejections": [
-        "候选6：账号标识不匹配或不可核实，未调用模型",
+        "候选7：账号标识不匹配或不可核实，未调用模型",
         "候选8：账号标识不匹配或不可核实，未调用模型",
-        "日期未知或超出本期；且不是明确标有目标期刊名的期号/目录",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "远程教育杂志",
-      "query": "\"远程教育杂志\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"ycjyzz_zju\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"远程教育杂志\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"ycjyzz_zju\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
@@ -157,7 +157,7 @@
     },
     {
       "account": "现代教育论丛",
-      "query": "\"现代教育论丛\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"gh_e810783647a0\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"现代教育论丛\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"gh_e810783647a0\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
@@ -179,7 +179,7 @@
     },
     {
       "account": "教育技术学",
-      "query": "\"教育技术学\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"JYJSX2014\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"教育技术学\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"JYJSX2014\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
@@ -220,18 +220,6 @@
         },
         {
           "id": 14,
-          "url": "https://mp.weixin.qq.com/s/3WXYP1kMvAzypZv3N2DUJQ",
-          "title": "作为博士生，你要懂得理论谱系（theoretical lineage）",
-          "search_estimated_date": null,
-          "publication_date": "2026-05-14T14:44:41+08:00",
-          "author": "西西弗斯林",
-          "publisher": "The Writer Way",
-          "biz": "MzA3NTUwNTMwNQ==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 15,
           "url": "https://mp.weixin.qq.com/s/w3FgKGe-dnUQChEzl_wy3Q",
           "title": "GPT-5.6指令来袭！30个顶配提示词，半小时找到论文选题",
           "search_estimated_date": null,
@@ -239,6 +227,18 @@
           "author": "全息学术",
           "publisher": "学术AI大模型",
           "biz": "Mzk0Mzc2MDQzOA==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 15,
+          "url": "https://mp.weixin.qq.com/s/x0BE5CjY7PRj6MSfYunJrA",
+          "title": "重磅！科大讯飞与西北师范大学举行签约揭牌仪式",
+          "search_estimated_date": null,
+          "publication_date": "2021-04-01T20:55:44+08:00",
+          "author": null,
+          "publisher": "科大讯飞智慧教育",
+          "biz": "MzA5NjYyMTA0OA==",
           "read_status": "微信正文读取成功",
           "search_provider": "Tavily"
         }
@@ -255,7 +255,7 @@
     },
     {
       "account": "西大教技",
-      "query": "\"西大教技\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"xndxjyjs\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"西大教技\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"xndxjyjs\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
@@ -278,7 +278,7 @@
     },
     {
       "account": "国际与比较教育研究所",
-      "query": "\"国际与比较教育研究所\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"Edu-in\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"国际与比较教育研究所\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"Edu-in\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
@@ -295,6 +295,18 @@
         },
         {
           "id": 18,
+          "url": "https://mp.weixin.qq.com/s/z525r1UJRdJIpPKFi4_idg",
+          "title": "GPT-6.1 Sol 发布【AI 早报 2026-09-30】",
+          "search_estimated_date": null,
+          "publication_date": "2026-09-30T10:35:11+08:00",
+          "author": "Juya",
+          "publisher": "橘鸦Juya",
+          "biz": "MzIyMDk0MDY1OA==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 19,
           "url": "https://mp.weixin.qq.com/s/W7ldNHJCpAYR5s8enU_1Dw",
           "title": "2026 最值得用的 AI Cloud IDE——Replit 介绍 + .edu 邮箱申请半价订阅一步到位",
           "search_estimated_date": null,
@@ -306,31 +318,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 19,
-          "url": "http://mp.weixin.qq.com/s/VhsWE5aoQ5-epKVaQ6aCMg",
-          "title": "究极无敌的srcAI-xss手法（快看过来）",
-          "search_estimated_date": null,
-          "publication_date": null,
-          "author": null,
-          "publisher": null,
-          "biz": null,
-          "read_status": "微信读取失败；使用Tavily正文",
-          "search_provider": "Tavily"
-        },
-        {
           "id": 20,
-          "url": "https://mp.weixin.qq.com/s/xrAGXQSxJikdpnhSLcONcQ",
-          "title": "edu漏洞挖掘实战案例分享",
-          "search_estimated_date": null,
-          "publication_date": "2025-10-29T19:04:01+08:00",
-          "author": "风*涯",
-          "publisher": "陌笙不太懂安全",
-          "biz": "Mzk1NzgzMjkxOQ==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 21,
           "url": "https://mp.weixin.qq.com/s/O72SmkaeAjFnlNdlck5Qtw",
           "title": "如何免费获取 .edu 邮箱",
           "search_estimated_date": null,
@@ -342,14 +330,26 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 22,
-          "url": "https://mp.weixin.qq.com/s/PgnFjeaHAB1-D08dOW74nA",
-          "title": "数学老师狂喜！edulab开源，一道题自动生成带3D模型的交互教学页",
+          "id": 21,
+          "url": "https://mp.weixin.qq.com/s/HPoU5m3aV9Ctlob3KBxSdg",
+          "title": "Explore Teaching Jobs at the ISS EDU EXPO Shanghai | January 10",
           "search_estimated_date": null,
-          "publication_date": "2026-06-06T08:58:28+08:00",
-          "author": "陶人",
-          "publisher": "Ai技能图谱",
-          "biz": "MzkwMjg3MDU1MQ==",
+          "publication_date": "2026-01-05T17:00:00+08:00",
+          "author": null,
+          "publisher": "ThatsShanghai",
+          "biz": "MzIyNzIxMzIzOA==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 22,
+          "url": "https://mp.weixin.qq.com/s/xrAGXQSxJikdpnhSLcONcQ",
+          "title": "edu漏洞挖掘实战案例分享",
+          "search_estimated_date": null,
+          "publication_date": "2025-10-29T19:04:01+08:00",
+          "author": "风*涯",
+          "publisher": "陌笙不太懂安全",
+          "biz": "Mzk1NzgzMjkxOQ==",
           "read_status": "微信正文读取成功",
           "search_provider": "Tavily"
         }
@@ -366,7 +366,7 @@
     },
     {
       "account": "数字游戏学习研究",
-      "query": "\"数字游戏学习研究\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"ldmr0418\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"数字游戏学习研究\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"ldmr0418\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [],
       "rejections": [
@@ -375,7 +375,7 @@
     },
     {
       "account": "e2lab",
-      "query": "\"e2lab\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"gh_20d97d24cc32\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"e2lab\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"gh_20d97d24cc32\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [],
       "rejections": [
@@ -384,7 +384,7 @@
     },
     {
       "account": "EDU开源行动计划",
-      "query": "\"EDU开源行动计划\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"THU-MAIC\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"EDU开源行动计划\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"THU-MAIC\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
@@ -401,18 +401,6 @@
         },
         {
           "id": 24,
-          "url": "https://mp.weixin.qq.com/s/SPn2dfw9dcQCfdTLrXDItA",
-          "title": "清华夯爆了，这个开源Agent项目屠榜Github！！",
-          "search_estimated_date": null,
-          "publication_date": "2026-09-03T08:54:53+08:00",
-          "author": null,
-          "publisher": "DASOU",
-          "biz": "MzIyNTY1MDUwNQ==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 25,
           "url": "https://mp.weixin.qq.com/s/Au8svgG8jrf7FLlApLUgFQ",
           "title": "GitHub狂揽17000星！清华OpenMAIC正在颠覆教育行业",
           "search_estimated_date": null,
@@ -420,6 +408,18 @@
           "author": "蚁眼AI",
           "publisher": "蚁眼AI",
           "biz": "MzAxNjE0NDI4NA==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 25,
+          "url": "https://mp.weixin.qq.com/s/SPn2dfw9dcQCfdTLrXDItA",
+          "title": "清华夯爆了，这个开源Agent项目屠榜Github！！",
+          "search_estimated_date": null,
+          "publication_date": "2026-09-03T08:54:53+08:00",
+          "author": null,
+          "publisher": "DASOU",
+          "biz": "MzIyNTY1MDUwNQ==",
           "read_status": "微信正文读取成功",
           "search_provider": "Tavily"
         },
@@ -437,49 +437,37 @@
         },
         {
           "id": 27,
-          "url": "https://mp.weixin.qq.com/s/LopI-PoAVTu6LvmiGB1Wqw",
-          "title": "清华AI 课堂：AI 老师讲课、AI 同学抢答，一句话生成一整门课，GitHub 35.6k Star！",
+          "url": "https://mp.weixin.qq.com/s/_6U0bwwRNcYZTlasHy1Raw",
+          "title": "GitHub 本周热门的 10 个 AI 项目（每周日更新）",
           "search_estimated_date": null,
-          "publication_date": "2026-09-11T15:16:12+08:00",
-          "author": "墨白",
-          "publisher": "Any技术",
-          "biz": "MzcwMzQyNjE0OQ==",
+          "publication_date": "2026-09-13T11:34:00+08:00",
+          "author": "小浮",
+          "publisher": "寄浮世以初心",
+          "biz": "MzE5MTk4ODQ5OQ==",
           "read_status": "微信正文读取成功",
           "search_provider": "Tavily"
         },
         {
           "id": 28,
-          "url": "https://mp.weixin.qq.com/s/7B1b9EI8UIfHX_QkZCuXXw",
-          "title": "一键生成教学AI课堂！清华开源了多智能体互动课堂平台 OpenMAIC",
+          "url": "https://mp.weixin.qq.com/s/aUZ4eCR_1XDKGfjvlYfTYA",
+          "title": "清华开源 OpenMAIC：5.7 个月 30k stars，把 MOOC 录播革命成 AI 多 Agent 互动课堂",
           "search_estimated_date": null,
-          "publication_date": "2026-03-19T07:03:00+08:00",
-          "author": "老悠",
-          "publisher": "开源github甄选",
-          "biz": "Mzk1NzcyNjUyMg==",
+          "publication_date": "2026-09-08T07:29:00+08:00",
+          "author": "夜航星42",
+          "publisher": "智能时代蛮子",
+          "biz": "MzA3MDg1NTg0OQ==",
           "read_status": "微信正文读取成功",
           "search_provider": "Tavily"
         },
         {
           "id": 29,
-          "url": "https://mp.weixin.qq.com/s/R8WQ1jUmjZfLePp_f3Soxw",
-          "title": "我们把 DeepSeek Harness 变成了一位 OpenMAIC 老师",
+          "url": "https://mp.weixin.qq.com/s/WsBvXuyohraoEYOQFv7qsA",
+          "title": "清华 OpenMAIC 同行者计划｜来和我们一起做 AI 教育",
           "search_estimated_date": null,
-          "publication_date": "2026-08-13T22:47:51+08:00",
+          "publication_date": "2026-10-19T09:00:00+08:00",
           "author": "THU-MAIC",
-          "publisher": "EDU开源行动计划",
-          "biz": "MzY4NjM2NTU1NQ==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 30,
-          "url": "https://mp.weixin.qq.com/s/kXpVCe9lXS7CI2mBQpDzHw",
-          "title": "OpenMAIC正式版：Agent 驱动的专业工作台，由此出发",
-          "search_estimated_date": null,
-          "publication_date": "2026-08-28T11:00:23+08:00",
-          "author": "THU-MAIC",
-          "publisher": "EDU开源行动计划",
-          "biz": "MzY4NjM2NTU1NQ==",
+          "publisher": "Microcosmos志愿者营地",
+          "biz": "Mzg5MjAxMTI2MQ==",
           "read_status": "微信正文读取成功",
           "search_provider": "Tavily"
         }
@@ -492,14 +480,13 @@
         "候选26：账号标识不匹配或不可核实，未调用模型",
         "候选27：账号标识不匹配或不可核实，未调用模型",
         "候选28：账号标识不匹配或不可核实，未调用模型",
-        "候选29：页面发布日期2026-08-13超出本期，未调用模型",
-        "候选30：页面发布日期2026-08-28超出本期，未调用模型",
+        "候选29：账号标识不匹配或不可核实，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "人文社科论文速览",
-      "query": "\"人文社科论文速览\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"gh_28787020eb96\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"人文社科论文速览\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"gh_28787020eb96\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [],
       "rejections": [
@@ -508,11 +495,11 @@
     },
     {
       "account": "学士讲科研",
-      "query": "\"学士讲科研\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"XZSY20230426\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"学士讲科研\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"XZSY20230426\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
-          "id": 31,
+          "id": 30,
           "url": "https://mp.weixin.qq.com/s/PkS2ZiU8LdfGXi3NOXfWuA",
           "title": "fsQCA投稿前必须检查什么？一份可以直接使用的审稿人自查清单",
           "search_estimated_date": null,
@@ -525,17 +512,17 @@
         }
       ],
       "rejections": [
-        "候选31：页面发布日期2026-10-09超出本期，未调用模型",
+        "候选30：页面发布日期2026-10-09超出本期，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "简小杰做科研",
-      "query": "\"简小杰做科研\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"gh_0c8780a29b7b\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"简小杰做科研\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"gh_0c8780a29b7b\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
-          "id": 32,
+          "id": 31,
           "url": "https://mp.weixin.qq.com/s/cHc9aaC4jBnIaHFToS1oPg",
           "title": "从搜题软件到协作伙伴：如何通过教学干预让学生学会使用AI？",
           "search_estimated_date": null,
@@ -545,72 +532,20 @@
           "biz": "MzkzODk4OTAxMw==",
           "read_status": "微信正文读取成功",
           "search_provider": "用户样例/未记录"
-        },
-        {
-          "id": 33,
-          "url": "https://mp.weixin.qq.com/s/oBAPxR-9uaXHpVveUuIEZQ",
-          "title": "【报告解读】OECD 数字教育展望 | Chapter 3：利用 GenAI 实现苏格拉底教学法：对话式智能辅导的实践与未来",
-          "search_estimated_date": null,
-          "publication_date": "2026-04-04T07:00:00+08:00",
-          "author": "Jane Morii",
-          "publisher": "简小杰做科研",
-          "biz": "MzkzODk4OTAxMw==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 34,
-          "url": "https://mp.weixin.qq.com/s/jS3xeTjVaTF_NU5QK7wL6Q",
-          "title": "【报告解读】OECD 数字教育展望 | Chapter 2：GenAI 在人类技能培养与评估中的应用",
-          "search_estimated_date": null,
-          "publication_date": "2026-04-03T07:00:00+08:00",
-          "author": "Jane Morii",
-          "publisher": "简小杰做科研",
-          "biz": "MzkzODk4OTAxMw==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 35,
-          "url": "https://mp.weixin.qq.com/s/Bgl6f6ZK1elmzrOsQw7PxA",
-          "title": "【教育技术顶刊】The Internet and Higher Education： 1472名中国大学生的AI使用全景图：五大学科、四大区域、一个被忽视的真相!",
-          "search_estimated_date": null,
-          "publication_date": "2026-05-11T16:04:12+08:00",
-          "author": "Jane Morii",
-          "publisher": "简小杰做科研",
-          "biz": "MzkzODk4OTAxMw==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 36,
-          "url": "https://mp.weixin.qq.com/s/P01pevHrGvW3MkirJuVj2g",
-          "title": "【报告解读】OECD 数字教育展望 | Chapter1：探索 GenAI 在教育中的有效应用",
-          "search_estimated_date": null,
-          "publication_date": "2026-03-30T07:00:00+08:00",
-          "author": "Jane Morii",
-          "publisher": "简小杰做科研",
-          "biz": "MzkzODk4OTAxMw==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
         }
       ],
       "rejections": [
-        "候选32：页面发布日期2026-10-07超出本期，未调用模型",
-        "候选33：页面发布日期2026-04-04超出本期，未调用模型",
-        "候选34：页面发布日期2026-04-03超出本期，未调用模型",
-        "候选35：页面发布日期2026-05-11超出本期，未调用模型",
-        "候选36：页面发布日期2026-03-30超出本期，未调用模型",
+        "候选31：页面发布日期2026-10-07超出本期，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "ET学术小站",
-      "query": "\"ET学术小站\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"SuperResearchStudio\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"ET学术小站\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"SuperResearchStudio\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
-          "id": 37,
+          "id": 32,
           "url": "https://mp.weixin.qq.com/s/lUsGUqKcUn1NjY8nm9SS8w",
           "title": "【学术快报】《Learning and Instruction》Volume107",
           "search_estimated_date": null,
@@ -623,17 +558,17 @@
         }
       ],
       "rejections": [
-        "候选37：页面发布日期2026-11-01超出本期，未调用模型",
+        "候选32：页面发布日期2026-11-01超出本期，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "教育数字化100人",
-      "query": "\"教育数字化100人\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"wuxianclassroom\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"教育数字化100人\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"wuxianclassroom\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
-          "id": 38,
+          "id": 33,
           "url": "https://mp.weixin.qq.com/s/zIBQHN4Li45OR15ZVMwEOg",
           "title": "第一批把作业外包给 AI 的中学生，中高考成绩暴跌",
           "search_estimated_date": null,
@@ -646,53 +581,28 @@
         }
       ],
       "rejections": [
-        "候选38：页面发布日期2026-09-21超出本期，未调用模型",
+        "候选33：页面发布日期2026-09-21超出本期，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "Citedu全媒",
-      "query": "\"Citedu全媒\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"chinaitedu\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 3 条（逐篇核验账号及日期）",
-      "status": "确认目标账号来源 1 条；期刊线索/领域补充 0 条",
-      "sources": [
-        {
-          "id": 39,
-          "url": "https://mp.weixin.qq.com/s/JaMQVrloqoEeonVd4lkgnQ",
-          "title": "怀进鹏：拥抱智能时代，开辟科技与教育变革新路径",
-          "search_estimated_date": null,
-          "publication_date": "2026-11-06T10:31:17+08:00",
-          "author": null,
-          "publisher": "Citedu全媒",
-          "biz": "MzIzNDE2NzQwOA==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "公开文章索引（原文待核验）"
-        },
-        {
-          "id": 40,
-          "url": "https://mp.weixin.qq.com/s/cxKfcciZXVZv7lwbW1GgIQ",
-          "title": "为何今年不“生成AI成品”？——数智技术赋能思政教育的实践进阶与理念升级",
-          "search_estimated_date": null,
-          "publication_date": "2026-11-02T11:00:00+08:00",
-          "author": "吴晏",
-          "publisher": "Citedu全媒",
-          "biz": "MzIzNDE2NzQwOA==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "公开文章索引（原文待核验）"
-        }
-      ],
+      "query": "\"Citedu全媒\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"chinaitedu\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 2 条（逐篇核验账号及日期）",
+      "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
+      "sources": [],
       "rejections": [
         "跳过已收录或重复链接",
         "跳过已收录或重复链接",
-        "候选40：页面发布日期2026-11-02超出本期，未调用模型"
+        "跳过已收录或重复链接"
       ]
     },
     {
       "account": "智慧教育 Smart Education",
-      "query": "\"智慧教育 Smart Education\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"ZHJY_20260328\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"智慧教育 Smart Education\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"ZHJY_20260328\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
-          "id": 41,
+          "id": 34,
           "url": "https://mp.weixin.qq.com/s/mTJ2GSbsvf7D7YYksemZiw",
           "title": "AI+STEM：中小学科学教育可持续生态体系建构",
           "search_estimated_date": null,
@@ -705,13 +615,13 @@
         }
       ],
       "rejections": [
-        "候选41：页面发布日期2026-10-28超出本期，未调用模型",
+        "候选34：页面发布日期2026-10-28超出本期，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "数教新知",
-      "query": "\"数教新知\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"gh_ab0c709da6c5\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"数教新知\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"gh_ab0c709da6c5\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [],
       "rejections": [
@@ -720,35 +630,11 @@
     },
     {
       "account": "教育技术学自留地",
-      "query": "\"教育技术学自留地\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"ET2018A\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 5 条（逐篇核验账号及日期）",
-      "status": "确认目标账号来源 2 条；期刊线索/领域补充 0 条",
-      "sources": [
-        {
-          "id": 42,
-          "url": "https://mp.weixin.qq.com/s/CmKEa1fmyJ3XlWOhkbU2NA",
-          "title": "从聚光灯、批注到实时投票——这46个网页交互工具，把教室里的任何一块屏幕，变成学生舍不得眨眼的讲台",
-          "search_estimated_date": null,
-          "publication_date": "2026-11-08T08:04:00+08:00",
-          "author": "自留地君",
-          "publisher": "教育技术学自留地",
-          "biz": "MzUxMjA0NTU4Mw==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "公开文章索引（原文待核验）"
-        },
-        {
-          "id": 43,
-          "url": "https://mp.weixin.qq.com/s/6vZhtWjzyrXQJvXdumMr8A",
-          "title": "手机上瘾，这是真的吗？当我们在刷手机的时候，大脑到底发生了什么变化？这本书或许会给我们答案！",
-          "search_estimated_date": null,
-          "publication_date": "2026-11-07T08:15:00+08:00",
-          "author": "自留地君",
-          "publisher": "教育技术学自留地",
-          "biz": "MzUxMjA0NTU4Mw==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "公开文章索引（原文待核验）"
-        }
-      ],
+      "query": "\"教育技术学自留地\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"ET2018A\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 4 条（逐篇核验账号及日期）",
+      "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
+      "sources": [],
       "rejections": [
+        "跳过已收录或重复链接",
         "跳过已收录或重复链接",
         "跳过已收录或重复链接",
         "跳过已收录或重复链接",
@@ -757,11 +643,11 @@
     },
     {
       "account": "智慧教与学小能手",
-      "query": "\"智慧教与学小能手\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"HSCKST\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"智慧教与学小能手\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"HSCKST\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
-          "id": 44,
+          "id": 35,
           "url": "https://mp.weixin.qq.com/s/d-o-gcKv_-x_7R2zoUaO1A",
           "title": "学生把AI当伙伴，还是答案机器？",
           "search_estimated_date": null,
@@ -774,17 +660,17 @@
         }
       ],
       "rejections": [
-        "候选44：页面发布日期2026-10-16超出本期，未调用模型",
+        "候选35：页面发布日期2026-10-16超出本期，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "视频课程与教师发展",
-      "query": "\"视频课程与教师发展\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"ccnuvideolecture\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"视频课程与教师发展\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"ccnuvideolecture\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
-          "id": 45,
+          "id": 36,
           "url": "https://mp.weixin.qq.com/s/s8S7CY8EGANT6Xdv67IDPg",
           "title": "实时热点 ｜ 《2026智能教育发展蓝皮书——人工智能助力打造未来课堂》精华报告",
           "search_estimated_date": null,
@@ -797,17 +683,17 @@
         }
       ],
       "rejections": [
-        "候选45：页面发布日期2026-11-02超出本期，未调用模型",
+        "候选36：页面发布日期2026-11-02超出本期，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "关于设计的",
-      "query": "\"关于设计的\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"AboutDesign-TJ\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"关于设计的\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"AboutDesign-TJ\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
-          "id": 46,
+          "id": 37,
           "url": "https://mp.weixin.qq.com/s/dBfgPWa9OnMGP-EOs5ckFA",
           "title": "CHI'26交互设计顶会论文 | Best Paper Award | AI 当健身搭子，有用吗？",
           "search_estimated_date": null,
@@ -819,19 +705,7 @@
           "search_provider": "用户样例/未记录"
         },
         {
-          "id": 47,
-          "url": "http://mp.weixin.qq.com/s?__biz=Mzg4ODA5NzM1Nw%3D%3D&mid=2247496524&idx=1&sn=25b20ce3b7c6a01707a8cde0b047281a&chksm=cf82ec6ef8f565787506dc6c8eb88841e67fb0e239c616ec70bcb19a1fdc50b7962636d2e480&scene=21",
-          "title": "谈谈Xilinx FPGA设计的实现过程",
-          "search_estimated_date": null,
-          "publication_date": null,
-          "author": null,
-          "publisher": null,
-          "biz": null,
-          "read_status": "微信读取失败；使用Tavily正文",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 48,
+          "id": 38,
           "url": "https://mp.weixin.qq.com/s/qQhq9nxoeCD68iMwQoEVFQ",
           "title": "腾讯悄悄上线了他们第一个设计Agent - Miora。",
           "search_estimated_date": null,
@@ -843,7 +717,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 49,
+          "id": 39,
           "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647684576&idx=1&sn=4223ca3e47a04e2199d367919fc61d16&chksm=f007a9b7c77020a14a3a3a048a99f7dd44e43411972fc4d279812183bdcdc183ab86282a242c&cur_album_id=4626997530147635200&scene=189",
           "title": "腾讯悄悄上线了他们第一个设计Agent - Miora。",
           "search_estimated_date": null,
@@ -855,7 +729,7 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 50,
+          "id": 40,
           "url": "https://mp.weixin.qq.com/s/TrvDYMyvprz-OL98sb9rSQ",
           "title": "AI Agent正在持续重构设计工作流 #15",
           "search_estimated_date": null,
@@ -867,8 +741,8 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 51,
-          "url": "https://mp.weixin.qq.com/s/Dnp5kAmYJ1DlFxExYyk2RQ?click_id=2112770992",
+          "id": 41,
+          "url": "https://mp.weixin.qq.com/s/Dnp5kAmYJ1DlFxExYyk2RQ",
           "title": "应用从无人问津到月入5万，我做对了什么？---Starter Story创业故事",
           "search_estimated_date": null,
           "publication_date": "2026-09-30T20:30:00+08:00",
@@ -880,22 +754,22 @@
         }
       ],
       "rejections": [
-        "候选46：页面发布日期2026-11-02超出本期，未调用模型",
-        "候选47：账号标识不匹配或不可核实，未调用模型",
-        "候选48：账号标识不匹配或不可核实，未调用模型",
-        "候选49：账号标识不匹配或不可核实，未调用模型",
-        "候选50：账号标识不匹配或不可核实，未调用模型",
-        "候选51：账号标识不匹配或不可核实，未调用模型",
+        "跳过已收录或重复链接",
+        "候选37：页面发布日期2026-11-02超出本期，未调用模型",
+        "候选38：账号标识不匹配或不可核实，未调用模型",
+        "候选39：账号标识不匹配或不可核实，未调用模型",
+        "候选40：账号标识不匹配或不可核实，未调用模型",
+        "候选41：账号标识不匹配或不可核实，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "温州信息技术教研",
-      "query": "\"温州信息技术教研\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"gh_cb2503511d73\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"温州信息技术教研\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"gh_cb2503511d73\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
-          "id": 52,
+          "id": 42,
           "url": "https://mp.weixin.qq.com/s/uFV3wYiCjAF9r7AaPwggTA",
           "title": "一个网页，替老师干完了点名、积分、排座和成绩分析",
           "search_estimated_date": null,
@@ -908,13 +782,13 @@
         }
       ],
       "rejections": [
-        "候选52：页面发布日期2026-10-14超出本期，未调用模型",
+        "候选42：页面发布日期2026-10-14超出本期，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "欢喜莳",
-      "query": "\"欢喜莳\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"gh_1a330a62ffc7\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"欢喜莳\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"gh_1a330a62ffc7\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [],
       "rejections": [
@@ -923,11 +797,11 @@
     },
     {
       "account": "PsyEcho 芯声",
-      "query": "\"PsyEcho 芯声\" 微信公众号 最新文章 2026-11-05 至 2026-11-08；补充微信号/原始ID：\"gh_e4dff37b258f\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
+      "query": "\"PsyEcho 芯声\" 微信公众号 最新文章 2026-11-07 至 2026-11-09；补充微信号/原始ID：\"gh_e4dff37b258f\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
-          "id": 53,
+          "id": 43,
           "url": "https://mp.weixin.qq.com/s/qy79cKSfB3U2gsgjcVxDlA",
           "title": "Computers in Human Behavior | 批判性思维如何帮助学生识别AI生成的错误信息？两项实验给出答案",
           "search_estimated_date": null,
@@ -937,49 +811,47 @@
           "biz": "MzcwMjM2NTgyNQ==",
           "read_status": "微信正文读取成功",
           "search_provider": "用户样例/未记录"
-        },
-        {
-          "id": 54,
-          "url": "https://mp.weixin.qq.com/s/NIe9SiN8Bt3DRIFGInZUpg",
-          "title": "Thinking Skills and Creativity | 一项15人研究：真正的AI素养，从“不急着相信第一版答案”开始",
-          "search_estimated_date": null,
-          "publication_date": "2026-09-02T09:30:00+08:00",
-          "author": "芯声",
-          "publisher": "PsyEcho 芯声",
-          "biz": "MzcwMjM2NTgyNQ==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 55,
-          "url": "https://mp.weixin.qq.com/s?__biz=MzcwMjM2NTgyNQ%3D%3D&mid=2247484211&idx=1&sn=a168534637c63a00678a753802c93a43&chksm=f59e7e5a83da997199ce5ee49e5567199f7991131d8547a845d8edb07860b71e6d34d23d6ca0&mpshare=1&scene=1&srcid=0923tx8UUYJSVMklhzy7AZpQ&sharer_shareinfo=a0e63685bb196de8153932d9eb25ece6&sharer_shareinfo_first=a0e63685bb196de8153932d9eb25ece6#rd",
-          "title": "Computers & Education | 一项74名学生研究：AI什么时候提醒学生，比“提醒什么”更重要",
-          "search_estimated_date": null,
-          "publication_date": "2026-09-23T12:00:00+08:00",
-          "author": "芯声",
-          "publisher": "PsyEcho 芯声",
-          "biz": "MzcwMjM2NTgyNQ==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
         }
       ],
       "rejections": [
-        "候选53：页面发布日期2026-11-02超出本期，未调用模型",
-        "候选54：页面发布日期2026-09-02超出本期，未调用模型",
-        "候选55：页面发布日期2026-09-23超出本期，未调用模型",
+        "候选43：页面发布日期2026-11-02超出本期，未调用模型",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "数字教育",
-      "query": "\"数字教育\" 微信公众号 最新文章 2026-11-05 至 2026-11-08（优先限定mp.weixin.qq.com）；无结果后补充：\"数字教育\" 教育技术 教育数字化",
+      "query": "\"数字教育\" 微信公众号 最新文章 2026-11-07 至 2026-11-09（优先限定mp.weixin.qq.com）；无结果后补充：\"数字教育\" 教育技术 教育数字化",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
-          "id": 56,
-          "url": "https://zh.vietnamplus.vn/article-post270808.vnp",
-          "title": "黎进珠主持召开教育培训数字化转型会议",
-          "search_estimated_date": "Fri, 06 Nov 2026 08:32:24 GMT",
+          "id": 44,
+          "url": "https://www.bjyuanda88.com/news/potou1772",
+          "title": "把握人工智能赋能教育变革的时代机遇",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "仅搜索摘要",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 45,
+          "url": "https://kuku.baidu.com/landing/tscp_doc/f2d3576ef9294ff373baa471cb4ef6a4",
+          "title": "智慧职教是什么？国家级职业教育数字化平台全解析",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "仅搜索摘要",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 46,
+          "url": "https://feng.ifeng.com/c/8xsdlgDvhyO",
+          "title": "海南教育数智化转型实践亮相世界互联网大会乌镇峰会_大风号_凤凰网",
+          "search_estimated_date": "Sun, 08 Nov 2026 01:27:08 GMT",
           "publication_date": null,
           "author": null,
           "publisher": null,
@@ -988,33 +860,9 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 57,
-          "url": "https://wap.eastmoney.com/a/202611053922413684.html",
-          "title": "免费开放全球院校库，这家教育科技公司如何降低中小机构数字化门槛？ _ 东方财富网",
-          "search_estimated_date": "Thu, 05 Nov 2026 23:00:00 GMT",
-          "publication_date": null,
-          "author": null,
-          "publisher": null,
-          "biz": null,
-          "read_status": "Tavily正文",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 58,
-          "url": "http://www.chisa.edu.cn/global",
-          "title": "环球 - 神州学人网",
-          "search_estimated_date": "Fri, 06 Nov 2026 09:00:00 GMT",
-          "publication_date": null,
-          "author": null,
-          "publisher": null,
-          "biz": null,
-          "read_status": "Tavily正文",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 59,
-          "url": "https://www.instagram.com/p/DfYekWEjyg4",
-          "title": "Instagram",
+          "id": 47,
+          "url": "https://www.dutp.cn/index/news/details.html?id=104",
+          "title": "深化中柬教育协同赋能丝路人文互通",
           "search_estimated_date": null,
           "publication_date": null,
           "author": null,
@@ -1025,21 +873,56 @@
         }
       ],
       "rejections": [
-        "主题扩展缺少与教育技术直接相关的正文证据",
-        "主题扩展缺少与教育技术直接相关的正文证据",
+        "主题扩展未核实微信公众号身份，暂不加入候选关注",
         "主题扩展缺少与教育技术直接相关的正文证据",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "数智教育",
-      "query": "\"数智教育\" 微信公众号 最新文章 2026-11-05 至 2026-11-08（优先限定mp.weixin.qq.com）；无结果后补充：\"数智教育\" 教育技术 教育数字化",
+      "query": "\"数智教育\" 微信公众号 最新文章 2026-11-07 至 2026-11-09（优先限定mp.weixin.qq.com）；无结果后补充：\"数智教育\" 教育技术 教育数字化",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
-          "id": 60,
-          "url": "https://gongyi.cctv.com/2026/11/05/ARTI9uuxBJrwhjX3lcn1qfJS261105.shtml",
-          "title": "2026年世界互联网大会乌镇峰会数智教育论坛举行_公益频道_央视网(cctv.com)",
+          "id": 48,
+          "url": "https://www.163.com/dy/article/LB7O56B30514R9KQ.html",
+          "title": "海南教育数智化转型实践亮相世界互联网大会乌镇峰会|教师_网易订阅",
+          "search_estimated_date": "Sun, 08 Nov 2026 08:18:02 GMT",
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 49,
+          "url": "https://qianzhitech.com/news/chifeng4338",
+          "title": "海亮科技入选2026浙商AI智能体TOP40榜单",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "仅搜索摘要",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 50,
+          "url": "https://www.icloudnews.net/list/17.html",
+          "title": "通信-6G-光纤-光缆-量子-AI云资讯通信频道",
+          "search_estimated_date": "Sun, 08 Nov 2026 03:00:00 GMT",
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "Tavily正文",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 51,
+          "url": "https://caifuhao.eastmoney.com/news/20261108013918497459780",
+          "title": "资深传媒人张强谈\"新闻与网络传播学\"专业：变局中的坚守与破局_财富号_东方财富网",
           "search_estimated_date": null,
           "publication_date": null,
           "author": null,
@@ -1049,22 +932,10 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 61,
-          "url": "https://cn.chinadaily.com.cn/a/202611/05/WS6aec539ee4b0e14252fc970b.html",
-          "title": "2026年世界互联网大会乌镇峰会举行 腾讯多项AI实践集中亮相 - 中国日报网",
-          "search_estimated_date": "Thu, 05 Nov 2026 00:00:00 GMT",
-          "publication_date": null,
-          "author": null,
-          "publisher": null,
-          "biz": null,
-          "read_status": "Tavily正文",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 62,
-          "url": "https://www.icloudnews.net/list/17.html",
-          "title": "通信-6G-光纤-光缆-量子-AI云资讯通信频道",
-          "search_estimated_date": "Sat, 07 Nov 2026 08:00:00 GMT",
+          "id": 52,
+          "url": "https://www.sohu.com/a/1098667480_123753?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "title": "第二十三届北京论坛开幕_学术_文明_数智",
+          "search_estimated_date": "Sun, 08 Nov 2026 09:03:00 GMT",
           "publication_date": null,
           "author": null,
           "publisher": null,
@@ -1074,56 +945,29 @@
         }
       ],
       "rejections": [
-        "主题扩展未核实微信公众号身份，暂不加入候选关注",
-        "主题扩展未核实微信公众号身份，暂不加入候选关注",
+        "主题扩展缺少与教育技术直接相关的正文证据",
+        "主题扩展缺少与教育技术直接相关的正文证据",
         "主题扩展缺少与教育技术直接相关的正文证据",
         "未通过相关性、正文或发布日期筛选；不等于账号无更新"
       ]
     },
     {
       "account": "游戏化教学",
-      "query": "\"游戏化教学\" 微信公众号 最新文章 2026-11-05 至 2026-11-08（优先限定mp.weixin.qq.com）；无结果后补充：\"游戏化教学\" 教育技术 教育数字化",
+      "query": "\"游戏化教学\" 微信公众号 最新文章 2026-11-07 至 2026-11-09（优先限定mp.weixin.qq.com）；无结果后补充：\"游戏化教学\" 教育技术 教育数字化",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
-      "sources": [
-        {
-          "id": 63,
-          "url": "https://m.renrendoc.com/paper/540396156.html",
-          "title": "七年级上册22课寓言四则",
-          "search_estimated_date": "Sat, 07 Nov 2026 10:00:00 GMT",
-          "publication_date": null,
-          "author": null,
-          "publisher": null,
-          "biz": null,
-          "read_status": "仅搜索摘要",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 64,
-          "url": "https://www.ddxqjy.com/mainDetail?menuId=1&id=8755",
-          "title": "【图书入选名单公布通知】《新时代背景下幼儿教师专业发展的实践 ...",
-          "search_estimated_date": "Sat, 07 Nov 2026 04:00:00 GMT",
-          "publication_date": null,
-          "author": null,
-          "publisher": null,
-          "biz": null,
-          "read_status": "仅搜索摘要",
-          "search_provider": "Tavily"
-        }
-      ],
-      "rejections": [
-        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
-      ]
+      "sources": [],
+      "rejections": []
     },
     {
       "account": "创客教育",
-      "query": "\"创客教育\" 微信公众号 最新文章 2026-11-05 至 2026-11-08（优先限定mp.weixin.qq.com）；无结果后补充：\"创客教育\" 教育技术 教育数字化",
+      "query": "\"创客教育\" 微信公众号 最新文章 2026-11-07 至 2026-11-09（优先限定mp.weixin.qq.com）；无结果后补充：\"创客教育\" 教育技术 教育数字化",
       "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
       "sources": [
         {
-          "id": 65,
-          "url": "https://www.yemanba.com/product/48.html",
-          "title": "升级校园创客教育，激发数字文化创意软件开发潜力",
-          "search_estimated_date": "Thu, 05 Nov 2026 01:00:00 GMT",
+          "id": 53,
+          "url": "http://www.wkxpbk.com/product/51.html",
+          "title": "数字技术驱动教育变革西安市教育局调研西电人工智能专题纪实",
+          "search_estimated_date": null,
           "publication_date": null,
           "author": null,
           "publisher": null,
@@ -1132,10 +976,46 @@
           "search_provider": "Tavily"
         },
         {
-          "id": 66,
+          "id": 54,
+          "url": "https://kuku.baidu.com/landing/tscp_doc/bcf0bb87ced081c59f9a0db76c1018b6",
+          "title": "腾讯扣叮是什么？青少年编程学习平台功能与适用人群全解析",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "仅搜索摘要",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 55,
+          "url": "https://www.cnblogs.com/myxiaofei/p/23590086",
+          "title": "想提升孩子领导力？杭州Wowkids创造力中心创客教育口碑好",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "仅搜索摘要",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 56,
+          "url": "https://m.itouchtv.cn/article/b172e5570f89c8d8cf5bbf01d8237608",
+          "title": "粤改前沿| 智造乘风起感受广东先进制造的创新脉动",
+          "search_estimated_date": null,
+          "publication_date": null,
+          "author": null,
+          "publisher": null,
+          "biz": null,
+          "read_status": "仅搜索摘要",
+          "search_provider": "Tavily"
+        },
+        {
+          "id": 57,
           "url": "https://www.jiaojianli.com",
           "title": "Prof./Dr. Jiao‘s Weblog on Educational Technology",
-          "search_estimated_date": "Thu, 05 Nov 2026 07:00:00 GMT",
+          "search_estimated_date": "Sat, 07 Nov 2026 21:00:00 GMT",
           "publication_date": null,
           "author": null,
           "publisher": null,
@@ -1163,17 +1043,187 @@
     {
       "provider": "Tavily",
       "status": "ok",
+      "results": 2
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 2
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 5
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 5
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
       "results": 1
     },
     {
       "provider": "Tavily",
       "status": "ok",
+      "results": 5
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
       "results": 0
     },
     {
       "provider": "Tavily",
       "status": "ok",
-      "results": 3
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
+    },
+    {
+      "provider": "Tavily",
+      "status": "ok",
+      "results": 0
     },
     {
       "provider": "Tavily",
@@ -1224,41 +1274,6 @@
       "provider": "Tavily",
       "status": "ok",
       "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 5
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 2
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 5
     },
     {
       "provider": "Tavily",
@@ -1293,86 +1308,6 @@
     {
       "provider": "Tavily",
       "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
       "results": 5
     },
     {
@@ -1393,62 +1328,7 @@
     {
       "provider": "Tavily",
       "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 2
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 4
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 3
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 2
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 2
+      "results": 5
     }
   ],
   "search_requests": {
@@ -1456,17 +1336,17 @@
     "spark-x2.5-4b": 0,
     "spark-x2.5-1.7b": 0
   },
-  "included": 3,
-  "confirmed": 3,
-  "report": "2026-11-08_latest.md",
+  "included": 0,
+  "confirmed": 0,
+  "report": "2026-11-09_latest.md",
   "expanded": 0,
   "merged_entries": 18,
-  "current_entries": 5,
-  "new_entries": 3,
+  "current_entries": 2,
+  "new_entries": 0,
   "archived_reports": 1,
   "briefing_error": "",
-  "window_start": "2026-11-05",
-  "window_end": "2026-11-08T09:54:08.901691+08:00",
+  "window_start": "2026-11-07",
+  "window_end": "2026-11-09T09:58:54.024727+08:00",
   "discovery_events": [
     {
       "stage": "list",
@@ -1493,12 +1373,6 @@
       "cards": 40
     },
     {
-      "stage": "list",
-      "page": 5,
-      "status": "ok",
-      "cards": 40
-    },
-    {
       "stage": "detail",
       "account": "Citedu全媒",
       "status": "ok",
@@ -1507,18 +1381,6 @@
     {
       "stage": "detail",
       "account": "Citedu全媒",
-      "status": "ok",
-      "links": 1
-    },
-    {
-      "stage": "detail",
-      "account": "Citedu全媒",
-      "status": "ok",
-      "links": 1
-    },
-    {
-      "stage": "detail",
-      "account": "教育技术学自留地",
       "status": "ok",
       "links": 1
     },
