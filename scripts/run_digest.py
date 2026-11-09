@@ -28,6 +28,7 @@ EXPANSION_TOPICS = ("数字教育", "数智教育", "游戏化教学", "创客�
 TOPIC_PATTERN = re.compile(r"数字教育|教育数字化|数智教育|游戏化|创客教育|教育技术|智慧教育|数字素养|STEAM|STEM", re.I)
 PROFILE_PATH = Path(__file__).with_name("account_profiles.json")
 PROFILES = json.loads(PROFILE_PATH.read_text(encoding="utf-8")) if PROFILE_PATH.exists() else {}
+# The complete monitored set currently contains 27 verified accounts.
 GROUPS = {
     "A": ("权威学术期刊", ["电化教育研究", "开放教育研究", "现代远程教育研究", "远程教育杂志", "现代教育论丛"]),
     "B": ("机构与团队", ["教育技术学", "西大教技", "国际与比较教育研究所", "数字游戏学习研究", "e2lab", "EDU开源行动计划", "中国教育技术协会"]),
