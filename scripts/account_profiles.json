@@ -275,6 +275,17 @@
     "sample_published_at": "2026-11-05T10:03:06+08:00",
     "verified_on": "2026-11-05"
   },
+  "中国教育技术协会": {
+    "publisher": "中国教育技术协会",
+    "biz": "MjM5MzMyOTgzNQ==",
+    "wechat_id": "CAETbeijing",
+    "original_id": "gh_4d8375f02a23",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/W-sg3iNXkEXwyhcEl1MDrg"
+    ],
+    "sample_published_at": "2026-11-09T11:19:47+08:00",
+    "verified_on": "2026-11-09"
+  },
   "e2lab": {
     "publisher": "e2lab",
     "biz": "MzIyMDEzMzA1MQ==",
