@@ -113,8 +113,8 @@ class CollectionWindowTests(unittest.TestCase):
                     patch.object(d, 'analyze', side_effect=lambda name, sources, prompt, key: [{'source_id': s['id']} for s in sources]), \
                     patch.object(d, 'synthesize', return_value={'overview': [], 'trends': []}):
                 result = d.main([], root)
-                self.assertEqual(result['included'], 27)
-                self.assertEqual(result['current_entries'], 27)
+                self.assertEqual(result['included'], 28)
+                self.assertEqual(result['current_entries'], 28)
                 self.assertEqual(result['deferred_entries'], 0)
                 self.assertTrue(result['cursor_advanced'])
                 self.assertTrue((root/'state/collection_cursor.json').exists())

@@ -111,7 +111,7 @@ class SearchTests(unittest.TestCase):
             self.assertEqual(status['expanded'], 1)
             self.assertEqual(status['confirmed'], 0)
             self.assertFalse(status['failed'])
-            self.assertEqual(sum(len(names) for _, names in d.GROUPS.values()), 27)
+            self.assertEqual(sum(len(names) for _, names in d.GROUPS.values()), 28)
 
 
 if __name__ == '__main__':

@@ -114,7 +114,7 @@ class DigestTests(unittest.TestCase):
     def test_all_profiles_are_verified_and_match_targets(self):
         targets = {name for _, names in d.GROUPS.values() for name in names}
         self.assertEqual(set(d.PROFILES), targets)
-        self.assertEqual(len(targets), 27)
+        self.assertEqual(len(targets), 28)
         self.assertEqual(len({p['biz'] for p in d.PROFILES.values()}), len(targets))
         for profile in d.PROFILES.values():
             self.assertTrue(profile['publisher'])
@@ -135,6 +135,7 @@ class DigestTests(unittest.TestCase):
             self.assertEqual(calls[:len(expected)], expected)
             self.assertIn(('B', 'EDU开源行动计划'), calls)
             self.assertIn(('B', '中国教育技术协会'), calls)
+            self.assertIn(('E', '极客开源'), calls)
             report = (root/'reports'/status['report']).read_text(encoding='utf-8')
             self.assertIn('### EDU开源行动计划', report)
 

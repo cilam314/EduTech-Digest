@@ -286,6 +286,17 @@
     "sample_published_at": "2026-11-09T11:19:47+08:00",
     "verified_on": "2026-11-09"
   },
+  "极客开源": {
+    "publisher": "极客开源",
+    "biz": "MzA4NjUxNTI5MA==",
+    "wechat_id": "geekreading",
+    "original_id": "gh_65f128d3e8cd",
+    "sample_urls": [
+      "https://mp.weixin.qq.com/s/tpGx0WmF_0Q5XoBHNJaeEg"
+    ],
+    "sample_published_at": "2026-10-26T18:19:28+08:00",
+    "verified_on": "2026-11-13"
+  },
   "e2lab": {
     "publisher": "e2lab",
     "biz": "MzIyMDEzMzA1MQ==",

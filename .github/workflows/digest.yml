@@ -9,13 +9,13 @@ on:
   workflow_dispatch:
     inputs:
       account_limit:
-        description: "试运行填3；正式运行填27"
+        description: "试运行填3；正式运行填28"
         required: true
-        default: "27"
+        default: "28"
         type: choice
         options:
           - "3"
-          - "27"
+          - "28"
       search_test_provider:
         description: "正常运行选auto；另两项只用于验证星火备用搜索"
         required: true
@@ -54,7 +54,7 @@ jobs:
           SEARCH_TEST_PROVIDER: ${{ inputs.search_test_provider || 'auto' }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           DEEPSEEK_MODEL: ${{ vars.DEEPSEEK_MODEL || 'deepseek-flash' }}
-          ACCOUNT_LIMIT: ${{ inputs.account_limit || '27' }}
+          ACCOUNT_LIMIT: ${{ inputs.account_limit || '28' }}
           PYTHONUTF8: '1'
           PUBLIC_WECHAT_INDEX_URL: 'https://yaoverse.top'
         run: python scripts/run_digest.py --limit "$ACCOUNT_LIMIT"
