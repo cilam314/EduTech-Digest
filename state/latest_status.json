@@ -3,87 +3,19 @@
   "accounts": [
     {
       "account": "电化教育研究",
-      "query": "\"电化教育研究\" 微信公众号 最新文章 2026-11-19 至 2026-11-22；补充微信号/原始ID：\"e-EducationResearch\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
-      "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
-      "sources": [
-        {
-          "id": 1,
-          "url": "https://mp.weixin.qq.com/s/1pbsb_VnWpOp8uppTTlo1A",
-          "title": "「年终学术盛宴」2026年度中国教育学十大学术热点评选活动开始啦！",
-          "search_estimated_date": null,
-          "publication_date": "2026-11-03T12:19:10+08:00",
-          "author": "人大书报资料中心",
-          "publisher": "电化教育研究",
-          "biz": "MzI5NjA1MzAyMA==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "用户样例/未记录"
-        },
-        {
-          "id": 2,
-          "url": "https://mp.weixin.qq.com/s/7y-3LTC3rRdxVBRlltfHcQ",
-          "title": "周六开播 | 兰州交通大学：GenAI时代的翻译产学新生态沙龙",
-          "search_estimated_date": null,
-          "publication_date": "2025-07-01T11:59:23+08:00",
-          "author": null,
-          "publisher": "翻译技术教育研究院",
-          "biz": "Mzg5NzcyMzQ3Nw==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        }
-      ],
-      "rejections": [
-        "候选2：账号标识不匹配或不可核实，未调用模型",
-        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
-      ]
+      "query": "未执行",
+      "status": "服务失败：搜索后端均不可用或未配置；Tavily: api.tavily.com: HTTP 432（请查看提供商控制台的余额及错误说明）；spark-x2.5-4b: 星火未返回可解析的结构化信源；不将模型生成的链接当作已核验搜索结果；spark-x2.5-1.7b: 星火未返回可解析的结构化信源；不将模型生成的链接当作已核验搜索结果",
+      "sources": [],
+      "rejections": [],
+      "failed": true
     },
     {
       "account": "开放教育研究",
-      "query": "\"开放教育研究\" 微信公众号 最新文章 2026-11-19 至 2026-11-22；补充微信号/原始ID：\"gh_4f7e73e58c41\"；已知样例入口（不代表发现了后续文章）；公开索引原文入口 0 条（逐篇核验账号及日期）",
-      "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
-      "sources": [
-        {
-          "id": 3,
-          "url": "https://mp.weixin.qq.com/s/-mT4DwKCBtrloSkn5aXv7g",
-          "title": "好课上新、体验焕新、服务暖心！第二届上海老年学习课程展11月2日开幕",
-          "search_estimated_date": null,
-          "publication_date": "2026-10-31T08:00:00+08:00",
-          "author": null,
-          "publisher": "开放教育研究",
-          "biz": "Mzg3NDU5MzU5Ng==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "用户样例/未记录"
-        },
-        {
-          "id": 4,
-          "url": "https://mp.weixin.qq.com/s/v_s_QaGSaozyZLV7ojb-sw",
-          "title": "“未来共创 教育向新：AI时代的全球教育趋势对问”主题论坛圆满落幕",
-          "search_estimated_date": null,
-          "publication_date": "2025-07-04T16:27:27+08:00",
-          "author": null,
-          "publisher": "上海交通大学出版社",
-          "biz": "MzA5MzI5NzQxNQ==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        },
-        {
-          "id": 5,
-          "url": "https://mp.weixin.qq.com/s/gJzAqULBC-UsVg8LuiTzXw",
-          "title": "人工智能与未来教育前沿研究｜杨海燕 李涛：ChatGPT教学应用：场景、局限与突破策略",
-          "search_estimated_date": null,
-          "publication_date": "2023-08-24T10:43:48+08:00",
-          "author": "编辑部",
-          "publisher": "中国教育信息化",
-          "biz": "MjM5MDExNTE2Nw==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "Tavily"
-        }
-      ],
-      "rejections": [
-        "候选4：账号标识不匹配或不可核实，未调用模型",
-        "候选5：账号标识不匹配或不可核实，未调用模型",
-        "日期未知或超出本期；且不是明确标有目标期刊名的期号/目录",
-        "未通过相关性、正文或发布日期筛选；不等于账号无更新"
-      ]
+      "query": "未执行",
+      "status": "服务失败：搜索后端均不可用或未配置；",
+      "sources": [],
+      "rejections": [],
+      "failed": true
     },
     {
       "account": "现代远程教育研究",
@@ -207,23 +139,11 @@
     },
     {
       "account": "Citedu全媒",
-      "query": "\"Citedu全媒\" 微信公众号 最新文章 2026-11-19 至 2026-11-22；搜索服务失败，使用公开索引原文入口继续核验",
-      "status": "确认目标账号来源 1 条；期刊线索/领域补充 0 条",
-      "sources": [
-        {
-          "id": 6,
-          "url": "https://mp.weixin.qq.com/s/WQVs5zCPiibw1zGa1ssUbg",
-          "title": "借助智能体开发教学平台，赋能高中信息科技“智能家居”四课时项目设计",
-          "search_estimated_date": null,
-          "publication_date": "2026-11-20T10:30:00+08:00",
-          "author": "谢作如",
-          "publisher": "Citedu全媒",
-          "biz": "MzIzNDE2NzQwOA==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "公开文章索引（原文待核验）"
-        }
-      ],
+      "query": "\"Citedu全媒\" 微信公众号 最新文章 2026-11-19 至 2026-11-23；搜索服务失败，使用公开索引原文入口继续核验",
+      "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
+      "sources": [],
       "rejections": [
+        "跳过已收录或重复链接",
         "跳过已收录或重复链接",
         "跳过已收录或重复链接"
       ]
@@ -246,15 +166,27 @@
     },
     {
       "account": "教育技术学自留地",
-      "query": "\"教育技术学自留地\" 微信公众号 最新文章 2026-11-19 至 2026-11-22；搜索服务失败，使用公开索引原文入口继续核验",
-      "status": "确认目标账号来源 1 条；期刊线索/领域补充 0 条",
+      "query": "\"教育技术学自留地\" 微信公众号 最新文章 2026-11-19 至 2026-11-23；搜索服务失败，使用公开索引原文入口继续核验",
+      "status": "确认目标账号来源 2 条；期刊线索/领域补充 0 条",
       "sources": [
         {
-          "id": 7,
-          "url": "https://mp.weixin.qq.com/s/qC3JbUQG5dQqvDFSmJ7VcQ",
-          "title": "教会学生从视频中学习：6个建议",
+          "id": 1,
+          "url": "https://mp.weixin.qq.com/s/7yQYB14mZHIpxaO4ChoG7A",
+          "title": "当我们谈论 AI，我们在回避什么？且听瑞典社会学家西蒙.林德格伦怎么说？",
           "search_estimated_date": null,
-          "publication_date": "2026-11-21T08:06:00+08:00",
+          "publication_date": "2026-11-23T08:06:00+08:00",
+          "author": "自留地君",
+          "publisher": "教育技术学自留地",
+          "biz": "MzUxMjA0NTU4Mw==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "公开文章索引（原文待核验）"
+        },
+        {
+          "id": 2,
+          "url": "https://mp.weixin.qq.com/s/ifEzeGglgw2pFSyefuMKiw",
+          "title": "3-2-1，基于文字的反思和总结，其实是一线教师的杀手锏利器，只是，只是这个其貌不扬的工具被严重低估了！",
+          "search_estimated_date": null,
+          "publication_date": "2026-11-22T08:06:00+08:00",
           "author": "自留地君",
           "publisher": "教育技术学自留地",
           "biz": "MzUxMjA0NTU4Mw==",
@@ -263,6 +195,8 @@
         }
       ],
       "rejections": [
+        "跳过已收录或重复链接",
+        "跳过已收录或重复链接",
         "跳过已收录或重复链接",
         "跳过已收录或重复链接",
         "跳过已收录或重复链接",
@@ -361,21 +295,6 @@
   "search_events": [
     {
       "provider": "Tavily",
-      "status": "ok",
-      "results": 1
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 0
-    },
-    {
-      "provider": "Tavily",
-      "status": "ok",
-      "results": 2
-    },
-    {
-      "provider": "Tavily",
       "status": "disabled_this_run",
       "reason": "api.tavily.com: HTTP 432（请查看提供商控制台的余额及错误说明）"
     },
@@ -391,21 +310,21 @@
     }
   ],
   "search_requests": {
-    "Tavily": 4,
+    "Tavily": 1,
     "spark-x2.5-4b": 1,
     "spark-x2.5-1.7b": 1
   },
   "included": 2,
   "confirmed": 2,
-  "report": "2026-11-22_latest.md",
+  "report": "2026-11-23_latest.md",
   "expanded": 0,
-  "merged_entries": 34,
-  "current_entries": 3,
+  "merged_entries": 36,
+  "current_entries": 4,
   "new_entries": 2,
   "archived_reports": 1,
   "briefing_error": "",
   "window_start": "2026-11-19",
-  "window_end": "2026-11-22T09:58:47.776205+08:00",
+  "window_end": "2026-11-23T10:08:43.759678+08:00",
   "discovery_events": [
     {
       "stage": "list",
@@ -438,6 +357,18 @@
       "cards": 40
     },
     {
+      "stage": "list",
+      "page": 6,
+      "status": "ok",
+      "cards": 40
+    },
+    {
+      "stage": "detail",
+      "account": "Citedu全媒",
+      "status": "ok",
+      "links": 1
+    },
+    {
       "stage": "detail",
       "account": "Citedu全媒",
       "status": "ok",
@@ -451,7 +382,19 @@
     },
     {
       "stage": "detail",
-      "account": "Citedu全媒",
+      "account": "教育技术学自留地",
+      "status": "ok",
+      "links": 1
+    },
+    {
+      "stage": "detail",
+      "account": "教育技术学自留地",
+      "status": "ok",
+      "links": 1
+    },
+    {
+      "stage": "detail",
+      "account": "教育技术学自留地",
       "status": "ok",
       "links": 1
     },
