@@ -139,9 +139,34 @@
     },
     {
       "account": "Citedu全媒",
-      "query": "\"Citedu全媒\" 微信公众号 最新文章 2026-11-19 至 2026-11-23；搜索服务失败，使用公开索引原文入口继续核验",
-      "status": "未取得可新增收录的近期原文（可能已收录或检索覆盖不足；不能判断账号没有更新）",
-      "sources": [],
+      "query": "\"Citedu全媒\" 微信公众号 最新文章 2026-11-19 至 2026-11-25；搜索服务失败，使用公开索引原文入口继续核验",
+      "status": "确认目标账号来源 2 条；期刊线索/领域补充 0 条",
+      "sources": [
+        {
+          "id": 1,
+          "url": "https://mp.weixin.qq.com/s/rA08tEOGZBS6GI6FsMqapg",
+          "title": "高中课标解读·课程目标① | 素养立意，目标落实",
+          "search_estimated_date": null,
+          "publication_date": "2026-11-24T10:30:00+08:00",
+          "author": "李维明",
+          "publisher": "Citedu全媒",
+          "biz": "MzIzNDE2NzQwOA==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "公开文章索引（原文待核验）"
+        },
+        {
+          "id": 2,
+          "url": "https://mp.weixin.qq.com/s/HWAEAQqEiF0i7c4xj9sbjA",
+          "title": "新刊速递 | 《中国信息技术教育》2026年第22期 特别关注 融入与创新：中小学人工智能教育的浙江探索",
+          "search_estimated_date": null,
+          "publication_date": "2026-11-23T10:30:00+08:00",
+          "author": null,
+          "publisher": "Citedu全媒",
+          "biz": "MzIzNDE2NzQwOA==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "公开文章索引（原文待核验）"
+        }
+      ],
       "rejections": [
         "跳过已收录或重复链接",
         "跳过已收录或重复链接",
@@ -166,27 +191,15 @@
     },
     {
       "account": "教育技术学自留地",
-      "query": "\"教育技术学自留地\" 微信公众号 最新文章 2026-11-19 至 2026-11-23；搜索服务失败，使用公开索引原文入口继续核验",
-      "status": "确认目标账号来源 2 条；期刊线索/领域补充 0 条",
+      "query": "\"教育技术学自留地\" 微信公众号 最新文章 2026-11-19 至 2026-11-25；搜索服务失败，使用公开索引原文入口继续核验",
+      "status": "确认目标账号来源 1 条；期刊线索/领域补充 0 条",
       "sources": [
         {
-          "id": 1,
-          "url": "https://mp.weixin.qq.com/s/7yQYB14mZHIpxaO4ChoG7A",
-          "title": "当我们谈论 AI，我们在回避什么？且听瑞典社会学家西蒙.林德格伦怎么说？",
+          "id": 3,
+          "url": "https://mp.weixin.qq.com/s/ectv2Pfuomd21J-A6tYPKg",
+          "title": "正在被人工智能重新定义的学习样例",
           "search_estimated_date": null,
-          "publication_date": "2026-11-23T08:06:00+08:00",
-          "author": "自留地君",
-          "publisher": "教育技术学自留地",
-          "biz": "MzUxMjA0NTU4Mw==",
-          "read_status": "微信正文读取成功",
-          "search_provider": "公开文章索引（原文待核验）"
-        },
-        {
-          "id": 2,
-          "url": "https://mp.weixin.qq.com/s/ifEzeGglgw2pFSyefuMKiw",
-          "title": "3-2-1，基于文字的反思和总结，其实是一线教师的杀手锏利器，只是，只是这个其貌不扬的工具被严重低估了！",
-          "search_estimated_date": null,
-          "publication_date": "2026-11-22T08:06:00+08:00",
+          "publication_date": "2026-11-24T08:06:00+08:00",
           "author": "自留地君",
           "publisher": "教育技术学自留地",
           "biz": "MzUxMjA0NTU4Mw==",
@@ -195,6 +208,8 @@
         }
       ],
       "rejections": [
+        "跳过已收录或重复链接",
+        "跳过已收录或重复链接",
         "跳过已收录或重复链接",
         "跳过已收录或重复链接",
         "跳过已收录或重复链接",
@@ -314,17 +329,17 @@
     "spark-x2.5-4b": 1,
     "spark-x2.5-1.7b": 1
   },
-  "included": 2,
-  "confirmed": 2,
-  "report": "2026-11-23_latest.md",
+  "included": 3,
+  "confirmed": 3,
+  "report": "2026-11-25_latest.md",
   "expanded": 0,
-  "merged_entries": 36,
-  "current_entries": 4,
-  "new_entries": 2,
+  "merged_entries": 39,
+  "current_entries": 6,
+  "new_entries": 3,
   "archived_reports": 1,
   "briefing_error": "",
   "window_start": "2026-11-19",
-  "window_end": "2026-11-23T10:08:43.759678+08:00",
+  "window_end": "2026-11-25T10:16:39.987230+08:00",
   "discovery_events": [
     {
       "stage": "list",
@@ -363,6 +378,24 @@
       "cards": 40
     },
     {
+      "stage": "list",
+      "page": 7,
+      "status": "ok",
+      "cards": 40
+    },
+    {
+      "stage": "list",
+      "page": 8,
+      "status": "ok",
+      "cards": 40
+    },
+    {
+      "stage": "detail",
+      "account": "Citedu全媒",
+      "status": "ok",
+      "links": 1
+    },
+    {
       "stage": "detail",
       "account": "Citedu全媒",
       "status": "ok",
@@ -377,6 +410,18 @@
     {
       "stage": "detail",
       "account": "Citedu全媒",
+      "status": "ok",
+      "links": 1
+    },
+    {
+      "stage": "detail",
+      "account": "Citedu全媒",
+      "status": "ok",
+      "links": 1
+    },
+    {
+      "stage": "detail",
+      "account": "教育技术学自留地",
       "status": "ok",
       "links": 1
     },
