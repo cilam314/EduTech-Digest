@@ -139,16 +139,16 @@
     },
     {
       "account": "Citedu全媒",
-      "query": "\"Citedu全媒\" 微信公众号 最新文章 2026-11-19 至 2026-11-25；搜索服务失败，使用公开索引原文入口继续核验",
+      "query": "\"Citedu全媒\" 微信公众号 最新文章 2026-11-19 至 2026-11-27；搜索服务失败，使用公开索引原文入口继续核验",
       "status": "确认目标账号来源 2 条；期刊线索/领域补充 0 条",
       "sources": [
         {
           "id": 1,
-          "url": "https://mp.weixin.qq.com/s/rA08tEOGZBS6GI6FsMqapg",
-          "title": "高中课标解读·课程目标① | 素养立意，目标落实",
+          "url": "https://mp.weixin.qq.com/s/k8dcL1l_3-Vu5p0_wEc8EQ",
+          "title": "高中课标解读·课程目标③ | 立足“做中学”，推进高中信息科技核心素养课堂转化",
           "search_estimated_date": null,
-          "publication_date": "2026-11-24T10:30:00+08:00",
-          "author": "李维明",
+          "publication_date": "2026-11-26T10:30:00+08:00",
+          "author": "方其桂",
           "publisher": "Citedu全媒",
           "biz": "MzIzNDE2NzQwOA==",
           "read_status": "微信正文读取成功",
@@ -156,11 +156,11 @@
         },
         {
           "id": 2,
-          "url": "https://mp.weixin.qq.com/s/HWAEAQqEiF0i7c4xj9sbjA",
-          "title": "新刊速递 | 《中国信息技术教育》2026年第22期 特别关注 融入与创新：中小学人工智能教育的浙江探索",
+          "url": "https://mp.weixin.qq.com/s/UkKuDI150jUut1oQsI1jmA",
+          "title": "高中课标解读·课程目标② | 信息科技核心素养的认识、理解与实践",
           "search_estimated_date": null,
-          "publication_date": "2026-11-23T10:30:00+08:00",
-          "author": null,
+          "publication_date": "2026-11-25T10:30:00+08:00",
+          "author": "王志兵 董涛",
           "publisher": "Citedu全媒",
           "biz": "MzIzNDE2NzQwOA==",
           "read_status": "微信正文读取成功",
@@ -168,6 +168,7 @@
         }
       ],
       "rejections": [
+        "跳过已收录或重复链接",
         "跳过已收录或重复链接",
         "跳过已收录或重复链接",
         "跳过已收录或重复链接"
@@ -191,15 +192,27 @@
     },
     {
       "account": "教育技术学自留地",
-      "query": "\"教育技术学自留地\" 微信公众号 最新文章 2026-11-19 至 2026-11-25；搜索服务失败，使用公开索引原文入口继续核验",
-      "status": "确认目标账号来源 1 条；期刊线索/领域补充 0 条",
+      "query": "\"教育技术学自留地\" 微信公众号 最新文章 2026-11-19 至 2026-11-27；搜索服务失败，使用公开索引原文入口继续核验",
+      "status": "确认目标账号来源 2 条；期刊线索/领域补充 0 条",
       "sources": [
         {
           "id": 3,
-          "url": "https://mp.weixin.qq.com/s/ectv2Pfuomd21J-A6tYPKg",
-          "title": "正在被人工智能重新定义的学习样例",
+          "url": "https://mp.weixin.qq.com/s/5FxvTv1zrBbAKpgiKts-wQ",
+          "title": "我用AI 制作了一个课例研讨点评的系统，把教研从\"事后评课\"变成\"现场共创\"，让每一位老师的思考都能被看见",
           "search_estimated_date": null,
-          "publication_date": "2026-11-24T08:06:00+08:00",
+          "publication_date": "2026-11-26T08:08:00+08:00",
+          "author": "自留地君",
+          "publisher": "教育技术学自留地",
+          "biz": "MzUxMjA0NTU4Mw==",
+          "read_status": "微信正文读取成功",
+          "search_provider": "公开文章索引（原文待核验）"
+        },
+        {
+          "id": 4,
+          "url": "https://mp.weixin.qq.com/s/SdbTn26XhXJII2Fz5XqFmA",
+          "title": "一个参与式教师工作坊的成功样板，一个用技术变革大学课堂的案例库，一个数字化赋能循证教学实践社群",
+          "search_estimated_date": null,
+          "publication_date": "2026-11-25T08:00:00+08:00",
           "author": "自留地君",
           "publisher": "教育技术学自留地",
           "biz": "MzUxMjA0NTU4Mw==",
@@ -208,8 +221,6 @@
         }
       ],
       "rejections": [
-        "跳过已收录或重复链接",
-        "跳过已收录或重复链接",
         "跳过已收录或重复链接",
         "跳过已收录或重复链接",
         "跳过已收录或重复链接",
@@ -329,17 +340,17 @@
     "spark-x2.5-4b": 1,
     "spark-x2.5-1.7b": 1
   },
-  "included": 3,
-  "confirmed": 3,
-  "report": "2026-11-25_latest.md",
+  "included": 4,
+  "confirmed": 4,
+  "report": "2026-11-27_latest.md",
   "expanded": 0,
-  "merged_entries": 39,
+  "merged_entries": 43,
   "current_entries": 6,
-  "new_entries": 3,
+  "new_entries": 4,
   "archived_reports": 1,
   "briefing_error": "",
   "window_start": "2026-11-19",
-  "window_end": "2026-11-25T10:16:39.987230+08:00",
+  "window_end": "2026-11-27T10:16:40.846865+08:00",
   "discovery_events": [
     {
       "stage": "list",
@@ -390,10 +401,8 @@
       "cards": 40
     },
     {
-      "stage": "detail",
-      "account": "Citedu全媒",
-      "status": "ok",
-      "links": 1
+      "stage": "list",
+      "status": "page_limit_reached"
     },
     {
       "stage": "detail",
@@ -421,7 +430,13 @@
     },
     {
       "stage": "detail",
-      "account": "教育技术学自留地",
+      "account": "Citedu全媒",
+      "status": "ok",
+      "links": 1
+    },
+    {
+      "stage": "detail",
+      "account": "Citedu全媒",
       "status": "ok",
       "links": 1
     },
@@ -474,7 +489,7 @@
       "links": 1
     }
   ],
-  "discovery_incomplete": false,
+  "discovery_incomplete": true,
   "deferred_entries": 0,
   "cursor_advanced": false
 }
